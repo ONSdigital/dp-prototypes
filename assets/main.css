@@ -33,7 +33,20 @@ ul {
 }
 
 ul li {
-  margin-bottom: 0.25em;
+  margin-bottom: 0.8em;
   margin-top: 0;
   padding: 0;
+  font-size: 16px
+}
+
+a {
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 3px solid #FF9933;
+}
+
+a:visited {
+  color: #560072
 }
