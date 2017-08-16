@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Accessible Autocomplete Preact examples</title>
+    <style>
+      /* Example page specific styling. */
+      html {
+        color: #414042;
+        background: #FFF;
+        font-family: "Open Sans",Helvetica,Arial,sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      body {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        line-height: normal;
+      }
+
+      label {
+        display: block;
+        margin-bottom: .5rem;
+      }
+
+      code {
+        padding-left: .5em;
+        padding-right: .5em;
+        background: #EFEFEF;
+        font-weight: normal;
+        font-family: monospace;
+      }
+
+      main {
+        max-width: 40em;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .autocomplete-wrapper {
+        max-width: 20em;
+        margin-bottom: 4rem;
+      }
+    </style>
+    <link rel="stylesheet" href="../../dist/accessible-autocomplete.min.css">
+  </head>
+  <body>
+    <main>
+      <h1>Add geography filters</h1>
+
+      <label for="autocomplete-default">Search geography</label>
+      <div id="tt-default" class="autocomplete-wrapper"></div>
+    </main>
+
+    <!-- We include the development version of Preact for debugging purposes. -->
+    <script type="text/javascript" src="https://unpkg.com/preact@8.1.0/dist/preact.js"></script>
+    <script type="text/javascript" src="../../dist/lib/accessible-autocomplete.preact.min.js"></script>
+    <script type="text/javascript">
+      function suggest (query, syncResults) {
+        var results = [
+          'England and Wales',
+ 'England',
+ 'Wales',
+ 'North East',
+ 'North West',
+ 'Yorkshire and The Humber',
+ 'East Midlands',
+ 'West Midlands',
+ 'East of England',
+ 'London',
+ 'South East',
+ 'South West',
+ 'County Durham',
+ 'Darlington',
+ 'Hartlepool',
+ 'Middlesbrough',
+ 'Northumberland',
+ 'Redcar and Cleveland',
+ 'Stockton-on-Tees',
+ 'Gateshead',
+ 'Newcastle upon Tyne',
+ 'North Tyneside',
+ 'South Tyneside',
+ 'Sunderland',
+ 'Blackpool',
+ 'Cheshire East',
+ 'Cheshire West and Chester',
+ 'Halton',
+ 'Warrington',
+ 'Allerdale',
+ 'Barrow-in-Furness',
+ 'Carlisle',
+ 'Bolton',
+ 'Bury',
+ 'Manchester',
+ 'Oldham',
+ 'Rochdale',
+ 'Salford',
+ 'Stockport',
+ 'Tameside',
+ 'Trafford',
+ 'Wigan',
+ 'Fylde',
+ 'Lancaster',
+ 'Preston',
+ 'Knowsley',
+ 'Liverpool',
+ 'Sefton',
+ 'St. Helens',
+ 'Wirral',
+ 'East Riding of Yorkshire',
+ 'Kingston upon Hull, City of',
+ 'North East Lincolnshire',
+ 'North Lincolnshire',
+ 'York',
+ 'Hambleton',
+ 'Harrogate',
+ 'Richmondshire',
+ 'Scarborough',
+ 'Selby',
+ 'Barnsley',
+ 'Doncaster',
+ 'Rotherham',
+ 'Sheffield',
+ 'Bradford',
+ 'Calderdale',
+ 'Kirklees',
+ 'Leeds',
+ 'Wakefield',
+ 'Derby',
+ 'Nottingham',
+ 'Rutland',
+ 'Erewash',
+ 'Charnwood',
+ 'Melton',
+ 'East Lindsey',
+ 'Lincoln',
+ 'North Kesteven',
+ 'South Holland',
+ 'South Kesteven',
+ 'West Lindsey',
+ 'East Northamptonshire',
+ 'Northampton',
+ 'South Northamptonshire',
+ 'Ashfield',
+ 'Bassetlaw',
+ 'Broxtowe',
+ 'Mansfield',
+ 'Newark and Sherwood',
+ 'Herefordshire, County of',
+ 'Shropshire',
+ 'Stoke-on-Trent',
+ 'Telford and Wrekin',
+ 'Lichfield',
+ 'Newcastle-under-Lyme',
+ 'Stafford',
+ 'Nuneaton and Bedworth',
+ 'Rugby',
+ 'Stratford-on-Avon',
+ 'Birmingham',
+ 'Coventry',
+ 'Dudley',
+ 'Sandwell',
+ 'Solihull',
+ 'Walsall',
+ 'Wolverhampton',
+ 'Wychavon',
+ 'Central Bedfordshire',
+ 'Peterborough',
+ 'Cambridge',
+ 'East Cambridgeshire',
+ 'Fenland',
+ 'Huntingdonshire',
+ 'South Cambridgeshire',
+ 'Colchester',
+ 'Uttlesford',
+ 'Hertsmere',
+ 'Three Rivers',
+ 'Breckland',
+ 'Broadland',
+ 'Kings Lynn and West Norfolk',
+ 'North Norfolk',
+ 'Norwich',
+ 'South Norfolk',
+ 'Babergh',
+ 'Forest Heath',
+ 'Ipswich',
+ 'Mid Suffolk',
+ 'St Edmundsbury',
+ 'Suffolk Coastal',
+ 'Waveney',
+ 'Camden',
+ 'Hammersmith and Fulham',
+ 'Lambeth',
+ 'Tower Hamlets',
+ 'Wandsworth',
+ 'Westminster',
+ 'Bromley',
+ 'Croydon',
+ 'Greenwich',
+ 'Harrow',
+ 'Hillingdon',
+ 'Hounslow',
+ 'Kingston upon Thames',
+ 'Richmond upon Thames',
+ 'Bracknell Forest',
+ 'Isle of Wight',
+ 'Medway',
+ 'Milton Keynes',
+ 'Portsmouth',
+ 'Southampton',
+ 'West Berkshire',
+ 'Windsor and Maidenhead',
+ 'Wokingham',
+ 'Aylesbury Vale',
+ 'South Bucks',
+ 'Wycombe',
+ 'Basingstoke and Deane',
+ 'East Hampshire',
+ 'Eastleigh',
+ 'Fareham',
+ 'Gosport',
+ 'Hart',
+ 'Havant',
+ 'New Forest',
+ 'Rushmoor',
+ 'Test Valley',
+ 'Winchester',
+ 'Ashford',
+ 'Canterbury',
+ 'Dover',
+ 'Maidstone',
+ 'Shepway',
+ 'Thanet',
+ 'Cherwell',
+ 'Oxford',
+ 'South Oxfordshire',
+ 'Vale of White Horse',
+ 'West Oxfordshire',
+ 'Guildford',
+ 'Surrey Heath',
+ 'Waverley',
+ 'Woking',
+ 'Arun',
+ 'Chichester',
+ 'Bath and North East Somerset',
+ 'Bournemouth',
+ 'Bristol, City of',
+ 'Cornwall',
+ 'North Somerset',
+ 'Plymouth',
+ 'Poole',
+ 'South Gloucestershire',
+ 'Swindon',
+ 'Torbay',
+ 'Wiltshire',
+ 'East Devon',
+ 'Exeter',
+ 'Mid Devon',
+ 'North Devon',
+ 'South Hams',
+ 'Teignbridge',
+ 'West Devon',
+ 'East Dorset',
+ 'North Dorset',
+ 'Purbeck',
+ 'West Dorset',
+ 'Weymouth and Portland',
+ 'Cheltenham',
+ 'Cotswold',
+ 'Forest of Dean',
+ 'Gloucester',
+ 'Stroud',
+ 'Tewkesbury',
+ 'Mendip',
+ 'Sedgemoor',
+ 'South Somerset',
+ 'Taunton Deane',
+ 'Isle of Anglesey',
+ 'Gwynedd',
+ 'Conwy',
+ 'Denbighshire',
+ 'Flintshire',
+ 'Wrexham',
+ 'Powys',
+ 'Pembrokeshire',
+ 'Carmarthenshire',
+ 'Swansea',
+ 'Neath Port Talbot',
+ 'Bridgend',
+ 'The Vale of Glamorgan',
+ 'Cardiff',
+ 'Rhondda Cynon Taf',
+ 'Caerphilly',
+ 'Monmouthshire',
+ 'Newport	 '
+          ]
+        syncResults(query
+          ? results.filter(function (result) {
+              return result.toLowerCase().indexOf(query.toLowerCase()) !== -1
+            })
+          : []
+        )
+      }
+    </script>
+
+    <script type="text/javascript">
+      var element = document.querySelector('#tt-default')
+      var id = 'autocomplete-default'
+      preact.render(
+        preact.createElement(Autocomplete.default, {
+          id: id,
+          source: suggest
+        }),
+        element
+      )
+    </script>
+  </body>
+</html>
