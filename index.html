@@ -41,7 +41,7 @@
     <div class="col-wrap">
       <div class="col col--lg-two-thirds col--md-two-thirds">
 
-       <h2 id="sprint-5">Sprint 6</h2>
+       <h2 id="sprint-6">Sprint 6</h2>
          <p class="font-size--21">23 August to 6 September 2017</p>
          <h3>Done</h3>
          <ul>
@@ -55,9 +55,10 @@
             <li><a href="http://digitalblog.ons.gov.uk/2017/08/15/picking-things-from-a-long-list/">Picking things from a long list</a> (blog post)</li>
             <li><a href="/dp-prototypes/img/Create user journey map for Geography.pdf" download>Geoportal content on main ONS website</a> Download link (PDF)</li>
          </ul>
-<!--         <h3>Learnt</h3>-->
+<h3>Learnt</h3>
          <ul>
-<!--           <li>When selecting a range, users expected the end date to pre-populated with start date </li>-->
+<li>After fleshing out the types of data we are storing in postgres, it made more sense to start moving our database to a mongodb datastore. This allowed us to store more complex data types and have quicker database reads</li>
+        <li>Versions and instances share a lot of data, but we interact with them in 2 separate APIs and store them twice. Moving instances into the dataset API will prevent duplication of data and time spent copying it over.</li>
          </ul>
         
         <h2 id="sprint-5">Sprint 5</h2>
