@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<!-- saved from url=(0117)https://www.ons.gov.uk/visualisations/dvc390/treemap/imports.html?initialWidth=700&childId=ec3-41d7-9291-41e23e3bec87 -->
+<html lang="en" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Trade -imports treemap</title>
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="./styles.css" media="screen">
+<style>
+body{
+	max-width:700px;
+}
+
+#svgEle{
+	width:100%;
+}
+
+text {
+  pointer-events: none;
+}
+
+.grandparent text {
+  /*font-weight: bold;*/
+  fill: #606060;
+  font-size:1.8em;
+}
+
+rect {
+  fill: none;
+  stroke: #fff;
+}
+
+.grandparent{
+/*	pointer-events:none;*/
+}
+
+
+rect.parent,
+.grandparent rect {
+  stroke-width: 2px;
+}
+
+.grandparent line {
+  stroke: #606060;
+  stroke-width: 1px;
+}
+
+.btn{
+	font-size:13px
+}
+
+.children rect.parent,
+.grandparent rect {
+  cursor: pointer;
+}
+
+.children rect.parent {
+  fill: #bbb;
+  fill-opacity: .2;
+}
+
+.children:hover rect.child {
+  fill: #bbb;
+}
+
+*[code*=c1_] {
+	fill:teal;
+}
+
+*[code*=c2_] {
+	fill:#006080;
+}
+
+*[code*=c3_] {
+	fill:#9C566B;
+}
+
+*[code*=c4_] {
+	fill:#0073b3;
+}
+
+*[code*=c5_] {
+	fill:#007c58;
+}
+*[code*=c6_] {
+	fill:#ce5b67;
+}
+
+*[code*=c7_] {
+	fill:#d32b3c;
+}
+
+*[code*=c8_] {
+	fill:#75bc9a;
+}
+
+*[code*=c9_] {
+	fill:#44a2cc;
+}
+
+*[code*=c10_] {
+	fill:#f4b97d;
+}
+
+*[code*=c11_] {
+	fill:#f6aa53;
+}
+
+*[code*=c12_] {
+	fill:#007c58;
+}
+*[code*=c13_] {
+	fill:#ed7d04;
+}
+
+.depth text{
+	fill:white;
+}
+
+#blurb{
+	pointer-events:none;
+	line-height: 2.2em;
+	font-size:1em;
+	font-weight: 600;
+}
+
+
+#txt2{
+	font-weight:200;	
+}
+
+@media (max-width: 500px) {
+
+}
+
+
+@media (min-width: 501px) {
+
+}
+
+	
+
+@media (min-width: 939px) {
+  		
+}
+
+
+@media (min-width: 1200px) {
+  	
+}
+
+.horizLine{
+	border-bottom:1px solid #B9B9B9;	
+	padding-bottom:5px;
+	margin:0px 0px 5px -5px;
+}
+
+
+
+
+
+.btn-ons {
+  color: #6f6f6f;
+  background-color: #ffffff;
+  border-color: #D3D3D3;
+}
+.btn-ons:hover,
+.btn-ons:focus,
+.btn-ons.focus,
+.btn-ons:active,
+.btn-ons.active,
+.open > .dropdown-toggle.btn-ons {
+  color: #6f6f6f;
+  background-color: #E7E7E7;
+  border-color: #D3D3D3;
+}
+
+hr {
+  margin-top: 0px;
+  margin-bottom: 3px;
+  border: 0;
+  border-top: 1px solid #dddddd;
+}
+
+#intro{
+	display:none;
+}
+
+#social{
+	top:5px;
+}
+
+.social {
+			padding-top:5px;
+			padding-left:5px;
+			float:right;
+			opacity:0.5;
+			cursor:pointer;
+		}
+		
+		.social:hover {
+			opacity:1;
+				
+		}
+		
+		
+		.social {
+			
+		}
+		
+		#embedrow {
+			padding-bottom:5px;
+			margin:5px;
+			border-bottom:1px solid #d3d3d3;
+			border-top:1px solid #d3d3d3;
+		}
+		
+		
+		#close {
+			padding-bottom:3px;	
+		}
+		
+		#allDivs{
+			margin:auto;	
+		}
+
+#ieMsg{
+	width: 940px;
+    margin: 0 auto;
+}
+#suptext {
+	padding:20px 20px 20px 20px;
+	width:900px;
+	background-color:#F2EEF5;
+}
+
+#suptext p{
+	margin:0px 20px 10px 20px;
+	font-family: Helvetica, Arial, sans-serif;
+    font-size:14px;
+	color:#8064A0;
+
+}
+
+#suptext a{
+	font-family: Helvetica, Arial, sans-serif;
+    font-size:14px;
+	color:#8064A0;
+
+}
+
+#suptext h1{
+	margin:0px;
+	font-family: Helvetica, Arial, sans-serif;
+    font-size:24px;
+	color:#8064A0;
+}
+
+#thumbNail{
+	top:0px;
+	left:0px;
+}
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 100% !important;
+  
+
+}
+
+#source{
+	font-size:12px;	
+}
+
+.item{
+	width:80px;
+	height:80px;
+}
+
+</style>
+</head>
+<body id="childt" marginheight="0">
+<div class="container-fluid">
+<div id="main-wrapper">
+<div id="mainContent" style="">
+<div id="blurb" class="row">
+<text id="txt2">
+<text id="txt3">Total imports: £547,234 million</text></text></div>
+<div class="row">
+<button type="button" id="upBtn" class="nav btn btn-ons ">
+<span class="glyphicon glyphicon-upload" aria-hidden="true"></span> Up a level
+</button>
+<button type="button" id="topBtn" class="nav btn btn-ons ">
+<span class="glyphicon glyphicon-upload" aria-hidden="true"></span> Back to top
+</button>
+</div>
+<div class="row">
+<div id="chart"><svg id="svgEle" width="670px" height="550px" preserveAspectRatio="xMidYMid meet" style="margin-left: 0px;"><g id="tree" transform="translate(0,0)"><g class="depth"><g class="children"><rect class="child" code="c2_1" desc="Iceland" id="c2_1" vals="593" realvals="593" x="666.6757831526701" y="428.13318635010216" width="3.3242168473299216" height="121.86681364989784"></rect><rect class="child" code="c2_3" desc="Switzerland" id="c2_3" vals="12541" realvals="12541" x="596.3739223055126" y="428.13318635010216" width="70.30186084715751" height="121.86681364989784"></rect><rect class="child" code="c2_2" desc="Norway" id="c2_2" vals="14206" realvals="14206" x="596.3739223055126" y="296.3195762762139" width="73.62607769448744" height="131.81361007388824"></rect><rect class="parent" desc="European Free Trade Association" id="c2" vals="27340" realvals="27368" x="596.3739223055126" y="296.3195762762139" width="73.62607769448744" height="253.68042372378608"></rect><text class="parentLabels" dy="1em" y="302.3195762762139" x="602.3739223055126" style="font-size: 10.7627px;"><tspan dy="1em">European </tspan><tspan x="602.3739223055126" dy="1em">Free  Trade </tspan><tspan x="602.3739223055126" dy="1em">Association </tspan><tspan x="602.3739223055126" dy="1em">£27,368m </tspan></text></g><g class="children"><rect class="child" code="c3_1" desc="Albania" id="c3_1" vals="4" realvals="4" x="594.8386886165956" y="548.2200589939555" width="1.5352336889169464" height="1.7799410060446235"></rect><rect class="child" code="c3_2" desc="Belarus" id="c3_2" vals="25" realvals="25" x="585.2434780609814" y="548.2200589939555" width="9.595210555614358" height="1.7799410060446235"></rect><rect class="child" code="c3_21" desc="Iran" id="c3_21" vals="83" realvals="83" x="585.2434780609814" y="543.1257450801121" width="11.13044424453119" height="5.09431391384328"></rect><rect class="child" code="c3_13" desc="Uruguay" id="c3_13" vals="98" realvals="98" x="575.5043393470207" y="543.1257450801121" width="9.739138713960642" height="6.874254919887903"></rect><rect class="child" code="c3_37" desc="Other Australasia and Oceania" id="c3_37" vals="185" realvals="185" x="575.5043393470207" y="537.0698538411646" width="20.869582958491833" height="6.055891238947538"></rect><rect class="child" code="c3_14" desc="Venezuela" id="c3_14" vals="265" realvals="265" x="561.5032267293" y="537.0698538411646" width="14.00111261772065" height="12.930146158835555"></rect><rect class="child" code="c3_5" desc="Ukraine" id="c3_5" vals="353" realvals="353" x="561.5032267293" y="530.1541847592424" width="34.8706955762126" height="6.915669081922147"></rect><rect class="child" code="c3_33" desc="Other Near &amp; Middle Eastern Countries" id="c3_33" vals="407" realvals="407" x="547.4929867495193" y="530.1541847592424" width="14.01023997978075" height="19.845815240757588"></rect><rect class="child" code="c3_16" desc="Bolivia, Peru, Ecuador, Paraguay, Suriname, Guyana" id="c3_16" vals="616" realvals="616" x="526.288299212554" y="530.1541847592424" width="21.204687536965366" height="19.845815240757588"></rect><rect class="child" code="c3_9" desc="Chile" id="c3_9" vals="694" realvals="694" x="561.381532070611" y="516.6052244524387" width="34.99239023490156" height="13.548960306803679"></rect><rect class="child" code="c3_10" desc="Colombia" id="c3_10" vals="696" realvals="696" x="526.288299212554" y="516.6052244524387" width="35.093232858057036" height="13.548960306803679"></rect><rect class="child" code="c3_6" desc="Argentina" id="c3_6" vals="697" realvals="697" x="491.73645525341635" y="536.2189706591769" width="34.551843959137614" height="13.781029340823125"></rect><rect class="child" code="c3_26" desc="Philippines" id="c3_26" vals="992" realvals="992" x="491.73645525341635" y="516.6052244524387" width="34.551843959137614" height="19.613746206738142"></rect><rect class="child" code="c3_39" desc="Morocco" id="c3_39" vals="1018" realvals="1018" x="547.1952789726253" y="502.46385908860356" width="49.178643332887304" height="14.141365363835178"></rect><rect class="child" code="c3_38" desc="Egypt" id="c3_38" vals="1148" realvals="1148" x="491.73645525341635" y="502.46385908860356" width="55.45882371920891" height="14.141365363835178"></rect><rect class="child" code="c3_36" desc="New Zealand" id="c3_36" vals="1279" realvals="1279" x="453.9830386971939" y="526.8562146076604" width="37.75341655622242" height="23.143785392339623"></rect><rect class="child" code="c3_20" desc="Indonesia" id="c3_20" vals="1348" realvals="1348" x="453.9830386971939" y="502.46385908860356" width="37.75341655622242" height="24.392355519056935"></rect><rect class="child" code="c3_25" desc="Pakistan" id="c3_25" vals="1562" realvals="1562" x="526.3220923224595" y="487.23099197176026" width="70.05182998305304" height="15.232867116843295"></rect><rect class="child" code="c3_11" desc="Mexico" id="c3_11" vals="1613" realvals="1613" x="453.9830386971939" y="487.23099197176026" width="72.33905362526554" height="15.232867116843295"></rect><rect class="child" code="c3_22" desc="Israel" id="c3_22" vals="1724" realvals="1724" x="410.7096187456023" y="522.7832570823226" width="43.27341995159156" height="27.21674291767738"></rect><rect class="child" code="c3_27" desc="Saudi Arabia" id="c3_27" vals="2252" realvals="2252" x="410.7096187456023" y="487.23099197176026" width="43.27341995159156" height="35.55226511056236"></rect><rect class="child" code="c3_24" desc="Malaysia" id="c3_24" vals="2311" realvals="2311" x="504.92673442679296" y="469.9666631325258" width="91.4471878787196" height="17.26432883923451"></rect><rect class="child" code="c3_41" desc="Algeria, Tunisia and Libya" id="c3_41" vals="2381" realvals="2381" x="410.7096187456023" y="469.9666631325258" width="94.21711568119059" height="17.26432883923451"></rect><rect class="child" code="c3_7" desc="Brazil" id="c3_7" vals="2516" realvals="2516" x="507.5994282430393" y="450.60500534223354" width="88.77449406247325" height="19.36165779029227"></rect><rect class="child" code="c3_15" desc="Central America &amp; Carrib. exc. Mexico" id="c3_15" vals="2746" realvals="2746" x="410.7096187456023" y="450.60500534223354" width="96.88980949743706" height="19.36165779029227"></rect><rect class="child" code="c3_31" desc="Thailand" id="c3_31" vals="3535" realvals="3535" x="361.8346747329225" y="500.5890442813662" width="48.874944012679805" height="49.41095571863377"></rect><rect class="child" code="c3_30" desc="Taiwan" id="c3_30" vals="3576" realvals="3576" x="361.8346747329225" y="450.60500534223354" width="48.874944012679805" height="49.984038939132745"></rect><rect class="child" code="c3_28" desc="Singapore" id="c3_28" vals="3859" realvals="3859" x="481.09090658998275" y="427.7369329281519" width="115.28301571552981" height="22.868072414081666"></rect><rect class="child" code="c3_40" desc="South Africa" id="c3_40" vals="3992" realvals="3992" x="361.8346747329225" y="427.7369329281519" width="119.25623185706024" height="22.868072414081666"></rect><rect class="child" code="c3_29" desc="South Korea" id="c3_29" vals="4812" realvals="4812" x="307.83616875218377" y="489.1214943346716" width="53.99850598073874" height="60.87850566532842"></rect><rect class="child" code="c3_35" desc="Australia" id="c3_35" vals="4852" realvals="4852" x="307.83616875218377" y="427.7369329281519" width="53.99850598073874" height="61.38456140651982"></rect><rect class="child" code="c3_3" desc="Russia" id="c3_3" vals="5262" realvals="5262" x="245.95915558675532" y="491.9046181206371" width="61.87701316542845" height="58.09538187936289"></rect><rect class="child" code="c3_42" desc="Sub-Saharan Africa exc. South Africa" id="c3_42" vals="5812" realvals="5812" x="245.95915558675532" y="427.7369329281519" width="61.87701316542845" height="64.16768519248524"></rect><rect class="child" code="c3_8" desc="Canada" id="c3_8" vals="7619" realvals="7619" x="425.02355277658546" y="397.36076135213943" width="171.3503695289271" height="30.376171576012382"></rect><rect class="child" code="c3_32" desc="Other Gulf Arabian Countries" id="c3_32" vals="7962" realvals="7962" x="245.95915558675532" y="397.36076135213943" width="179.06439718983015" height="30.376171576012382"></rect><rect class="child" code="c3_18" desc="Hong Kong" id="c3_18" vals="8426" realvals="8426" x="422.78377447952346" y="364.20061101927286" width="173.5901478259891" height="33.160150332866635"></rect><rect class="child" code="c3_4" desc="Turkey" id="c3_4" vals="8583" realvals="8583" x="245.95915558675532" y="364.20061101927286" width="176.82461889276814" height="33.160150332866635"></rect><rect class="child" code="c3_34" desc="Other Asia" id="c3_34" vals="9456" realvals="9456" x="141.13953637625477" y="488.37101788263794" width="104.81961921050055" height="61.62898211736206"></rect><rect class="child" code="c3_19" desc="India" id="c3_19" vals="9485" realvals="9485" x="141.13953637625477" y="426.5530297922003" width="104.81961921050055" height="61.817988090437666"></rect><rect class="child" code="c3_23" desc="Japan" id="c3_23" vals="9567" realvals="9567" x="141.13953637625477" y="364.20061101927286" width="104.81961921050055" height="62.35241877292748"></rect><rect class="child" code="c3_17" desc="China" id="c3_17" vals="38386" realvals="38386" x="0" y="364.20061101927286" width="141.13953637625477" height="185.79938898072714"></rect><rect class="child" code="c3_12" desc="United States of America" id="c3_12" vals="59258" realvals="59258" x="0" y="296.3195762762139" width="596.3739223055126" height="67.88103474305893"></rect><rect class="parent" desc="Rest of World" id="c3" vals="221455" realvals="229245" x="0" y="296.3195762762139" width="596.3739223055126" height="253.68042372378608"></rect><text class="parentLabels" dy="1em" y="302.3195762762139" x="6" style="font-size: 33.8634px;"><tspan dy="1em">Rest  of  World  £229,245m </tspan></text></g><g class="children"><rect class="child" code="c1_8" desc="Estonia" id="c1_8" vals="278" realvals="278" x="641.934480441165" y="289.5526441809535" width="28.06551955883492" height="6.766932095260415"></rect><rect class="child" code="c1_25" desc="Slovenia" id="c1_25" vals="405" realvals="405" x="641.934480441165" y="279.6943438263485" width="28.06551955883492" height="9.858300354605035"></rect><rect class="child" code="c1_4" desc="Croatia" id="c1_4" vals="473" realvals="473" x="622.4981835870971" y="279.6943438263485" width="19.436296854067905" height="16.62523244986545"></rect><rect class="child" code="c1_16" desc="Latvia" id="c1_16" vals="628" realvals="628" x="622.4981835870971" y="270.6626431528923" width="47.501816412902826" height="9.0317006734561"></rect><rect class="child" code="c1_19" desc="Malta" id="c1_19" vals="654" realvals="654" x="622.4981835870971" y="261.25701856620395" width="47.501816412902826" height="9.405624586688361"></rect><rect class="child" code="c1_3" desc="Bulgaria" id="c1_3" vals="739" realvals="739" x="589.8041524382661" y="280.8778419808043" width="32.69403114883107" height="15.441734295409617"></rect><rect class="child" code="c1_17" desc="Lithuania" id="c1_17" vals="939" realvals="939" x="589.8041524382661" y="261.25701856620395" width="32.69403114883107" height="19.620823414600352"></rect><rect class="child" code="c1_5" desc="Cyprus" id="c1_5" vals="1148" realvals="1148" x="589.8041524382661" y="251.477665735521" width="80.1958475617339" height="9.779352830682967"></rect><rect class="child" code="c1_23" desc="Romania" id="c1_23" vals="1903" realvals="1903" x="560.8123785191972" y="251.477665735521" width="28.99177391906892" height="44.841910540692936"></rect><rect class="child" code="c1_24" desc="Slovakia" id="c1_24" vals="2202" realvals="2202" x="560.8123785191972" y="237.7003688176187" width="109.18762148080282" height="13.777296917902248"></rect><rect class="child" code="c1_18" desc="Luxembourg" id="c1_18" vals="2421" realvals="2421" x="502.59995784499415" y="267.9077441926786" width="58.21242067420303" height="28.41183208353533"></rect><rect class="child" code="c1_9" desc="Finland" id="c1_9" vals="2574" realvals="2574" x="502.59995784499415" y="237.7003688176187" width="58.21242067420303" height="30.207375375059883"></rect><rect class="child" code="c1_13" desc="Hungary" id="c1_13" vals="3008" realvals="3008" x="587.0582561682988" y="212.92473469891007" width="82.94174383170116" height="24.775634118708638"></rect><rect class="child" code="c1_12" desc="Greece" id="c1_12" vals="3063" realvals="3063" x="502.59995784499415" y="212.92473469891007" width="84.45829832330469" height="24.775634118708638"></rect><rect class="child" code="c1_1" desc="Austria" id="c1_1" vals="4143" realvals="4143" x="431.78978097257584" y="256.3490963300351" width="70.81017687241831" height="39.97047994617884"></rect><rect class="child" code="c1_22" desc="Portugal" id="c1_22" vals="4501" realvals="4501" x="431.78978097257584" y="212.92473469891007" width="70.81017687241831" height="43.42436163112501"></rect><rect class="child" code="c1_7" desc="Denmark" id="c1_7" vals="4639" realvals="4639" x="561.7141395327565" y="183.6581038554703" width="108.28586046724354" height="29.26663084343977"></rect><rect class="child" code="c1_6" desc="Czech Republic" id="c1_6" vals="5566" realvals="5566" x="431.78978097257584" y="183.6581038554703" width="129.92435856018062" height="29.26663084343977"></rect><rect class="child" code="c1_27" desc="Sweden" id="c1_27" vals="9967" realvals="9967" x="309.7801124802941" y="240.5123651228144" width="122.00966849228183" height="55.80721115339952"></rect><rect class="child" code="c1_21" desc="Poland" id="c1_21" vals="10154" realvals="10154" x="309.7801124802941" y="183.6581038554703" width="122.00966849228183" height="56.8542612673441"></rect><rect class="child" code="c1_14" desc="Ireland" id="c1_14" vals="18675" realvals="18675" x="498.1973031098553" y="109.39882241271913" width="171.80269689014472" height="74.25928144275117"></rect><rect class="child" code="c1_15" desc="Italy" id="c1_15" vals="20481" realvals="20481" x="309.7801124802941" y="109.39882241271913" width="188.41719062956116" height="74.25928144275117"></rect><rect class="child" code="c1_2" desc="Belgium" id="c1_2" vals="23405" realvals="23405" x="132.8845576884263" y="205.93135611185588" width="176.89555479186777" height="90.38822016435805"></rect><rect class="child" code="c1_26" desc="Spain" id="c1_26" vals="24996" realvals="24996" x="132.8845576884263" y="109.39882241271913" width="176.89555479186777" height="96.53253369913672"></rect><rect class="child" code="c1_10" desc="France" id="c1_10" vals="36359" realvals="36359" x="0" y="109.39882241271913" width="132.8845576884263" height="186.92075386349478"></rect><rect class="child" code="c1_20" desc="Netherlands" id="c1_20" vals="36929" realvals="36929" x="439.39166014241505" y="0" width="230.60833985758495" height="109.39882241271913"></rect><rect class="child" code="c1_11" desc="Germany" id="c1_11" vals="70363" realvals="70363" x="0" y="0" width="439.39166014241505" height="109.39882241271913"></rect><rect class="parent" desc="EU" id="c1" vals="290613" realvals="290621" x="0" y="0" width="670" height="296.3195762762139"></rect><text class="parentLabels" dy="1em" y="6" x="6" style="font-size: 43.462px;"><tspan dy="1em">EU  £290,621m </tspan></text></g></g><g class="grandparent"><rect id="gparent" y="0" width="670" height="0"></rect></g></g></svg></div>
+</div>
+<div id="source">
+Source: <a href="https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/adhocs/006656balanceofpaymentsannualgeographicaldatatables" target="_blank">Balance of Payments annual geographical data tables, 2015</a>, ONS
+</div>
+</div>
+<div id="ieMsg" style="display:none">
+<div id="suptext">
+<h1>Browser requirements</h1>
+<p><b>For a safer, faster, better experience online you should upgrade your browser. You would have been able to play with this lovely interactive graphic below. <a href="https://www.gov.uk/support/browsers" target="_blank">Find out more about browsers</a></b>
+</p>
+</div>
+<img id="thumbNail" src="./imports.png">
+</div>
+</div>
+</div>
+<script type="text/javascript" async="" src="./ga.js"></script><script src="./jquery.min.js"></script>
+<script src="./modernizr.custom.56904(1).js"></script>
+<script src="./bootstrap.min.js" charset="utf-8"></script>
+<script src="./pym(1).js" charset="utf-8"></script>
+<script src="./d3.min.js" charset="utf-8"></script>
+<script>
+	
+	if (Modernizr.inlinesvg= true ){		
+		
+			$("#main-wrapper").fadeIn(1000);
+			$("#mainContent").fadeIn(1000);
+			
+		}else{
+				$("#ieMsg").fadeIn(1000);
+		}	
+	
+	
+	
+		
+	pymChild = new pym.Child();	
+					
+			
+    
+	
+	var	transitioning;	
+	var widthCalc;  
+	var heightCalc;	
+	
+	
+	getSizes();
+
+		
+	$(window).resize(function () {
+		  if(window.innerWidth != bwidth) {		 	
+			getSizes();
+		  }
+	});		
+	
+	
+	function getSizes() {
+	
+		bodywidth = d3.select("body").style("width");
+		bwidth = bodywidth.replace('px', '');
+		divwidth = d3.select("#chart").style("width");
+		width = divwidth.replace('px', '') - 30;
+		if(bwidth >= 767) {
+			fullheight = 500;
+			ratiovar = 0.5;
+		} else {
+			var url = (window.location != window.parent.location) ;
+			if(url == false){
+					ratiovar = 0.2;			
+					windowheight = window.innerHeight;
+					
+					if(windowheight<=500) {
+						fullheight = window.innerHeight;
+					} else if (windowheight >500 && windowheight <=800) {
+						fullheight = window.innerHeight - 250;
+					} else if (windowheight >800 && windowheight <=2000) {
+						fullheight = window.innerHeight - 350;
+					}
+			} else {
+				ratiovar = 0.2;			
+					windowheight = 500;
+					fullheight =550;
+			}
+		}
+		
+		d3.select("#svgEle").remove();
+		makeChart(width, fullheight);
+	
+	}
+	
+	
+	
+	
+	
+	function makeChart(width, fullheight) {
+    		
+	 margin = {top: 0, right: 0, bottom: 0, left: 0}
+        formatNumber = d3.format(",.0f"),
+		 
+			
+		atTop=true,
+		level = 0,
+		levelArray = Array(level);
+   
+    height = fullheight - margin.top - margin.bottom;
+			
+     x = d3.scale.linear()
+        .domain([0, width])
+        .range([0, width]);
+    
+     y = d3.scale.linear()
+        .domain([0, height])
+        .range([0, height]);
+    
+    treemap = d3.layout.treemap()
+        .children(function(d, depth) { return depth ? null : d._children; })
+        .sort(function(a, b) { return a.vals[0] - b.vals[0]; })
+        .ratio(height / width * ratiovar * (1 + Math.sqrt(5)))
+		.value(function(d) { return d.vals[0]; })
+        .round(false);
+    
+     svg = d3.select("#chart")
+		.append("svg")
+		.attr("id", "svgEle")
+		.attr("width", width + "px")
+		.attr("height", height + "px")
+		//.attr("viewBox", "0 0 "+width+" "+ (height))
+		.attr("preserveAspectRatio", "xMidYMid meet")
+        .style("margin-left", -margin.left + "px")
+        .style("margin.right", -margin.right + "px")
+      .append("g")
+	  	.attr("id", "tree")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+       // .style("shape-rendering", "crispEdges");
+    
+     grandparent = svg.append("g")
+        .attr("class", "grandparent")
+	 	.append("rect")
+	 	.attr("id", "gparent")
+		.attr("y", -margin.top)
+		.attr("width", width)
+		.attr("height", margin.top);
+      
+   
+    d3.json("tree_imp.json", function(root) {
+		dataset = root;
+		 initialize(root);
+		 accumulate(root);
+		 layout(root);
+		 display(root);
+		
+	d3.select("#blurb").select("#txt3").html("Total imports: £"+formatNumber(dataset.vals[1])+ " million");
+			
+		
+	});
+	
+	 
+	
+	}
+	
+   	
+      function initialize(root) {
+        root.x = root.y = 0;
+        root.dx = width;
+	    root.dy = height;
+        root.depth = 0;
+      }
+    
+      // Aggregate the values for internal nodes. This is normally done by the
+      // treemap layout, but not here because of our custom implementation.
+      // We also take a snapshot of the original children (_children) to avoid
+      // the children being overwritten when when layout is computed.
+      function accumulate(d) {
+		   //console.log('accumulate')
+        return (d._children = d.children)
+            ? d.vals[0] = d.children.reduce(function(p, v) { return p + accumulate(v); }, 0)
+            : d.vals[0];
+			
+      }
+    
+      // Compute the treemap layout recursively such that each group of siblings
+      // uses the same size (1×1) rather than the dimensions of the parent cell.
+      // This optimizes the layout for the current zoom state. Note that a wrapper
+      // object is created for the parent node for each group of siblings so that
+      // the parent’s dimensions are not discarded as we recurse. Since each group
+      // of sibling was laid out in 1×1, we must rescale to fit using absolute
+      // coordinates. This lets us use a viewport to zoom.
+      function layout(d) {
+		   
+        if (d._children) {
+		
+         treemap.nodes({_children: d._children});
+          d._children.forEach(function(c) {
+            c.x = d.x + c.x * d.dx;
+            c.y = d.y + c.y * d.dy;
+            c.dx *= d.dx;
+            c.dy *= d.dy;
+            c.parent = d;
+			
+            layout(c);
+          });
+        }
+      }
+    
+      function display(d) {
+		  
+        grandparent
+            .datum(d.parent)
+            .on("click", transition)
+//            .select("text")
+//            .text(desc(d))
+			
+		d3.select("#titleText")
+            .datum(d.parent)
+           // .text(desc(d))
+			
+        var g1 = svg.insert("g", ".grandparent")
+            .datum(d)
+            .attr("class", "depth");
+    
+        var g = g1.selectAll("g")
+            .data(d._children)
+          .enter().append("g");
+		  
+        g.filter(function(d) { return d._children; })
+            .classed("children", true)
+            .on("click", transition);
+    
+        g.selectAll(".child")
+            .data(function(d) { return d._children || [d]; })
+          .enter().append("rect")
+            .attr("class", "child")
+			.attr("code",function(d) { return d.code} )
+			.attr("desc",function(d) { return d.desc} )
+			.attr("id",function(d) { return d.code} )
+			.attr("vals",function(d) { return d.vals[0]} )
+			.attr("realvals",function(d) { return d.vals[1]} )
+			.on("mouseover", mouseover)
+			.on("mouseout", mouseout)
+            .call(rect);
+		
+        g.append("rect")
+            .attr("class", "parent")
+			.attr("desc",function(d) { return d.desc} )
+			.attr("id",function(d) { return d.code} )
+			.attr("vals",function(d) { return d.vals[0]} )
+			.attr("realvals",function(d) { return d.vals[1]} )
+			.on("mouseover", mouseover)
+			.on("mouseout", mouseout)
+            .call(rect);
+			
+       g.append("text")
+			.attr("class", "parentLabels")
+            .attr("dy", "1em")
+            .text(function(d) { return d.desc+" £"+formatNumber(d.vals[1])+"m"; })
+			.call(resize)
+            .call(text);
+		
+		  
+		  	
+        function transition(d) {
+			if(d3.select(this).attr("id") != "gparent"){
+				selectedArray.push(d3.select(this).select('.parent').attr("id"))
+				selectedView = selectedArray.join().replace(/,/g , "/")
+								
+				window.location.hash = encodeURI(selectedView);
+			} else {
+						selectedArray.splice(-1,1)					
+						selectedView = selectedArray.join().replace(/,/g , "/")
+						
+						window.location.hash = encodeURI(selectedView)
+			}
+		
+			
+			
+          if (transitioning || !d) return;
+          transitioning = true;
+  
+          var g2 = display(d),
+              t1 = g1.transition().duration(400),
+              t2 = g2.transition().duration(400);
+     
+          // Update the domain only after entering new elements.
+          x.domain([d.x, d.x + d.dx]);
+          y.domain([d.y, d.y + d.dy]);
+    
+          // Enable anti-aliasing during the transition.
+          svg.style("shape-rendering", null);
+    
+          // Draw child nodes on top of parent nodes.
+          svg.selectAll(".depth").sort(function(a, b) { return a.depth - b.depth; });
+   
+          // Fade-in entering text.
+          g2.selectAll("text").style("fill-opacity", 0);
+    	
+	
+          // Transition to the new view.
+          t1.selectAll("rect").call(rect);
+		  t1.selectAll("text").call(text).style("fill-opacity", 1);
+         // t1.selectAll(".childLabels").call(text).style("fill-opacity",1);
+          t1.selectAll(".parentLabels").call(text).style("fill-opacity",1);
+          
+          t2.selectAll("rect").call(rect);
+		  t2.selectAll("text").call(resize).call(text).style("fill-opacity", 1);
+		//  t2.selectAll(".childLabels").call(text).call(resize2).style("fill-opacity", 1);
+		  t2.selectAll(".parentLabels").call(resize).call(text).style("fill-opacity", 1);
+         
+    
+          // Remove the old node when the transition is finished.
+          t1.remove().each("end", function() {
+            svg.style("shape-rendering", "crispEdges");
+            transitioning = false;
+          });
+        
+			myClass = $(this).attr("class");
+			
+			if(myClass=="children"){
+				level = level+1;
+				levelArray = Array(level);
+			} else {
+				level = level-1;
+				levelArray = Array(level);
+			}
+			
+		}
+    
+        return g;
+		g.each( function(d,i) {
+			d3.selectAll(".children").selectAll("text")
+				.data(d._children).enter().append("text")
+				.attr("class", "childLabels")
+				.attr("dy", "0.5em")
+				.text(function(d){ return d.desc;});
+			})
+      }
+	  
+	  function resize(text, width){
+		  
+			text.each(function(d,i) {
+				
+				var text = d3.select(this).style("font-size", function(d) { 
+						return Math.sqrt((d.widthCalc*d.heightCalc))/ Math.log(this.getComputedTextLength())*0.45 + "px";  
+				})	
+			});
+	  };
+	  
+	  function text(text, width) {
+		  	text.each(function(d,i) {
+				var text = d3.select(this),
+					words = text.text().split(/\s+/).reverse(),
+					word,
+					line = [],
+					y = text.attr("y"),
+					dy = parseFloat(text.attr("dy")),
+					tspan = text.text(null).append("tspan")/*.attr("x", 0).attr("y", y)*/.attr("dy",  "1em");
+				
+				while (word = words.pop()) {
+				  line.push(word+" ");
+				  tspan.text(line.join(" "));
+				  
+				 if (tspan.node().getComputedTextLength() >  d.widthCalc-10) {
+					line.pop();
+					tspan.text(line.join(" "));
+					line = [word+" "];
+					
+					tspan = text.append("tspan").attr("x", function(d) { return x(d.x) + 6; }).attr("dy",  dy + "em").text(word+" ");
+					
+				  }
+				 }		
+			  });
+				
+       d3.selectAll(".parentLabels").attr("y", function(d) { return y(d.y) + 6; })
+      					   			.attr("x", function(d) { return x(d.x) + 6; });
+	  }
+    
+	
+	  function rect(rect) {
+		rect.attr("x", function(d) { return x(d.x); })
+            .attr("y", function(d) { return y(d.y); })
+      		.attr("width", function(d) {
+				   widthCalc = x(d.x + d.dx) - x(d.x);
+				  
+				  d["widthCalc"] = widthCalc;
+				  return widthCalc;
+        	})
+            .attr("height", function(d) {
+				 heightCalc =y(d.y + d.dy) - y(d.y);
+				 d["heightCalc"] = heightCalc;
+				  return heightCalc;				  
+     		})
+	  }
+    
+//      function desc(d) {
+//		return d.parent
+//            ? desc(d.parent) + " > " + d.desc
+//            : d.desc;
+//      }
+  
+	
+	function mouseover (d){
+			
+			var	selectClass = $(this).attr('desc');
+			var	selectValue = $(this).attr('realvals');		
+			d3.select("#blurb").select("#txt3").html(selectClass+": £"+formatNumber(selectValue)+" million");
+		
+	};
+	
+	function mouseout (){
+			d3.select("#blurb").select("#txt3").html("Total imports: £"+formatNumber(dataset.vals[1])+" million");
+	};
+    
+	function simulateClick(elem /* Must be the element */) {
+		var evt = document.createEvent("MouseEvents");
+		evt.initMouseEvent(
+			"click", /* type */
+			true, /* canBubble */
+			true, /* cancelable */
+			window, /* view */
+			0, /* detail */
+			0, /* screenX */
+			0, /* screenY */
+			0, /* clientX */
+			0, /* clientY */
+			false, /* ctrlKey */
+			false, /* altKey */
+			false, /* shiftKey */
+			false, /* metaKey */
+			0, /* button */
+			null); /* relatedTarget */
+		elem.dispatchEvent(evt);	
+	}
+	
+	d3.select("#upBtn").on('click', function() {
+	    	simulateClick(grandparent[0][0]);
+			
+	});
+	
+	d3.select("#topBtn").on('click', function() {
+	    	backToTop();
+	});
+	
+	
+	
+	setTimeout( function(){ 
+	 	if (pymChild) {
+       		pymChild.sendHeight();
+			
+			
+			
+			var url = decodeURI(window.location.hash);
+			
+			
+			selectedArray = []
+			if (url == ""){
+				selectedView = "c0"	
+			} else {
+				params = url.split("/");
+				params[0] = params[0].replace("#", "")
+				storyArray = params;
+				selectedView = storyArray.join().replace(/,/g , "/")
+				
+				$(storyArray).each(function(i){
+					
+					setTimeout(function(){
+						storyId = "#"+storyArray[i];
+						simulateClick(d3.select(storyId)[0][0]);						
+					}, 760*i); 
+			});
+			
+			}
+			
+		}
+	}, 700)
+	
+
+		
+
+		
+
+
+
+function backToTop (){
+				
+			$(levelArray).each(function(i){		
+				setTimeout(function(){
+					simulateClick(grandparent[0][0]);
+				},760*i);
+			});
+};
+
+
+
+	function updateHash() {
+	   
+	}
+		
+		
+		
+    </script>
+<script>
+
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-37894017-1']);
+		  _gaq.push(['_trackPageview']);
+		
+		
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+</script>
+
+
+</body></html>
