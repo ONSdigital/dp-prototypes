@@ -27,12 +27,12 @@ p {
   padding: 1em 0 0 0;
 }
 
-ul {
+ul, ol {
   margin-top: 0.2em;
   margin-left: 0.5em;
 }
 
-ul li {
+li {
   margin-bottom: 0.8em;
   margin-top: 0;
   padding: 0;
