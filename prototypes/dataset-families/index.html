@@ -1,0 +1,223 @@
+<html>
+    <head>
+            <!-- <link rel="stylesheet" type="text/css" href="https://assets.publishing.service.gov.uk/frontend/application-54f51711f2e5eb8b80a4fcdb5d38978d969ab7ecc0bda1daf997f272235724f6.css:1"> -->
+            <!-- <link rel="stylesheet" type="text/css" href="https://cdn.ons.gov.uk/sixteens/81674c0/css/main.css"> -->
+            <link rel="stylesheet" type="text/css" href="https://assets.publishing.service.gov.uk/collections/application-efae9edd3b3443077bbf8583d46098e4e4ab635730277e64fa531665dbff6912.css">
+            <!-- <script src="https://assets.publishing.service.gov.uk/collections/application-80e1c12f131d1537f4dbad00ea88215ac8f07dcf870abfaaf368aaba138fafba.js"></script> -->
+    </head>
+
+
+
+
+
+<body style="margin-top: 0px; margin-left: 0px; margin-right: 0px;">
+        <main id="content" role="main" class="content browse">
+
+
+
+        <div class="homepage-top-inner" style="background:#EAEAEA">
+                <p style="padding-left: 20px; padding-top: 20px; color: #414042;font-family: Open Sans,Helvetica,Arial,sans-serif; font-size: 16px;font-weight: 400; line-height: 32px;"><a href = "#" style = "color:#206095">Home</a>  > </p>
+                <hr style = "margin-left: 20px; margin-right: 20px; color: #414042;">
+                <h1 id = "themeTitle" style="padding-left: 20px; padding-top: 20px; color: #414042; font-family: Open Sans,Helvetica,Arial,sans-serif; font-size: 35px;font-weight: 400; line-height: 48px;"></h1>
+                <p id = "themeDesc" style="padding-left: 20px; padding-top: 20px; color: #414042; padding-bottom: 30px; font-family: Open Sans,Helvetica,Arial,sans-serif; font-size: 21px;font-weight: 400; line-height: 32px;"></p>
+        </div>
+
+        <div id = "editionUpdate" class="browse-panes section" data-state="section" >
+            <div id="subsection" class="subsection-pane pane" style="display: none;">
+                <div class="pane-inner a-to-z">
+                <h1 tabindex="-1" id="currentDataset"></h1>
+              
+                  <ul id="editions" style="padding-left: 5px;">
+                  </ul>
+              </div>
+              </div>
+                <div id="section" class="section-pane pane" style="">
+                  <div class="pane-inner alphabetical" style="">
+                        <h1 tabindex="-1" id="currentBulletin"></h1>
+                        <ul id="datasets" style="padding-left: 5px;">  
+                      </ul>
+              </div>
+              
+                </div>
+              
+                <div id="root" class="pane root-pane" style="">
+                <ul id="datasetFamilies" style="padding-left: 20px;"> 
+              </div>
+              
+              </div>
+          
+          <!-- <div class="browse-panes section">
+            <div id="subsection" class="subsection-pane pane" style="">
+              <div class="pane-inner a-to-z">
+                <h1 tabindex="-1">Benefits entitlement</h1>
+                    <p class="sort-order">A to Z</p>
+                        <ul>     
+                        </ul>
+                </div>
+            </div>
+            <div id="section" class="section-pane pane with-sort"><div class="pane-inner alphabetical" style="padding-left: 20px;" >
+            <h1 tabindex="-1" id="currentBulletin"></h1>
+              <ul id="datasets" style="padding-left: 5px;">  
+            </ul>
+          </div>
+          </div>
+            <div id="root" class="pane root-pane">
+            <ul id="datasetFamilies" style="padding-left: 20px;">  
+                <li></li> 
+            </ul>
+          </div>  
+          </div>     -->
+
+
+        
+
+
+
+
+            </main>
+
+    <script>
+
+
+  
+  
+
+        function createNode(element) {
+				return document.createElement(element); // Create the type of element you pass in the parameters
+	    }
+
+	    function append(parent, el) {
+				return parent.appendChild(el); // Append the second parameter(element) to the first one
+        }
+        
+        const datasetFamilies = document.getElementById('datasetFamilies');
+        const datasetList = document.getElementById('datasets');
+        const currentBulletin = document.getElementById('currentBulletin');
+        const themeTitle = document.getElementById('themeTitle');
+        const themeDesc = document.getElementById('themeDesc');
+        const editionUpdate = document.getElementById('editionUpdate');
+        const subsection = document.getElementById('subsection');
+        const currentDataset = document.getElementById('currentDataset');
+        const editions = document.getElementById('editions');
+        let k = 0
+        let bulletins = []
+        url=window.location.href 
+        theme = url.split('?')[1]
+        console.log (theme)
+        // theme = "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours"
+        fetch (theme + "/data", {
+            mode:'cors',
+        })
+        .then(data => {return data.json()})
+        .then(json => {
+            // console.log(json)
+            let spanTitle = createNode('span');
+            let spanDesc = createNode('span');
+            spanTitle.innerHTML = json.description.title;
+            spanDesc.innerHTML = json.description.summary;
+            append(themeTitle, spanTitle);
+            append(themeDesc, spanDesc);      
+        })
+        fetch (theme + "/publications/data?filter=bulletin&size=100", {
+            mode:'cors',
+        })
+        .then(data => {return data.json()})
+        .then(json => {
+            json.result.results.map((data,index) => {
+                bulletins.push({uri:data.uri,title:data.description.title})
+            })   
+            getDatasets(k, bulletins)
+          for (i = 0; i < bulletins.length; i++) { 
+            let k=i
+            let li=createNode('li')
+                a=createNode('a')
+                a.innerHTML = bulletins[i].title;
+                a.onclick = function() {getDatasets(k, bulletins);};
+				append(li, a);
+                append(datasetFamilies, li);       
+        }
+        })
+
+            function getDatasets(k, bulletins) {
+                span=createNode('Span')
+                currentBulletin.innerHTML = "";
+                span.innerHTML=bulletins[k].title
+                append(currentBulletin, span);
+                datasetList.innerHTML = "";
+                editionUpdate.classList.remove('subsection');
+                editionUpdate.classList.add('section');
+                subsection.style= 'display: none;';
+                fetch ("https://www.ons.gov.uk" + bulletins[k].uri + "/relateddata/data?&size=100", {
+                        mode:'cors',
+                         })
+                         .then(data => {return data.json()})
+                         .then(json => {               
+                            if (typeof json.result == "undefined"){
+                                let li=createNode('li')
+                                    a=createNode('a')
+				                    a.innerHTML = "No datasets for this family";
+				                    append(li, a);
+                                    append(datasetList, li);
+                                    
+                            // k=k+1
+                            // getDatasets(k, bulletins)
+                            }
+                            else {
+                            json.result.results.map((data,index) => {
+                                let datasets = ({uri:data.uri,desc:data.description.summary,title:data.description.title})
+                                //console.log(datasets.title)
+                                l = index
+                                let li=createNode('li')
+                                    a=createNode('a')
+                                    h3=createNode('h3')
+                                    p=createNode('p')
+                                    h3.innerHTML = datasets.title;
+                                    p.innerHTML = datasets.desc;
+                                    a.onclick = function() {getEditions(datasets);};
+                                    append(h3, p);
+                                    append(a, h3);
+                                    append(li, a);
+                                    append(datasetList, li);
+                         })
+                        }
+                    })
+                }
+
+            function getEditions(datasets) {
+                editions.innerHTML = "";
+                span=createNode('Span')
+                currentDataset.innerHTML = "";
+                span.innerHTML=datasets.title
+                append(currentDataset, span);
+                editionUpdate.classList.add('subsection');
+                editionUpdate.classList.remove('section');
+                subsection.style= '';
+                fetch ("https://www.ons.gov.uk" + datasets.uri + "/data", {
+                        mode:'cors',
+                         })
+                         .then(data => {return data.json()})
+                         .then(json => {     
+                             json.datasets.map((data,index) => {
+                                fetch ("https://www.ons.gov.uk" + data.uri + "/data", {
+                                mode:'cors',
+                                })
+                                .then(data => {return data.json()})
+                                .then(json => {
+
+                                 let li=createNode('li')
+                                    a=createNode('a')
+                                    a.href="https://www.ons.gov.uk" + datasets.uri
+                                    a.innerHTML = json.description.edition;
+                                    append(li, a);
+                                    append(editions, li);
+                                })
+                             })    
+                    })
+                }
+    
+    </script>
+</body>
+
+
+
+</html>
