@@ -1,6 +1,6 @@
 # Digital Publishing prototypes
 
-Hosts a list of all Digital Publishing prototypes (https://onsdigital.github.io/dp-prototypes/)
+A list of the key things we are doing in the Digital Publishing website development team (https://onsdigital.github.io/dp-prototypes/)
 
 ## Getting started
 
@@ -12,6 +12,6 @@ See [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## License
 
-Copyright ©‎ 2016 to 2017, Office for National Statistics (https://www.ons.gov.uk)
+Copyright © 2016 to 2018, Office for National Statistics (https://www.ons.gov.uk)
 
 Released under MIT license, see [LICENSE](LICENSE.md) for details.
