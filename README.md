@@ -1,6 +1,6 @@
 # Digital Publishing prototypes
 
-Hosts a list of all Digital Publishing prototypes (https://onsdigital.github.io/dp-prototypes/)
+A list of the key things we are doing in the Digital Publishing website development team (https://onsdigital.github.io/dp-prototypes/)
 
 ## Getting started
 
