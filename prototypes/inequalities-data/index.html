@@ -1,0 +1,2051 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="//cdn.ons.gov.uk/sixteens/cb6733a/css/main.css">
+    <link href="https://cdn.ons.gov.uk/sixteens/658deeb/css/work-in-progress.css" rel="stylesheet" type="text/css">
+
+    <title>Centre for Equalities and Inclusion: Inequalities data audit</title>
+</head>
+
+<body class="pl-home">
+    <div id="hide">
+        <header>
+            <a class="skiplink" href="#main" tabindex="0">
+                Skip to main content
+            </a>
+        </header>
+        <div class="background--ship-grey">
+            <div class="wrapper">
+                <div class="padding-top--1 padding-bottom--1">
+                    <p class="margin-bottom--0 margin-top--0 font-xsmall"><strong class="banner__tag">Warning</strong>
+                        this is a prototype. The content may not be complete or accurate.</p>
+                </div>
+            </div>
+        </div>
+        <div class="page-intro background--indigo padding-top-md--4">
+            <div class="pl-wrap__inner padding-top-sm--4">
+                <div class="wrapper">
+                    <h1 class="page-intro__title page-intro__title--home-big padding-bottom-md--4">Inequalities data</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="col-wrap">
+            <div class="col col--md-one col--lg-one">
+                <h2>Filter by domain
+                    <select id="myInput" title="Domain" onchange="selectDomain()">
+                        <option>All domains</option>
+                        <option>Participation</option>
+                        <option>Health</option>
+                        <option>Justice and Personal Security</option>
+                        <option>Work</option>
+                        <option>Education</option>
+                        <option>Living Standards</option>
+                        <option>Other</option>
+                    </select>
+                </h2>
+            </div>
+        </div>
+        <div class="col-wrap">
+            <div class="col col--md-one col--lg-one">
+                <h2 class="margin-top-lg--2 margin-top-md--2 margin-top-sm--1">Toggle dimensions covered by data:</h2>
+                <div class="col-wrap">
+                    <div class="col col--md-6 col--lg-6 margin-left-md--1">
+                        <button id="showall" class="btn btn--secondary margin-top-lg--1 margin-top-md--1 margin-top-sm--1"
+                            onclick="filterSelection('')"> Show
+                            all</button>
+                    </div>
+                    <div class="col col--md-40 col--lg-53">
+                        <div id="myBtnContainer" class="btn-group">
+                            <button class="btn btn--secondary btn--small margin-top-lg--1 margin-top-md--1 margin-top-sm--1"
+                                onclick="filterSelection('Age')"> Age</button>
+                            <button class="btn btn--secondary btn--small margin-top-lg--1 margin-top-md--1 margin-top-sm--1"
+                                onclick="filterSelection('Disability')">
+                                Disability</button>
+                            <button class="btn btn--secondary btn--small margin-top-lg--1 margin-top-md--1 margin-top-sm--1"
+                                onclick="filterSelection('Sexual Orientation')">
+                                Sexual Orientation</button>
+                            <button class="btn btn--secondary btn--small margin-top-lg--1 margin-top-md--1 margin-top-sm--1"
+                                onclick="filterSelection('Ethnicity')">
+                                Ethnicity</button>
+                            <button class="btn btn--secondary btn--small margin-top-lg--1 margin-top-md--1 margin-top-sm--1"
+                                onclick="filterSelection('Marriage and Civil Partnership')">Marriage
+                                and Civil Partnership</button>
+                            <button class="btn btn--secondary btn--small margin-top-lg--1 margin-top-md--1 margin-top-sm--1"
+                                onclick="filterSelection('Religion/Belief')">Religion/Belief</button>
+                            <button class="btn btn--secondary btn--small margin-top-lg--1 margin-top-md--1 margin-top-sm--1"
+                                onclick="filterSelection('Gender reassignment')">Gender
+                                reassignment
+                                <button class="btn btn--secondary btn--small margin-top-lg--1 margin-top-md--1 margin-top-sm--1"
+                                    onclick="filterSelection('Pregnancy and Maternity')">Pregnancy
+                                    and Maternity</button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="col-wrap">
+            <div class="col col--md-one col--lg-one">
+                <div class="markdown-table-container print--avoid-break">
+                    <figure class="figure" id="table-6cc24a28">
+                        <table class="table" id="equalities">
+                            <colgroup>
+                                <col style="width: 52.1%" />
+                                <col style="width: 14.3%" />
+                                <col style="width: 20.4%" />
+                                <col style="width: 12.9%" />
+                            </colgroup>
+                            <tr class="table__header-row">
+                                <th scope="col">Dataset</th>
+                                <th scope="col">Domain</th>
+                                <th scope="col">Dimensions</th>
+                                <th scope="col">No. of individuals sampled</th>
+                            </tr>
+                            <tr>
+                                <td><a href="#">A mystery shop of turn-up-and-go services</a></td>
+                                <td>Participation</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#"></a>Abortions Notifications (DHSC)</a></td>
+                                <td>Health</td>
+                                <td>Age, Ethnicity, Marriage and Civil Partnership, Pregnancy and Maternity</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#"></a>Accident and Emergency Datamart (A&amp;E2)</a></td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">&gt;1,000,000</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#"></a>Accident and Emergency Department Survey</a></td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#"></a>Active Lives Survey (formerly Active People Survey) (14 and 15
+                                    year olds)</a></td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">201579</td>
+                            </tr>
+                            <tr>
+                                <td>Active Lives Survey (formerly Active People Survey) (Adult questionnaire)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">201579</td>
+                            </tr>
+                            <tr>
+                                <td>Active Lives Survey (formerly Active People Survey) (Adult questionnaire)</td>
+                                <td>Participation</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Admission of patients to Mental Health Facilities (Wales)</td>
+                                <td>Health</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Admitted Patient Care dataset (APCds)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Adult inpatient survey</td>
+                                <td>Health</td>
+                                <td></td>
+                                <td class="align-right">72778</td>
+                            </tr>
+                            <tr>
+                                <td>Adult Psychiatric Morbidity Survey</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">7403</td>
+                            </tr>
+                            <tr>
+                                <td>Adult Psychiatric Morbidity Survey</td>
+                                <td>Participation</td>
+                                <td>Age</td>
+                                <td class="align-right">7403</td>
+                            </tr>
+                            <tr>
+                                <td>Adult safeguarding</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">15757</td>
+                            </tr>
+                            <tr>
+                                <td>Adult safeguarding</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right">15757</td>
+                            </tr>
+                            <tr>
+                                <td>Adult Social Care Survey (ASCS)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">72580</td>
+                            </tr>
+                            <tr>
+                                <td>Adults receiving care and support</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Annual Civil Service Employment Survey (ACSES)</td>
+                                <td>Work</td>
+                                <td>Age</td>
+                                <td class="align-right">500000</td>
+                            </tr>
+                            <tr>
+                                <td>Annual Population Survey (APS)</td>
+                                <td>Education</td>
+                                <td>Age</td>
+                                <td class="align-right">300000</td>
+                            </tr>
+                            <tr>
+                                <td>Annual Population Survey (APS)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">300000</td>
+                            </tr>
+                            <tr>
+                                <td>Annual Population Survey (APS)</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right">300000</td>
+                            </tr>
+                            <tr>
+                                <td>Annual Population Survey (APS)</td>
+                                <td>Participation</td>
+                                <td>Age</td>
+                                <td class="align-right">300000</td>
+                            </tr>
+                            <tr>
+                                <td>Annual Population Survey (APS)</td>
+                                <td>Work</td>
+                                <td>Age</td>
+                                <td class="align-right">300000</td>
+                            </tr>
+                            <tr>
+                                <td>Annual Survey of Hours and Earnings (ASHE)</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right">140000</td>
+                            </tr>
+                            <tr>
+                                <td>Annual Survey of Hours and Earnings (ASHE)</td>
+                                <td>Work</td>
+                                <td>Age</td>
+                                <td class="align-right">140000</td>
+                            </tr>
+                            <tr>
+                                <td>Arrests Data</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right">Varies</td>
+                            </tr>
+                            <tr>
+                                <td>Asylum Claims on the basis of sexual orientation</td>
+                                <td>Participation</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Attainment data: KS1 &amp; Phonics</td>
+                                <td>Education</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Attainment data: KS4</td>
+                                <td>Education</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Attainment data:KS2</td>
+                                <td>Education</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Attainmnt data: KS5 (16-18)</td>
+                                <td>Education</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Benefits Data</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Birth notifications</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Birth Registrations</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Birth registrations Northern Ireland</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Breast Screening (KC63)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>British Social Attitudes Survey (BSAS)</td>
+                                <td>Participation</td>
+                                <td>Age</td>
+                                <td class="align-right">2942</td>
+                            </tr>
+                            <tr>
+                                <td>Cancer Outcomes and Services Data (COSD)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Care Home Census</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Child Measurement Programme Data (CMP)</td>
+                                <td>Health</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Childhood Vaccination Coverage Data</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Children and Young People in Care return (OC2)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Children and Young People&#39;s Health Services (CYPHS)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Children and Young People&#39;s Inpatient and Day Case Survey (0-7 years)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Children and Young People&#39;s Inpatient and Day Case Survey (12-15 years)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Children and Young People&#39;s Inpatient and Day Case Survey (8-11 years)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Children in Need Census</td>
+                                <td>Education</td>
+                                <td>Age</td>
+                                <td class="align-right">721730</td>
+                            </tr>
+                            <tr>
+                                <td>Children Looked After (CLA) database</td>
+                                <td>Education</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Children looked after (SSDA903) data collection</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Children looked after survey (CLAS)</td>
+                                <td>Education</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Children Order Return (Child Protection Register)</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Children receiving care and support census</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Children&#39;s Dental Health Survey</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">9866</td>
+                            </tr>
+                            <tr>
+                                <td>Childrens&#39; service provisions</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Children&#39;s Social Work Statistics</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Civil Partnership dissolutions (HMCTS)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Civil Partnership Registrations</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Civil partnerships in England and Wales</td>
+                                <td>Participation</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Client Management System (CMS) Data</td>
+                                <td>Work</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Community Contraception Collection (KT31) </td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Community Life Survey</td>
+                                <td>Participation</td>
+                                <td>Age</td>
+                                <td class="align-right">10256</td>
+                            </tr>
+                            <tr>
+                                <td>Community Mental Health Service User Survey</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">12139</td>
+                            </tr>
+                            <tr>
+                                <td>Community Services Dataset</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Concessionary Travel Survey</td>
+                                <td>Participation</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Continous Household Survey</td>
+                                <td>Participation</td>
+                                <td>Age</td>
+                                <td class="align-right">3349</td>
+                            </tr>
+                            <tr>
+                                <td>CORE (Continuous Recording of Lettings and Sales in Social Housing)</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Corporate Parenting Returns</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Court Proceedings Data</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Courts Data</td>
+                                <td>Justice and Personal Security</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>CPS Case Outcomes by Principal Offence Category Data</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>CPS Court Proceedings Data</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Crime Survey for England and Wales</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Crime Survey for England and Wales</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Defence Statistics (Tri Service)</td>
+                                <td>Work</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Dementia Diagnosis Data</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Dental Working Patterns Survey</td>
+                                <td>Work</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Department of Education Statistics, Northern Ireland</td>
+                                <td>Education</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Deprivation of Liberty Safeguards</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Dfi Driver &amp; Vehicle Agency customer satisfaction survey</td>
+                                <td>Participation</td>
+                                <td>Age</td>
+                                <td class="align-right">1565</td>
+                            </tr>
+                            <tr>
+                                <td>Digital Imaging Dataset (DID)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Disabled parking badges</td>
+                                <td>Participation</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Disabled Persons Railcard in circulation and issued</td>
+                                <td>Participation</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Divorces (HMCTS)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Divorces in England and Wales Statistical bulletins</td>
+                                <td>Participation</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>DWP benefits statistical summaries</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>DWP equality information</td>
+                                <td>Work</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Early Years Census</td>
+                                <td>Education</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>eAsset/SACHS Data</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Effects of Taxes and Benefits (ETB)</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Emergency Care Dataset</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Emergency department survey</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">41,941 (Type 1) 3,656 (Type 3)</td>
+                            </tr>
+                            <tr>
+                                <td>English Housing Survey</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">13468</td>
+                            </tr>
+                            <tr>
+                                <td>English Housing Survey</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right">13468</td>
+                            </tr>
+                            <tr>
+                                <td>English index of multiple deprivation</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>English Longitudinal Study of Ageing (ELSA)</td>
+                                <td>Work</td>
+                                <td>Age</td>
+                                <td class="align-right">10000</td>
+                            </tr>
+                            <tr>
+                                <td>English Longitudinal Study of Ageing (ELSA)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">10000</td>
+                            </tr>
+                            <tr>
+                                <td>Estimates of the Population Aged 85 and Over</td>
+                                <td>Participation</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Estimates of the very old, including centenarians</td>
+                                <td>Participation</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>European Quality of Life Survey</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>European Quality of Life Survey</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>European Quality of Life Survey</td>
+                                <td>Participation</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>European Quality of Life Survey</td>
+                                <td>Work</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>European Social Survey</td>
+                                <td>Education</td>
+                                <td>Age</td>
+                                <td class="align-right">1500</td>
+                            </tr>
+                            <tr>
+                                <td>European Social Survey</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">1500</td>
+                            </tr>
+                            <tr>
+                                <td>European Social Survey</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right">1500</td>
+                            </tr>
+                            <tr>
+                                <td>European Social Survey</td>
+                                <td>Participation</td>
+                                <td>Age</td>
+                                <td class="align-right">1500</td>
+                            </tr>
+                            <tr>
+                                <td>European Social Survey</td>
+                                <td>Work</td>
+                                <td>Age</td>
+                                <td class="align-right">1500</td>
+                            </tr>
+                            <tr>
+                                <td>Family Resources Survey (FRS)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Family Resources Survey (FRS)</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Family Resources Survey (FRS)</td>
+                                <td>Work</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Female Genital Mutilation (FGM) Enhanced Dataset</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">1675</td>
+                            </tr>
+                            <tr>
+                                <td>Fit Notes</td>
+                                <td>Health</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Forced Marriage Unit (FMU) Data</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Free school meal entitlement and child poverty in England</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Gender Recognition Certificates Statistics</td>
+                                <td>Participation</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Gender Recognition Marriage Register</td>
+                                <td>Participation</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>General Dental Services (Wales)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Genitourinary Medicine Clinic Activity Data Set </td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Gender Identity Development Service referral figures</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>GP Patient Survey</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Guardianship under the Mental Health Act 1983 (SSDA702)</td>
+                                <td>Health</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Gypsy and Traveller Caravan Count</td>
+                                <td>Living Standards</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Health Survey for England</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">10000</td>
+                            </tr>
+                            <tr>
+                                <td>Health Survey Northern Ireland</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">3888</td>
+                            </tr>
+                            <tr>
+                                <td>Higher Education Statistics Agency (HESA) Staff Record</td>
+                                <td>Education</td>
+                                <td>Age</td>
+                                <td class="align-right">419710</td>
+                            </tr>
+                            <tr>
+                                <td>Higher Education Statistics Agency (HESA) Student Record</td>
+                                <td>Education</td>
+                                <td>Age</td>
+                                <td class="align-right">2317880</td>
+                            </tr>
+                            <tr>
+                                <td>HMPPS Terrorism Prisoners Data</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Home Office Data Hub (HODH)</td>
+                                <td>Justice and Personal Security</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Home Office Immigration Statistics</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Home Office Operational Statistics Data Collection</td>
+                                <td>Work</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Homelessness statistics</td>
+                                <td>Living Standards</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Homelessness statistics HL1</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Homelessness statistics PREVENT1</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Hospital Episode Statistics (HES)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Hospital Episode Statistics (HES)</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Households Below Average Income</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Improving Access to Psychological Therapies (IAPT) dataset</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">900000</td>
+                            </tr>
+                            <tr>
+                                <td>Individual Insolvencies by location, age and gender</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Individual Learner Record</td>
+                                <td>Education</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Internet access</td>
+                                <td>Participation</td>
+                                <td>Age</td>
+                                <td class="align-right">100000</td>
+                            </tr>
+                            <tr>
+                                <td>Judicial Diversity Statistics</td>
+                                <td>Work</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Kids&#39; Life and Times survey</td>
+                                <td>Participation</td>
+                                <td></td>
+                                <td class="align-right">4505</td>
+                            </tr>
+                            <tr>
+                                <td>Labour Force Survey</td>
+                                <td>Education</td>
+                                <td>Age</td>
+                                <td class="align-right">217767</td>
+                            </tr>
+                            <tr>
+                                <td>Labour Force Survey</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">217767</td>
+                            </tr>
+                            <tr>
+                                <td>Labour Force Survey</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right">217767</td>
+                            </tr>
+                            <tr>
+                                <td>Labour Force Survey</td>
+                                <td>Participation</td>
+                                <td>Age</td>
+                                <td class="align-right">217767</td>
+                            </tr>
+                            <tr>
+                                <td>Labour Force Survey</td>
+                                <td>Work</td>
+                                <td>Age</td>
+                                <td class="align-right">217767</td>
+                            </tr>
+                            <tr>
+                                <td>Learning Disability Census</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Level 2 and 3 attainment by young people aged 19 in 2017</td>
+                                <td>Education</td>
+                                <td>Age</td>
+                                <td class="align-right">616,941 (2017 cohort)</td>
+                            </tr>
+                            <tr>
+                                <td>LGBT Survey</td>
+                                <td>Education</td>
+                                <td>Age</td>
+                                <td class="align-right">108100</td>
+                            </tr>
+                            <tr>
+                                <td>LGBT Survey</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">108100</td>
+                            </tr>
+                            <tr>
+                                <td>LGBT Survey</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right">108100</td>
+                            </tr>
+                            <tr>
+                                <td>LGBT Survey</td>
+                                <td>Participation</td>
+                                <td>Age</td>
+                                <td class="align-right">108100</td>
+                            </tr>
+                            <tr>
+                                <td>LGBT Survey</td>
+                                <td>Work</td>
+                                <td>Age</td>
+                                <td class="align-right">108100</td>
+                            </tr>
+                            <tr>
+                                <td>Life Opportunities Survey</td>
+                                <td>Participation</td>
+                                <td>Age</td>
+                                <td class="align-right">48285</td>
+                            </tr>
+                            <tr>
+                                <td>Linked [Benefits Data][Police National Computer Data]</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Linked [Out-of-work Benefit Data][Child Benefit Data]</td>
+                                <td>Work</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Linked[Hospital Episode Statistics][Digital Imaging Dataset]</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Linked[Hospital Episode Statistics][Birth registrations data]</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Living Costs and Food Survey (LCF)</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Local Authority School Counselling Services collection, Welsh Government</td>
+                                <td>Education</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Longitudinal Educational Outcomes</td>
+                                <td>Education</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Looked after children census</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Managing and Minimising Physical Restraint (MMPR) Data</td>
+                                <td>Justice and Personal Security</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Marriage registrations</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Maternity Indicators Dataset</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Maternity Services Dataset (MSDS)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Maternity Services Survey</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">18426</td>
+                            </tr>
+                            <tr>
+                                <td>Mental Health Services Dataset</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Millennium Cohort Study</td>
+                                <td>Education</td>
+                                <td>Age</td>
+                                <td class="align-right">11884</td>
+                            </tr>
+                            <tr>
+                                <td>Millennium Cohort Study</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">11884</td>
+                            </tr>
+                            <tr>
+                                <td>Millennium Cohort Study</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right">11884</td>
+                            </tr>
+                            <tr>
+                                <td>Millennium Cohort Study</td>
+                                <td>Other</td>
+                                <td>Age</td>
+                                <td class="align-right">11884</td>
+                            </tr>
+                            <tr>
+                                <td>Millennium Cohort Study</td>
+                                <td>Participation</td>
+                                <td>Age</td>
+                                <td class="align-right">11884</td>
+                            </tr>
+                            <tr>
+                                <td>Millennium Cohort Study</td>
+                                <td>Work</td>
+                                <td>Age</td>
+                                <td class="align-right">11884</td>
+                            </tr>
+                            <tr>
+                                <td>Monitor of engagement with the natural environment</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">47477</td>
+                            </tr>
+                            <tr>
+                                <td>Mortality data</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>MPS Stop and Search Data</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Scottish Cancer Registry</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>National Child Measurement (NCMP) Programme Data</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">1100000</td>
+                            </tr>
+                            <tr>
+                                <td>National Community Child Health Database (NCCHD)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>National Confidential Enquiry into Suicide and Homicide (NCISH)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>National Diet and Nutrition Survey (NDNS)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>National DNA Database (NDNAD)</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>National Drug Treatment Monitoring System (NDTMS)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>National Health Service Central Register (NHSCR)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>National information system for vocational qualifications</td>
+                                <td>Education</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>National Offender Management Service Human Resource Management Service (NOMS
+                                    HRMS) Data</td>
+                                <td>Work</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>National Pupil Database</td>
+                                <td>Education</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>National Radiotherapy Dataset (RTDS)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>National Survey for Wales</td>
+                                <td>Education</td>
+                                <td>Age</td>
+                                <td class="align-right">11381</td>
+                            </tr>
+                            <tr>
+                                <td>National Survey for Wales</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">11381</td>
+                            </tr>
+                            <tr>
+                                <td>National Survey for Wales</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right">11381</td>
+                            </tr>
+                            <tr>
+                                <td>National Survey for Wales</td>
+                                <td>Participation</td>
+                                <td>Age</td>
+                                <td class="align-right">11381</td>
+                            </tr>
+                            <tr>
+                                <td>National Survey of Bereaved People (VOICES)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">49000</td>
+                            </tr>
+                            <tr>
+                                <td>National Travel Survey</td>
+                                <td>Participation</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>National Workfore Dataset (NWD)</td>
+                                <td>Work</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>NI Benefits Statistics Summary</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Northern Ireland Crime Survey</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Northern Ireland Housing Statistics</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Northern Ireland Life and Times Survey</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right">1208</td>
+                            </tr>
+                            <tr>
+                                <td>Northern Ireland Life and Times Survey</td>
+                                <td>Participation</td>
+                                <td></td>
+                                <td class="align-right">1208</td>
+                            </tr>
+                            <tr>
+                                <td>Northern Ireland Life and Times Survey</td>
+                                <td>Education</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Northern Ireland Life and Times Survey</td>
+                                <td>Work</td>
+                                <td>Age</td>
+                                <td class="align-right">1203</td>
+                            </tr>
+                            <tr>
+                                <td>Northern Ireland Multiple Deprivation Measure 2017</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Northern Ireland Omnibus Survey</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right">2200</td>
+                            </tr>
+                            <tr>
+                                <td>Northern Ireland Omnibus Survey</td>
+                                <td>Participation</td>
+                                <td>Age</td>
+                                <td class="align-right">2200</td>
+                            </tr>
+                            <tr>
+                                <td>ONS Longitudinal Study</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right">1100000</td>
+                            </tr>
+                            <tr>
+                                <td>Opinions and Lifestyle Survey (OPN)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Opinions and Lifestyle Survey (OPN)</td>
+                                <td>Participation</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Patient Episode Database for Wales (PEDW)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Patient Reported Outcome Measures (PROMs) data</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Patients registered at a GP practice data</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Personal Demographic Service (PDS)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">74000000</td>
+                            </tr>
+                            <tr>
+                                <td>Police Recorded Crime</td>
+                                <td>Justice and Personal Security</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Prison-NOMIS Data</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Psychiatric Census</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Public Appointments Data</td>
+                                <td>Work</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Pupils&#39; Attendance Record, Welsh Government</td>
+                                <td>Education</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Pupils Educated Other Than At School (EOTAS), Welsh Government </td>
+                                <td>Education</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Quarterly Public Sector Employment Survey (QPSES)</td>
+                                <td>Work</td>
+                                <td></td>
+                                <td class="align-right">900</td>
+                            </tr>
+                            <tr>
+                                <td>Research into passenger awareness of assisted travel services</td>
+                                <td>Participation</td>
+                                <td>Age</td>
+                                <td class="align-right">1010</td>
+                            </tr>
+                            <tr>
+                                <td>Research into passenger experiences of Passenger Assist</td>
+                                <td>Participation</td>
+                                <td>Age</td>
+                                <td class="align-right">4060</td>
+                            </tr>
+                            <tr>
+                                <td>Safeguarding Adult Collection (SAC)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>School Census</td>
+                                <td>Education</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Scottish Crime and Justice Survey</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right">5567</td>
+                            </tr>
+                            <tr>
+                                <td>Scottish Funding Council</td>
+                                <td>Education</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Scottish Government Schools Census</td>
+                                <td>Education</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Scottish Health Survey</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Scottish HES equivalents (Scottish Morbidity Record 00/01/02/04)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Scottish Household Survey</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right">9640</td>
+                            </tr>
+                            <tr>
+                                <td>Scottish Household Survey</td>
+                                <td>Participation</td>
+                                <td>Age</td>
+                                <td class="align-right">9640</td>
+                            </tr>
+                            <tr>
+                                <td>Scottish Index of Multiple Deprivation</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Scottish Social Attitudes Survey</td>
+                                <td>Work</td>
+                                <td>Age</td>
+                                <td class="align-right">1288</td>
+                            </tr>
+                            <tr>
+                                <td>Sexual and Reproductive Activity Dataset (SRHAD)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">1200000</td>
+                            </tr>
+                            <tr>
+                                <td>Short and Long Term Support (SALT)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Skills Development Scotland</td>
+                                <td>Education</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Smoking status at time of delivery (SATOD) data</td>
+                                <td>Health</td>
+                                <td></td>
+                                <td class="align-right">150000</td>
+                            </tr>
+                            <tr>
+                                <td>Smoking, drinking and drug use among young people survey</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">12051</td>
+                            </tr>
+                            <tr>
+                                <td>Statutory Homelessness, Wales</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Statutory register of births</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Statutory register of deaths</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Statutory register of marriages</td>
+                                <td></td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Stonewall LGBT in Britain hate crime survey</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Stonewall LGBT in Britain home and communities survey</td>
+                                <td>Participation</td>
+                                <td>Age</td>
+                                <td class="align-right">5375</td>
+                            </tr>
+                            <tr>
+                                <td>Stonewall LGBT in Britain home and communities survey</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right">5375</td>
+                            </tr>
+                            <tr>
+                                <td>Stonewall LGBT in Britain School Survey</td>
+                                <td>Education</td>
+                                <td>Age</td>
+                                <td class="align-right">3700</td>
+                            </tr>
+                            <tr>
+                                <td>Stonewall LGBT in Britain School Survey</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">3700</td>
+                            </tr>
+                            <tr>
+                                <td>Stonewall LGBT in Britain School Survey</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right">3700</td>
+                            </tr>
+                            <tr>
+                                <td>Stonewall LGBT in Britain survey</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right">871</td>
+                            </tr>
+                            <tr>
+                                <td>Stonewall LGBT in Britain survey</td>
+                                <td>Work</td>
+                                <td>Age</td>
+                                <td class="align-right">871</td>
+                            </tr>
+                            <tr>
+                                <td>Stonewall LGBT in Britain survey</td>
+                                <td>Education</td>
+                                <td>Age</td>
+                                <td class="align-right">871</td>
+                            </tr>
+                            <tr>
+                                <td>Stonewall LGBT in Britain survey</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">871</td>
+                            </tr>
+                            <tr>
+                                <td>Stonewall LGBT in Britain university survey</td>
+                                <td>Education</td>
+                                <td>Age</td>
+                                <td class="align-right">522</td>
+                            </tr>
+                            <tr>
+                                <td>Stonewall LGBT in Britain work survey</td>
+                                <td>Work</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Stop and search dataset</td>
+                                <td>Justice and Personal Security</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Stop smoking service dataset</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Summary Care Records (SCR)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Survey of Adult Carers in England (SACE)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Survey of personal incomes (SPI)</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Survey on Living Conditions (EU-SILC)</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right">17645</td>
+                            </tr>
+                            <tr>
+                                <td>Taking part: the national survey of culture, leisure and sport</td>
+                                <td>Participation</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Terrorist prisoners dataset</td>
+                                <td>Justice and Personal Security</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>The General Practice Extraction Service (GPES)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>The Hospital Inpatient System (HIS)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Travel Survey for Northern Ireland</td>
+                                <td>Participation</td>
+                                <td>Age</td>
+                                <td class="align-right">5497</td>
+                            </tr>
+                            <tr>
+                                <td>Understanding Society (USoc)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">40,000+</td>
+                            </tr>
+                            <tr>
+                                <td>Understanding Society (USoc)</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right">40,000+</td>
+                            </tr>
+                            <tr>
+                                <td>United Kingdom Time Use Survey</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right">9388</td>
+                            </tr>
+                            <tr>
+                                <td>United Kingdom Time Use Survey</td>
+                                <td>Work</td>
+                                <td>Age</td>
+                                <td class="align-right">9388</td>
+                            </tr>
+                            <tr>
+                                <td>Wealth and Assets Survey</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right">42,832 individuals</td>
+                            </tr>
+                            <tr>
+                                <td>Welsh Cancer Intelligence and Surveillance Unit&#39;s National Cancer Registry</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Welsh Demographic Survey (WDS)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Welsh Health Survey</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Welsh Hospital Episode Statistics</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Welsh National Database for Substance Misuse</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>What about youth survey (WAY)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">120000</td>
+                            </tr>
+                            <tr>
+                                <td>Work-Life Balance Employer Survey (WLB)</td>
+                                <td>Work</td>
+                                <td>Age</td>
+                                <td class="align-right">2011</td>
+                            </tr>
+                            <tr>
+                                <td>Young Life and Times Survey</td>
+                                <td>Participation</td>
+                                <td></td>
+                                <td class="align-right">1009</td>
+                            </tr>
+                            <tr>
+                                <td>Young Life and Times Survey</td>
+                                <td>Living Standards</td>
+                                <td></td>
+                                <td class="align-right">1009</td>
+                            </tr>
+                            <tr>
+                                <td>Young Life and Times Survey</td>
+                                <td>Education</td>
+                                <td></td>
+                                <td class="align-right">1009</td>
+                            </tr>
+                            <tr>
+                                <td>Young Life and Times Survey</td>
+                                <td>Justice and Personal Security</td>
+                                <td></td>
+                                <td class="align-right">1009</td>
+                            </tr>
+                            <tr>
+                                <td>Young Persons Matched Administrative data</td>
+                                <td>Education</td>
+                                <td>Age</td>
+                                <td class="align-right">12,381,297 (2004-2019 cohort)</td>
+                            </tr>
+                            <tr>
+                                <td>Young Persons’ Behaviour and Attitudes Survey</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">6831</td>
+                            </tr>
+                            <tr>
+                                <td>Youth Custody Data</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Youth Justice Agency Data</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>European Union Statistics on Income and Living Conditions (EU-SILC)</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Survey on Living Conditions (SLC)</td>
+                                <td>Living Standards</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Pregnancy and maternity-related discrimination and disadvantage: Mother&#39;s
+                                    survey</td>
+                                <td></td>
+                                <td></td>
+                                <td class="align-right">3254</td>
+                            </tr>
+                            <tr>
+                                <td>Pregnancy and maternity-related discrimination and disadvantage: Employer&#39;s
+                                    survey</td>
+                                <td></td>
+                                <td></td>
+                                <td class="align-right">3034</td>
+                            </tr>
+                            <tr>
+                                <td>National Antenatal Infection Screening Monitoring (NAISM) data</td>
+                                <td>Health</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>NHS Infectious Diseases in Pregnancy Screening (IDPS) data</td>
+                                <td>Health</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>National Cancer Diagnosis Audit (NCDA)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">17402</td>
+                            </tr>
+                            <tr>
+                                <td>National Radiotherapy Dataset (RTDS)</td>
+                                <td>Health</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>National Survey of Bereaved People (VOICES)</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">21320</td>
+                            </tr>
+                            <tr>
+                                <td>NCTPOC Arrest and Outcomes Data</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>NI Prison Service (NIPS) Data</td>
+                                <td>Work</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>NOMS Data</td>
+                                <td>Justice and Personal Security</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Northern Ireland Civil Service (HRConnect) Data</td>
+                                <td>Work</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Northern Ireland Civil Service Recruitment Competitions Data</td>
+                                <td>Work</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Northern Ireland transport statistics </td>
+                                <td>Participation</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Out-of-work Benefit Data</td>
+                                <td>Work</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Police Recorded Crime (Scotland)</td>
+                                <td>Justice and Personal Security</td>
+                                <td></td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Proven Re-offending Data</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Pupil Level Annual School Census (PLASC), Welsh Government </td>
+                                <td>Education</td>
+                                <td>Age</td>
+                                <td class="align-right">Pupil Level Annual School Census (PLASC), Welsh Government
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Quarterly Employment Survey (QES)</td>
+                                <td>Work</td>
+                                <td></td>
+                                <td class="align-right">Quarterly Employment Survey (QES)</td>
+                            </tr>
+                            <tr>
+                                <td>Rail Passenger Assists and bookings</td>
+                                <td>Participation</td>
+                                <td></td>
+                                <td class="align-right">Rail Passenger Assists and bookings</td>
+                            </tr>
+                            <tr>
+                                <td>Consultant-led Referral to Treatment Waiting Times</td>
+                                <td>Health</td>
+                                <td></td>
+                                <td class="align-right">Consultant-led Referral to Treatment Waiting Times</td>
+                            </tr>
+                            <tr>
+                                <td>Safety in Custody Data</td>
+                                <td>Justice and Personal Security</td>
+                                <td>Age</td>
+                                <td class="align-right">Safety in Custody Data</td>
+                            </tr>
+                            <tr>
+                                <td>Satisfaction with access to GP services</td>
+                                <td>Health</td>
+                                <td>Age</td>
+                                <td class="align-right">Satisfaction with access to GP services</td>
+                            </tr>
+                            <tr>
+                                <td>School Leavers Destination Survey</td>
+                                <td>Education</td>
+                                <td>Age</td>
+                                <td class="align-right">School Leavers Destination Survey</td>
+                            </tr>
+                            <tr>
+                                <td>Schools and Teachers Data, Welsh Government</td>
+                                <td>Education</td>
+                                <td>Age</td>
+                                <td class="align-right">Schools and Teachers Data, Welsh Government</td>
+                            </tr>
+                            <tr>
+                                <td>SCORE</td>
+                                <td>Living Standards</td>
+                                <td></td>
+                                <td class="align-right">SCORE</td>
+                            </tr>
+                        </table>
+                        <footer class="figure__footer">
+                        </footer>
+                    </figure>
+                </div>
+            </div>
+
+
+            <script>
+                function selectDomain() {
+
+                    // Declare variables 
+                    let input, filter, table, tr, td, i, txtValue;
+                    input = document.getElementById("myInput");
+                    if (input.value === "All domains") {
+                        filter = ""
+                    } else {
+                        filter = input.value.toUpperCase();
+                    }
+                    table = document.getElementById("equalities");
+                    tr = table.getElementsByTagName("tr");
+
+                    // Loop through all table rows, and hide those who don't match the search query
+                    for (i = 0; i < tr.length; i++) {
+                        td = tr[i].getElementsByTagName("td")[1];
+                        if (td) {
+                            txtValue = td.textContent || td.innerText;
+                            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                tr[i].style.display = "";
+                            } else {
+                                tr[i].style.display = "none";
+                            }
+                        }
+                    }
+                }
+
+                function filterSelection(c) {
+                    // Declare variables 
+                    let input, filter, table, tr, td, i, txtValue;
+
+                    input = c;
+                    filter = input.toUpperCase();
+                    table = document.getElementById("equalities");
+                    tr = table.getElementsByTagName("tr");
+
+                    // Loop through all table rows, and hide those who don't match the search query
+                    for (i = 0; i < tr.length; i++) {
+                        td = tr[i].getElementsByTagName("td")[2];
+                        if (td) {
+                            txtValue = td.textContent || td.innerText;
+                            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                tr[i].style.display = "";
+                            } else {
+                                tr[i].style.display = "none";
+                            }
+                        }
+                    }
+                }
+            </script>
+
+</html>
