@@ -30,7 +30,8 @@
             <div class="pl-wrap__inner padding-top-sm--4">
                 <div class="wrapper">
                     <h1 class="page-intro__title page-intro__title--home-big padding-bottom-md--4">Inequalities data</h1>
-                    <p>The results as at 15 October 2018 of an audit of data available on the protected characteristics of the Equality Act (2010).</p>
+                    <p>The results as at 15 October 2018 of an audit of data available on the protected characteristics
+                        of the Equality Act (2010).</p>
                 </div>
             </div>
         </div>
@@ -76,7 +77,7 @@
                             <button name="Ethnicity" class="btn btn--secondary btn--small margin-top-lg--1 margin-top-md--1 margin-top-sm--1"
                                 onclick="filterSelection('Ethnicity')">
                                 Ethnicity</button>
-                            <button name="Pregnancy/Maternity" class="btn btn--secondary btn--small margin-top-lg--1 margin-top-md--1 margin-top-sm--1"
+                            <button name="Marriage/Civil-Partnership" class="btn btn--secondary btn--small margin-top-lg--1 margin-top-md--1 margin-top-sm--1"
                                 onclick="filterSelection('Marriage/Civil-Partnership')">Marriage/Civil-Partnership</button>
                             <button name="Religion/Belief" class="btn btn--secondary btn--small margin-top-lg--1 margin-top-md--1 margin-top-sm--1"
                                 onclick="filterSelection('Religion/Belief')">Religion/Belief</button>
@@ -106,7 +107,7 @@
                                 <col style="width: 17.6%">
                                 <col style="width: 24.2%">
                             </colgroup>
-                            <tbody>
+                            <tbody id="tableData">
                                 <tr class="table__header-row">
                                     <th scope="col" class="align-left">Dataset</th>
                                     <th scope="col" class="align-left">Domain</th>
@@ -114,15 +115,15 @@
                                     <th scope="col" class="align-left">Geographical coverage</th>
                                     <th scope="col" class="align-left">Dimensions</th>
                                 </tr>
-                                <tr>
-                                    <td class="align-left"><a href = "">A mystery shop of turn-up-and-go services</a></td>
+                                <!-- <tr>
+                                    <td class="align-left"><a href="">A mystery shop of turn-up-and-go services</a></td>
                                     <td class="align-left">Participation</td>
                                     <td class="align-left">Adhoc</td>
                                     <td class="align-left">Great Britain</td>
                                     <td class="align-left">Disability</td>
                                 </tr>
                                 <tr>
-                                    <td class="align-left"><a href = "">Abortions Notifications (DHSC)</a></td>
+                                    <td class="align-left"><a href="">Abortions Notifications (DHSC)</a></td>
                                     <td class="align-left">Health</td>
                                     <td class="align-left">Quarterly</td>
                                     <td class="align-left">England and Wales</td>
@@ -130,30 +131,32 @@
                                         Pregnancy/Maternity</td>
                                 </tr>
                                 <tr>
-                                    <td class="align-left"><a href = "">Accident and Emergency Datamart (A&amp;E2)</a></td>
+                                    <td class="align-left"><a href="">Accident and Emergency Datamart (A&amp;E2)</a></td>
                                     <td class="align-left">Health</td>
                                     <td class="align-left">Monthly</td>
                                     <td class="align-left">Scotland</td>
                                     <td class="align-left">Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief</td>
                                 </tr>
                                 <tr>
-                                    <td class="align-left"><a href = "">Accident and Emergency Department Survey</a></td>
+                                    <td class="align-left"><a href="">Accident and Emergency Department Survey</a></td>
                                     <td class="align-left">Health</td>
                                     <td class="align-left">Annual</td>
                                     <td class="align-left">England</td>
                                     <td class="align-left">Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief</td>
                                 </tr>
                                 <tr>
-                                    <td class="align-left"><a href = "">Active Lives Survey (formerly Active People Survey) (14 and
-                                        15 year olds)</a></td>
+                                    <td class="align-left"><a href="">Active Lives Survey (formerly Active People
+                                            Survey) (14 and
+                                            15 year olds)</a></td>
                                     <td class="align-left">Health</td>
                                     <td class="align-left">Bi-Annual</td>
                                     <td class="align-left">England</td>
                                     <td class="align-left">Age, Sex, Ethnicity, Disability</td>
                                 </tr>
                                 <tr>
-                                    <td class="align-left"><a href = "">Active Lives Survey (formerly Active People Survey) (Adult
-                                        questionnaire)</a></td>
+                                    <td class="align-left"><a href="">Active Lives Survey (formerly Active People
+                                            Survey) (Adult
+                                            questionnaire)</a></td>
                                     <td class="align-left">Health</td>
                                     <td class="align-left">Bi-Annual</td>
                                     <td class="align-left">England</td>
@@ -2194,7 +2197,7 @@
                                     <td class="align-left">Annual</td>
                                     <td class="align-left">Northern Ireland</td>
                                     <td class="align-left">Age, Sex, Religion/Belief</td>
-                                </tr>
+                                </tr> -->
                             </tbody>
                         </table>
                         <footer class="figure__footer">
@@ -2258,9 +2261,9 @@
                             }
                         }
                     }
-                    
+
                     if (c === "showall") {
-                    showAll.className += " btn--secondary-active";
+                        showAll.className += " btn--secondary-active";
                     }
 
                     for (b = 0; b < btns.length; b++) {
@@ -2272,6 +2275,36 @@
                             showAll.className = showAll.className.replace(" btn--secondary-active", "")
                         }
                     }
+                }
+
+
+                fetch("data/data.json")
+                    .then(function (response) {
+                        return response.json();
+                    })
+                    .then(function (myJson) {
+                        for (i = 0; i < myJson.length; i++) {
+                            console.log(myJson[i].URL)
+
+                            tr = createNode("tr");
+                            tr.innerHTML = "<tr><td class='align-left' ><a href = " + myJson[i].URL + ">" + myJson[
+                                    i].Dataset + "</a></td><td class='align-left' >" + myJson[i].Domain +
+                                "</td><td class='align-left'>" + myJson[i].Frequency +
+                                "</td><td class='align-left'>" + myJson[i].Geographicalcoverage +
+                                "</td><td class='align-left'>" + myJson[i].Dimensions + "</td></tr>"
+
+                                append(equalities, tr);
+                        }
+                        
+                    });
+
+
+                function createNode(element) {
+                    return document.createElement(element);
+                }
+
+                function append(parent, el) {
+                    return parent.appendChild(el);
                 }
             </script>
 
