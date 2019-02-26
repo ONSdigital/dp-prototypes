@@ -21,7 +21,7 @@
       "Domain": "Health",
       "Frequency": "Monthly",
       "Geographicalcoverage": "Scotland",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief"
     },
     {
       "Dataset": "Accident and Emergency Department Survey",
@@ -29,7 +29,7 @@
       "Domain": "Health",
       "Frequency": "Annual",
       "Geographicalcoverage": "England",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief"
     },
     {
       "Dataset": "Active Lives Survey (formerly Active People Survey) (14 and 15 year olds)",
@@ -45,7 +45,7 @@
       "Domain": "Health",
       "Frequency": "Bi-Annual",
       "Geographicalcoverage": "England",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Disability"
     },
     {
       "Dataset": "Active Lives Survey (formerly Active People Survey) (Adult questionnaire)",
@@ -53,7 +53,7 @@
       "Domain": "Participation",
       "Frequency": "Bi-Annual",
       "Geographicalcoverage": "England",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Disability"
     },
     {
       "Dataset": "Admission of patients to Mental Health Facilities (Wales) ",
@@ -77,7 +77,7 @@
       "Domain": "Health",
       "Frequency": "Annual",
       "Geographicalcoverage": "England",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Disability"
     },
     {
       "Dataset": "Adult Psychiatric Morbidity Survey",
@@ -85,7 +85,7 @@
       "Domain": "Health",
       "Frequency": "Adhoc",
       "Geographicalcoverage": "England",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, Disability"
     },
     {
       "Dataset": "Adult Psychiatric Morbidity Survey",
@@ -93,7 +93,7 @@
       "Domain": "Participation",
       "Frequency": "Adhoc",
       "Geographicalcoverage": "England",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, Disability"
     },
     {
       "Dataset": "Adult safeguarding",
@@ -133,7 +133,7 @@
       "Domain": "Work",
       "Frequency": "Annual",
       "Geographicalcoverage": "United Kingdom",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Disability"
     },
     {
       "Dataset": "Annual Survey of Hours and Earnings (ASHE)",
@@ -153,11 +153,11 @@
     },
     {
       "Dataset": "Asylum Claims on the basis of sexual orientation",
-      "URL": "https://www.gov.uk/government/statistics/asylum-claims-on-the-basis-of-sexual-orientation",
+      "URL": "https://www.gov.uk/government/statistics/asylum-claims-on-the-basis-of-Sexual Orientation",
       "Domain": "Participation",
       "Frequency": "Adhoc",
       "Geographicalcoverage": "United Kingdom",
-      "Dimensions": "Sexual-Orientation"
+      "Dimensions": "Sexual Orientation"
     },
     {
       "Dataset": "Attainment data: KS1 & Phonics",
@@ -437,7 +437,7 @@
       "Domain": "Health",
       "Frequency": "Annual",
       "Geographicalcoverage": "England",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief"
     },
     {
       "Dataset": "Community Services Dataset",
@@ -501,7 +501,7 @@
       "Domain": "Justice and Personal Security",
       "Frequency": "Monthly",
       "Geographicalcoverage": "England and Wales",
-      "Dimensions": "Age, Ethnicity, Sexual-Orientation, Religion/Belief, Gender-Reassignment, Disability"
+      "Dimensions": "Age, Ethnicity, Sexual Orientation, Religion/Belief, Gender reassignment, Disability"
     },
     {
       "Dataset": "CPS Court Proceedings Data",
@@ -517,7 +517,7 @@
       "Domain": "Health",
       "Frequency": "Quarterly",
       "Geographicalcoverage": "England and Wales",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Marriage/Civil-Partnership, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Disability"
     },
     {
       "Dataset": "Crime Survey for England and Wales",
@@ -525,7 +525,7 @@
       "Domain": "Justice and Personal Security",
       "Frequency": "Quarterly",
       "Geographicalcoverage": "England and Wales",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Marriage/Civil-Partnership, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Disability"
     },
     {
       "Dataset": "Defence Statistics (Tri Service)",
@@ -533,7 +533,7 @@
       "Domain": "Work",
       "Frequency": "Bi-Annual",
       "Geographicalcoverage": "United Kingdom",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Pregnancy/Maternity"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Pregnancy/Maternity"
     },
     {
       "Dataset": "Dementia Diagnosis Data",
@@ -565,7 +565,7 @@
       "Domain": "Health",
       "Frequency": "Annual",
       "Geographicalcoverage": "England",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Disability"
     },
     {
       "Dataset": "Dfi Driver & Vehicle Agency customer satisfaction survey",
@@ -661,7 +661,7 @@
       "Domain": "Health",
       "Frequency": "Annual",
       "Geographicalcoverage": "England",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief"
     },
     {
       "Dataset": "English Housing Survey",
@@ -693,7 +693,7 @@
       "Domain": "Work",
       "Frequency": "Annual",
       "Geographicalcoverage": "England",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Marriage/Civil-Partnership, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Disability"
     },
     {
       "Dataset": "English Longitudinal Study of Ageing (ELSA)\n\n",
@@ -701,7 +701,7 @@
       "Domain": "Health",
       "Frequency": "Annual ",
       "Geographicalcoverage": "England",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Marriage/Civil-Partnership, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Disability"
     },
     {
       "Dataset": "Estimates of the Population Aged 85 and Over",
@@ -805,7 +805,7 @@
       "Domain": "Health",
       "Frequency": "Annual",
       "Geographicalcoverage": "United Kingdom",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Marriage/Civil-Partnership, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Disability"
     },
     {
       "Dataset": "Family Resources Survey (FRS)",
@@ -813,7 +813,7 @@
       "Domain": "Living Standards",
       "Frequency": "Annual",
       "Geographicalcoverage": "United Kingdom",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Marriage/Civil-Partnership, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Disability"
     },
     {
       "Dataset": "Family Resources Survey (FRS)",
@@ -821,7 +821,7 @@
       "Domain": "Work",
       "Frequency": "Annual",
       "Geographicalcoverage": "United Kingdom",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Marriage/Civil-Partnership, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Disability"
     },
     {
       "Dataset": "Female Genital Mutilation (FGM) Enhanced Dataset",
@@ -845,7 +845,7 @@
       "Domain": "Justice and Personal Security",
       "Frequency": "Annual",
       "Geographicalcoverage": "United Kingdom",
-      "Dimensions": "Age, Sex, Sexual-Orientation, Disability"
+      "Dimensions": "Age, Sex, Sexual Orientation, Disability"
     },
     {
       "Dataset": "Free school meal entitlement and child poverty in England",
@@ -869,7 +869,7 @@
       "Domain": "Participation",
       "Frequency": "Quarterly",
       "Geographicalcoverage": "",
-      "Dimensions": "Gender-Reassignment"
+      "Dimensions": "Gender reassignment"
     },
     {
       "Dataset": "Gender Recognition Marriage Register",
@@ -877,7 +877,7 @@
       "Domain": "Other",
       "Frequency": "",
       "Geographicalcoverage": "",
-      "Dimensions": "Gender-Reassignment, Marriage/Civil-Partnership"
+      "Dimensions": "Gender reassignment, Marriage/Civil-Partnership"
     },
     {
       "Dataset": "Genitourinary Medicine Clinic Activity Data Set ",
@@ -885,7 +885,7 @@
       "Domain": "Health",
       "Frequency": "Quarterly",
       "Geographicalcoverage": "England",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation"
     },
     {
       "Dataset": "GP Patient Survey",
@@ -893,7 +893,7 @@
       "Domain": "Health",
       "Frequency": "Annual",
       "Geographicalcoverage": "England",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Disability"
     },
     {
       "Dataset": "Guardianship under the Mental Health Act 1983 (SSDA702)",
@@ -917,7 +917,7 @@
       "Domain": "Health",
       "Frequency": "Annual ",
       "Geographicalcoverage": "England",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, Disability"
     },
     {
       "Dataset": "Health Survey Northern Ireland",
@@ -925,7 +925,7 @@
       "Domain": "Health",
       "Frequency": "Annual",
       "Geographicalcoverage": "Northern Ireland",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, Disability"
     },
     {
       "Dataset": "Higher Education Statistics Agency (HESA) Staff Record",
@@ -933,7 +933,7 @@
       "Domain": "Education",
       "Frequency": "Annual ",
       "Geographicalcoverage": "United Kingdom",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Gender-Reassignment, Pregnancy/Maternity, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Gender reassignment, Pregnancy/Maternity, Disability"
     },
     {
       "Dataset": "Higher Education Statistics Agency (HESA) Student Record",
@@ -941,7 +941,7 @@
       "Domain": "Education",
       "Frequency": "Annual ",
       "Geographicalcoverage": "United Kingdom",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Gender-Reassignment, Marriage/Civil-Partnership, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Gender reassignment, Marriage/Civil-Partnership, Disability"
     },
     {
       "Dataset": "HMPPS Terrorism Prisoners Data",
@@ -973,7 +973,7 @@
       "Domain": "Work",
       "Frequency": "Annual ",
       "Geographicalcoverage": "England",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief"
     },
     {
       "Dataset": "Homeless Case Level Information Collection (H-CLIC) Data",
@@ -981,7 +981,7 @@
       "Domain": "Living Standards",
       "Frequency": "Quarterly",
       "Geographicalcoverage": "England",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Gender-Reassignment, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Gender reassignment, Disability"
     },
     {
       "Dataset": "Homelessness Data Collection",
@@ -1045,7 +1045,7 @@
       "Domain": "Health",
       "Frequency": "Annual",
       "Geographicalcoverage": "England",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Marriage/Civil-Partnership, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Disability"
     },
     {
       "Dataset": "Individual Insolvencies",
@@ -1093,7 +1093,7 @@
       "Domain": "Education",
       "Frequency": "Quarterly",
       "Geographicalcoverage": "United Kingdom",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, Disability"
     },
     {
       "Dataset": "Labour Force Survey",
@@ -1101,7 +1101,7 @@
       "Domain": "Health",
       "Frequency": "Quarterly",
       "Geographicalcoverage": "United Kingdom",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, Disability"
     },
     {
       "Dataset": "Labour Force Survey",
@@ -1109,7 +1109,7 @@
       "Domain": "Living Standards",
       "Frequency": "Quarterly",
       "Geographicalcoverage": "United Kingdom",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, Disability"
     },
     {
       "Dataset": "Labour Force Survey",
@@ -1117,7 +1117,7 @@
       "Domain": "Participation",
       "Frequency": "Quarterly",
       "Geographicalcoverage": "United Kingdom",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, Disability"
     },
     {
       "Dataset": "Labour Force Survey",
@@ -1125,7 +1125,7 @@
       "Domain": "Work",
       "Frequency": "Quarterly",
       "Geographicalcoverage": "United Kingdom",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, Disability"
     },
     {
       "Dataset": "Learning Disability Census",
@@ -1149,7 +1149,7 @@
       "Domain": "Education",
       "Frequency": "Adhoc",
       "Geographicalcoverage": "United Kingdom",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Gender-Reassignment, Marriage/Civil-Partnership, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Gender reassignment, Marriage/Civil-Partnership, Disability"
     },
     {
       "Dataset": "LGBT Survey",
@@ -1157,7 +1157,7 @@
       "Domain": "Health",
       "Frequency": "Adhoc",
       "Geographicalcoverage": "United Kingdom",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Gender-Reassignment, Marriage/Civil-Partnership, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Gender reassignment, Marriage/Civil-Partnership, Disability"
     },
     {
       "Dataset": "LGBT Survey",
@@ -1165,7 +1165,7 @@
       "Domain": "Justice and Personal Security",
       "Frequency": "Adhoc",
       "Geographicalcoverage": "United Kingdom",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Gender-Reassignment, Marriage/Civil-Partnership, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Gender reassignment, Marriage/Civil-Partnership, Disability"
     },
     {
       "Dataset": "LGBT Survey",
@@ -1173,7 +1173,7 @@
       "Domain": "Participation",
       "Frequency": "Adhoc",
       "Geographicalcoverage": "United Kingdom",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Gender-Reassignment, Marriage/Civil-Partnership, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Gender reassignment, Marriage/Civil-Partnership, Disability"
     },
     {
       "Dataset": "LGBT Survey",
@@ -1181,7 +1181,7 @@
       "Domain": "Work",
       "Frequency": "Adhoc",
       "Geographicalcoverage": "United Kingdom",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Gender-Reassignment, Marriage/Civil-Partnership, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Gender reassignment, Marriage/Civil-Partnership, Disability"
     },
     {
       "Dataset": "Life Opportunities Survey",
@@ -1293,7 +1293,7 @@
       "Domain": "Health",
       "Frequency": "Adhoc",
       "Geographicalcoverage": "England",
-      "Dimensions": "Age, Ethnicity, Sexual-Orientation, Religion/Belief, Pregnancy/Maternity"
+      "Dimensions": "Age, Ethnicity, Sexual Orientation, Religion/Belief, Pregnancy/Maternity"
     },
     {
       "Dataset": "Mental Health Services Dataset",
@@ -1413,7 +1413,7 @@
       "Domain": "Health",
       "Frequency": "Annual",
       "Geographicalcoverage": "England",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Pregnancy/Maternity, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Pregnancy/Maternity, Disability"
     },
     {
       "Dataset": "National Health Service Central Register (NHSCR)",
@@ -1437,7 +1437,7 @@
       "Domain": "Work",
       "Frequency": "Annual ",
       "Geographicalcoverage": "England and Wales",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Disability"
     },
     {
       "Dataset": "National Pupil Database",
@@ -1461,7 +1461,7 @@
       "Domain": "Education",
       "Frequency": "Annual ",
       "Geographicalcoverage": "Wales",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, Disability"
     },
     {
       "Dataset": "National Survey for Wales",
@@ -1469,7 +1469,7 @@
       "Domain": "Health",
       "Frequency": "Annual ",
       "Geographicalcoverage": "Wales",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, Disability"
     },
     {
       "Dataset": "National Survey for Wales",
@@ -1477,7 +1477,7 @@
       "Domain": "Living Standards",
       "Frequency": "Annual ",
       "Geographicalcoverage": "Wales",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, Disability"
     },
     {
       "Dataset": "National Survey for Wales",
@@ -1485,7 +1485,7 @@
       "Domain": "Participation",
       "Frequency": "Annual ",
       "Geographicalcoverage": "Wales",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, Disability"
     },
     {
       "Dataset": "National Survey of Bereaved People (VOICES)",
@@ -1525,7 +1525,7 @@
       "Domain": "Justice and Personal Security",
       "Frequency": "Quarterly",
       "Geographicalcoverage": "Northern Ireland",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Marriage/Civil-Partnership, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Disability"
     },
     {
       "Dataset": "Northern Ireland Housing Statistics",
@@ -1541,7 +1541,7 @@
       "Domain": "Living Standards",
       "Frequency": "Annual ",
       "Geographicalcoverage": "Northern Ireland",
-      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, Gender-Reassignment, Marriage/Civil-Partnership, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, Gender reassignment, Marriage/Civil-Partnership, Disability"
     },
     {
       "Dataset": "Northern Ireland Life and Times Survey",
@@ -1549,7 +1549,7 @@
       "Domain": "Participation",
       "Frequency": "Annual ",
       "Geographicalcoverage": "Northern Ireland",
-      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, Gender-Reassignment, Marriage/Civil-Partnership, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, Gender reassignment, Marriage/Civil-Partnership, Disability"
     },
     {
       "Dataset": "Northern Ireland Life and Times Survey",
@@ -1557,7 +1557,7 @@
       "Domain": "Education",
       "Frequency": "Annual ",
       "Geographicalcoverage": "Northern Ireland",
-      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, Gender-Reassignment, Marriage/Civil-Partnership, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, Gender reassignment, Marriage/Civil-Partnership, Disability"
     },
     {
       "Dataset": "Northern Ireland Life and Times Survey",
@@ -1565,7 +1565,7 @@
       "Domain": "Work",
       "Frequency": "Annual ",
       "Geographicalcoverage": "Northern Ireland",
-      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, Gender-Reassignment, Marriage/Civil-Partnership, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, Gender reassignment, Marriage/Civil-Partnership, Disability"
     },
     {
       "Dataset": "Northern Ireland Multiple Deprivation Measure 2017",
@@ -1669,7 +1669,7 @@
       "Domain": "Justice and Personal Security",
       "Frequency": "Annual",
       "Geographicalcoverage": "England and Wales",
-      "Dimensions": "Ethnicity, Sexual-Orientation, Religion/Belief, Gender-Reassignment, Disability"
+      "Dimensions": "Ethnicity, Sexual Orientation, Religion/Belief, Gender reassignment, Disability"
     },
     {
       "Dataset": "Pregnancy and maternity-related discrimination and disadvantage: Employer's survey ",
@@ -1685,7 +1685,7 @@
       "Domain": "Work",
       "Frequency": "Adhoc",
       "Geographicalcoverage": "Great Britain",
-      "Dimensions": "Age, Sex, Sexual-Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, Disability"
+      "Dimensions": "Age, Sex, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, Disability"
     },
     {
       "Dataset": "Prison National Offender Management Information System (p-NOMIS) Data",
@@ -1781,7 +1781,7 @@
       "Domain": "Justice and Personal Security",
       "Frequency": "Annual",
       "Geographicalcoverage": "Scotland",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Marriage/Civil-Partnership"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership"
     },
     {
       "Dataset": "Scottish Funding Council",
@@ -1853,7 +1853,7 @@
       "Domain": "Health",
       "Frequency": "Annual ",
       "Geographicalcoverage": "England",
-      "Dimensions": "Age, Sex, Ethnicity, Gender-Reassignment"
+      "Dimensions": "Age, Sex, Ethnicity, Gender reassignment"
     },
     {
       "Dataset": "Short and Long Term Support (SALT)",
@@ -1917,7 +1917,7 @@
       "Domain": "Justice and Personal Security",
       "Frequency": "",
       "Geographicalcoverage": "Great Britain",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Gender-Reassignment, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Gender reassignment, Disability"
     },
     {
       "Dataset": "Stonewall LGBT in Britain home and communities survey",
@@ -1925,7 +1925,7 @@
       "Domain": "Participation",
       "Frequency": "",
       "Geographicalcoverage": "Great Britain",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Gender-Reassignment, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Gender reassignment, Disability"
     },
     {
       "Dataset": "Stonewall LGBT in Britain home and communities survey",
@@ -1933,7 +1933,7 @@
       "Domain": "Justice and Personal Security",
       "Frequency": "",
       "Geographicalcoverage": "Great Britain",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Gender-Reassignment, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Gender reassignment, Disability"
     },
     {
       "Dataset": "Stonewall LGBT in Britain School Survey",
@@ -1941,7 +1941,7 @@
       "Domain": "Education",
       "Frequency": "",
       "Geographicalcoverage": "Great Britain",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Gender-Reassignment, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Gender reassignment, Disability"
     },
     {
       "Dataset": "Stonewall LGBT in Britain School Survey",
@@ -1949,7 +1949,7 @@
       "Domain": "Health",
       "Frequency": "",
       "Geographicalcoverage": "Great Britain",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Gender-Reassignment, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Gender reassignment, Disability"
     },
     {
       "Dataset": "Stonewall LGBT in Britain School Survey",
@@ -1957,7 +1957,7 @@
       "Domain": "Justice and Personal Security",
       "Frequency": "",
       "Geographicalcoverage": "Great Britain",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Gender-Reassignment, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Gender reassignment, Disability"
     },
     {
       "Dataset": "Stonewall LGBT in Britain survey",
@@ -1965,7 +1965,7 @@
       "Domain": "Justice and Personal Security",
       "Frequency": "",
       "Geographicalcoverage": "Great Britain",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Gender-Reassignment, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Gender reassignment, Disability"
     },
     {
       "Dataset": "Stonewall LGBT in Britain survey",
@@ -1973,7 +1973,7 @@
       "Domain": "Work",
       "Frequency": "",
       "Geographicalcoverage": "Great Britain",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Gender-Reassignment, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Gender reassignment, Disability"
     },
     {
       "Dataset": "Stonewall LGBT in Britain survey",
@@ -1981,7 +1981,7 @@
       "Domain": "Education",
       "Frequency": "",
       "Geographicalcoverage": "Great Britain",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Gender-Reassignment, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Gender reassignment, Disability"
     },
     {
       "Dataset": "Stonewall LGBT in Britain survey",
@@ -1989,7 +1989,7 @@
       "Domain": "Health",
       "Frequency": "",
       "Geographicalcoverage": "Great Britain",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Gender-Reassignment, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Gender reassignment, Disability"
     },
     {
       "Dataset": "Stonewall LGBT in Britain university survey",
@@ -1997,7 +1997,7 @@
       "Domain": "Education",
       "Frequency": "",
       "Geographicalcoverage": "Great Britain",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Gender-Reassignment, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Gender reassignment, Disability"
     },
     {
       "Dataset": "Stonewall LGBT in Britain work survey",
@@ -2005,7 +2005,7 @@
       "Domain": "Work",
       "Frequency": "",
       "Geographicalcoverage": "Great Britain",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Gender-Reassignment, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Gender reassignment, Disability"
     },
     {
       "Dataset": "Stop and search dataset",
@@ -2061,7 +2061,7 @@
       "Domain": "Participation",
       "Frequency": "Annual ",
       "Geographicalcoverage": "England",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, Disability"
     },
     {
       "Dataset": "The General Practice Extraction Service (GPES)",
@@ -2093,7 +2093,7 @@
       "Domain": "Health",
       "Frequency": "Annual ",
       "Geographicalcoverage": "Great Britain",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Marriage/Civil-Partnership, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Disability"
     },
     {
       "Dataset": "Understanding Society (USoc)",
@@ -2101,7 +2101,7 @@
       "Domain": "Living Standards",
       "Frequency": "Annual ",
       "Geographicalcoverage": "Great Britain",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Marriage/Civil-Partnership, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Disability"
     },
     {
       "Dataset": "United Kingdom Time Use Survey",
@@ -2173,7 +2173,7 @@
       "Domain": "Health",
       "Frequency": "Adhoc",
       "Geographicalcoverage": "England",
-      "Dimensions": "Age, Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Pregnancy/Maternity, Disability"
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Pregnancy/Maternity, Disability"
     },
     {
       "Dataset": "Work-Life Balance Employer Survey (WLB)",
@@ -2189,7 +2189,7 @@
       "Domain": "Participation",
       "Frequency": "Annual",
       "Geographicalcoverage": "Northern Ireland",
-      "Dimensions": "Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Gender-Reassignment, Disability"
+      "Dimensions": "Sex, Ethnicity, Sexual Orientation, Religion/Belief, Gender reassignment, Disability"
     },
     {
       "Dataset": "Young Life and Times Survey",
@@ -2197,7 +2197,7 @@
       "Domain": "Living Standards",
       "Frequency": "Annual ",
       "Geographicalcoverage": "Northern Ireland",
-      "Dimensions": "Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Gender-Reassignment, Disability"
+      "Dimensions": "Sex, Ethnicity, Sexual Orientation, Religion/Belief, Gender reassignment, Disability"
     },
     {
       "Dataset": "Young Life and Times Survey",
@@ -2205,7 +2205,7 @@
       "Domain": "Education",
       "Frequency": "Annual",
       "Geographicalcoverage": "Northern Ireland",
-      "Dimensions": "Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Gender-Reassignment, Disability"
+      "Dimensions": "Sex, Ethnicity, Sexual Orientation, Religion/Belief, Gender reassignment, Disability"
     },
     {
       "Dataset": "Young Life and Times Survey",
@@ -2213,7 +2213,7 @@
       "Domain": "Justice and Personal Security",
       "Frequency": "Annual",
       "Geographicalcoverage": "Northern Ireland",
-      "Dimensions": "Sex, Ethnicity, Sexual-Orientation, Religion/Belief, Gender-Reassignment, Disability"
+      "Dimensions": "Sex, Ethnicity, Sexual Orientation, Religion/Belief, Gender reassignment, Disability"
     },
     {
       "Dataset": "Young Persons Matched Administrative data",
