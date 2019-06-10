@@ -1,0 +1,256 @@
+<html>
+    <head>
+        <title>Inflation helper</title>
+    </head>
+    <meta content="width=device-width,initial-scale=1.0,user-scalable=1" name="viewport">
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="//cdn.ons.gov.uk/sixteens/7b354cb/css/old-ie.css">
+	<![endif]-->
+    <!--[if IE 9]>
+      <link rel="stylesheet" href="//cdn.ons.gov.uk/sixteens/7b354cb/css/ie-9.css">
+    <![endif]-->
+	<!--[if gt IE 9]><!-->
+        <link rel="stylesheet" href="//cdn.ons.gov.uk/sixteens/a62dd01/css/main.css">
+    <!--<![endif]-->
+
+<body>
+    <div class="page-neutral-intro background--astral">
+        <div class="wrapper">
+            <div class="col-wrap">
+                <div class="col">
+                    <div class="col col--md-47 col--lg-34">
+                            <h2>Inflation estimate helper</h2>
+                                <div>
+                                    <h3>Get inflation for 
+                                        <select onchange = "setMeasure(this.value)">
+                                            <option disabled = "true" selected>
+                                                --- pick product/measure ---
+                                            </option>
+                                            <option value="pension">
+                                                State pension
+                                            </option>
+                                            <option value="student">
+                                                Student loan
+                                            </option>
+                                            <option value="cpi">
+                                                CPI based
+                                            </option>
+                                            <option value="cpih">
+                                                CPIH based
+                                            </option>
+                                            <option value="rpi">
+                                                RPI based
+                                            </option>
+                                        </select>
+                                    </h3> 
+                                </div>
+                                <div id="date" style="display:none">
+                                    <h3>For
+                                    <select onchange = "pickDate(this.value)">
+                                            <option disabled = "true" selected>
+                                                 --- pick month ---
+                                            </option>    
+                                            <option value="1">
+                                                 January
+                                            </option>
+                                            <option value="2">
+                                                 February
+                                            </option>
+                                            <option value="3">
+                                                 March
+                                            </option>
+                                            <option value="4">
+                                                 April
+                                            </option>
+                                            <option value="5">
+                                                 May
+                                            </option>
+                                            <option value="6">
+                                                 June
+                                            </option>
+                                            <option value="7">
+                                                 July
+                                            </option>
+                                            <option value="8">
+                                                 August
+                                            </option>
+                                            <option value="9">
+                                                 September
+                                            </option>
+                                            <option value="10">
+                                                 October
+                                            </option>
+                                            <option value="11">
+                                                 November
+                                            </option>
+                                            <option value="12">
+                                                 December
+                                            </option>
+                                        </select>
+                                    </h3>
+                                </div>
+                            <div class="col col--md-47 col--lg-34" >
+                                <p id = "result"></p>
+                                <p id = "disclaimer" style="display:none">NOTE: This is the inflation measure produced by ONS linked to your selection. The actual figure used for calculating may be different.</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+function createNode(element) {
+    return document.createElement(element); // Create the type of element you pass in the parameters
+}
+function append(parent, el) {
+    return parent.appendChild(el); // Append the second parameter(element) to the first one
+}
+const result = document.getElementById("result");
+const url = "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/";
+const productMeasure = {
+    pension:"cpi",
+    student:"rpi",
+    rpi:"rpi",
+    cpi:"cpi",
+    cpih:"cpih"
+};
+const productMonth = {
+    pension:4,
+    student:3,
+    rpi:"pickdate",
+    cpi:"pickdate",
+    cpih:"pickdate"
+};
+const inflationMap = {
+    cpi:"d7g7",
+    rpi:"czbh",
+    cpih:"l55o"
+};
+const monthMap = {
+    "1":"JAN",
+    "2":"FEB",
+    "3":"MAR",
+    "4":"APR",
+    "5":"MAY",
+    "6":"JUN",
+    "7":"JUL",
+    "8":"AUG",
+    "9":"SEP",
+    "10":"OCT",
+    "11":"NOV",
+    "12":"DEC"
+};
+let state = {measure:""};
+let timeSeriesDataMonths = {};
+let inflationMeasure = {};
+let year = new Date().getFullYear();
+let month = new Date().getMonth() + 1;
+let day = new Date().getDate();
+let time = (new Date().getHours() * 60) + new Date().getMinutes();
+    if (month < 10){
+        monthString = "0" + month;
+    } else {
+        monthString = month
+    }
+    if (day < 10){
+        dayString = "0" + day;
+    } else {
+        dayString = day;
+    }
+today = year + monthString + dayString;
+
+function setMeasure(choice){
+    state.measure = choice;
+    // reset some things
+    document.getElementById("date").style = "display:none";
+    year = new Date().getFullYear();
+    // result.removeChild(result.childNodes[0]);
+    if (result.childNodes.length > 0) {
+        result.removeChild(result.childNodes[0]);
+    }
+    inflationMeasure = productMeasure[choice];
+    let product = productMonth[choice];
+    let findMeasure = inflationMap[inflationMeasure];
+    fetch (url + findMeasure + "/data", {mode: "cors"}).then((data) => data.json()).then(function (data) {
+        releaseDate = data.description.releaseDate.split("T")[0].replace(/-/g,"");
+        timeSeriesDataMonths = data.months;
+        if(productMonth[choice] == "pickdate"){
+            document.getElementById("date").style = "";
+        } else {
+            if (product === (month - 1)){
+                if(releaseDate-today == 0 && time-570 < 0){
+                    year = year-1;
+                }
+                if(releaseDate-today < 0) {
+                    year = year-1;
+                }
+            }
+            if(product >= month){
+                    year = year-1;
+            }
+            timeSeriesDataMonths.map(function (timeSeriesDataMonths) {
+                if (timeSeriesDataMonths.date == year + " " + monthMap[product] ){
+                    value = timeSeriesDataMonths.value
+                    label = timeSeriesDataMonths.label
+                    span = createNode("span");
+                    p = createNode("p");
+                    warning = createNode("p");
+                    span.innerHTML = value + "%"
+                    span.classList.add("tiles__figure--home");
+                    p.innerHTML = "Displaying " + inflationMeasure.toUpperCase() + " for " + label
+                    if (inflationMeasure == "rpi"){
+                        warning.innerHTML = "ONS does not recommend the use of RPI. For more information see <a href = 'https://www.ons.gov.uk/economy/inflationandpriceindices/articles/shortcomingsoftheretailpricesindexasameasureofinflation/2018-03-08' style = 'color:white;text-decoration: underline' > Shortcomings of the Retail Prices Index as a measure of inflation</a>"
+                        append(p, warning);
+                    }
+                    append(span, p);
+                    append(result, span);
+                    document.getElementById("disclaimer").style = "";
+                }
+            })
+        }
+  })
+}
+
+function pickDate(choice){
+    // reset some things
+    year = new Date().getFullYear()
+    if (result.childNodes.length > 0) {
+        result.removeChild(result.childNodes[0]);
+    }
+    if (choice == (month - 1)){
+        if (releaseDate-today === 0 && time-570 < 0){
+            year = year-1;
+        }
+        if (releaseDate-today < 0) {
+            year = year-1;
+        }
+    }
+    if (choice >= month - 0){
+                year = year-1
+    }
+    timeSeriesDataMonths.map(function (timeSeriesDataMonths) {
+        if (timeSeriesDataMonths.date == year + " " + monthMap[choice] ){
+            value = timeSeriesDataMonths.value
+            label = timeSeriesDataMonths.label
+            span = createNode("span");
+            p = createNode("p");
+            warning = createNode("p");
+            span.innerHTML = value + "%"
+            span.classList.add("tiles__figure--home");
+            p.innerHTML = "Displaying " + inflationMeasure.toUpperCase() + " for " + label
+            if (inflationMeasure == "rpi"){
+                warning.innerHTML = "ONS does not recommend the use of RPI. For more information see <a href = 'https://www.ons.gov.uk/economy/inflationandpriceindices/articles/shortcomingsoftheretailpricesindexasameasureofinflation/2018-03-08' style = 'color:white;text-decoration: underline' > Shortcomings of the Retail Prices Index as a measure of inflation</a>"
+                append(p, warning);
+            }
+            append(span, p);
+            append(result, span);
+            document.getElementById("disclaimer").style = "";
+            }
+        })
+    }
+
+</script>
+
+</html>
