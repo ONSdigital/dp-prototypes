@@ -3,6 +3,17 @@
 
 <head>
     <title>Inflation helper</title>
+    <Description></Description>
+    <meta content="width=device-width,initial-scale=1.0,user-scalable=1" name="viewport">
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="//cdn.ons.gov.uk/sixteens/7b354cb/css/old-ie.css">
+	<![endif]-->
+    <!--[if IE 9]>
+      <link rel="stylesheet" href="//cdn.ons.gov.uk/sixteens/7b354cb/css/ie-9.css">
+    <![endif]-->
+    <!--[if gt IE 9]><!-->
+    <link rel="stylesheet" href="//cdn.ons.gov.uk/sixteens/a62dd01/css/main.css">
+    <!--<![endif]-->
     <style>
         .measure,
         .set {
@@ -17,55 +28,76 @@
 
 <body>
     <div>
+        <div class="page-neutral-intro background--astral">
+            <div class="wrapper">
+                <div class="col-wrap">
+                    <div class="col">
+                        <div class="col col--md-47 col--lg-34">
+                            <h2>Inflation estimate helper</h2>
+                            <form id='fallback'>
+                                <fieldset>
+                                    <legend>
+                                        <h2>Get inflation for:</h2>
+                                    </legend>
+                                    <label for='rpi' class='btn'>Student loan</label>
+                                    <label for='cpi' class='btn'>State pension</label>
+                                    <label for='cpih' class='btn'>CPIH</label>
+                                    <label for='rpi' class='btn'>RPI</label>
+                                    <label for='cpi' class='btn'>CPI</label>
+                                </fieldset>
 
+                                <input id='rpi' class='measure' name='measure' type='radio'>
 
-<noscript>
+                                <fieldset class='set'>
+                                    <div id="rpi">
+                                        <!-- <a class="btn btn--primary" title="Download RPI as csv" href="/generator?format=csv&amp;uri=/economy/inflationandpriceindices/timeseries/chbh/mm23">.csv</a> -->
+                                        <p>
+                                            <a class="btn btn--primary" title="Download RPI as xls"
+                                                href="/generator?format=xls&amp;uri=/economy/inflationandpriceindices/timeseries/czbh/mm23">Download
+                                                RPI as xls</a>
+                                        </p>
+                                    </div>
+                                </fieldset>
 
-        <form id='main'>
-            <fieldset>
-                <legend>Select measure</legend>
-                <label for='rpi' class='btn'>Student</label>
-                <label for='cpi' class='btn'>Pension</label>
-                <label for='cpih' class='btn'>CPIH</label>
-                <label for='rpi' class='btn'>RPI</label>
-                <label for='cpi' class='btn'>CPI</label>
-            </fieldset>
+                                <input id='cpi' class='measure' name='measure' type='radio'>
 
-            <input id='rpi' class='measure' name='measure' type='radio'>
+                                <fieldset class='set'>
+                                    <div id="cpi">
+                                        <p>
+                                            <!-- <a class="btn btn--primary" title="Download CPI as csv" href="/generator?format=csv&amp;uri=/economy/inflationandpriceindices/timeseries/d7g7/mm23">.csv</a> -->
+                                            <a class="btn btn--primary" title="Download CPI as xls"
+                                                href="/generator?format=xls&amp;uri=/economy/inflationandpriceindices/timeseries/d7g7/mm23">Download
+                                                CPI as xls</a>
+                                        </p>
+                                    </div>
+                                </fieldset>
 
-            <fieldset class='set'>
-                <div id="rpi">
-                    <!-- <a class="btn btn--primary" title="Download RPI as csv" href="/generator?format=csv&amp;uri=/economy/inflationandpriceindices/timeseries/chbh/mm23">.csv</a> -->
-                    <a class="btn btn--primary" title="Download RPI as xls"
-                        href="/generator?format=xls&amp;uri=/economy/inflationandpriceindices/timeseries/czbh/mm23">RPI.xls</a>
+                                <input id='cpih' class='measure' name='measure' type='radio'>
+
+                                <fieldset class='set'>
+                                    <div id="cpih">
+                                        <p>
+                                            <!-- <a class="btn btn--primary" title="Download CPIH as csv" href="/generator?format=csv&amp;uri=/economy/inflationandpriceindices/timeseries/l55o/mm23">.csv</a> -->
+                                            <a class="btn btn--primary" title="Download CPIH as xls"
+                                                href="/generator?format=xls&amp;uri=/economy/inflationandpriceindices/timeseries/l55o/mm23">Download
+                                                CPIH as xls</a>
+                                        </p>
+                                    </div>
+                                </fieldset>
+
+                                <p id="disclaimer">NOTE: This is the inflation measure produced by ONS linked to your
+                                    selection. The actual figure used for calculating may be different.</p>
+
+                            </form>
+                            <button onclick="getInflationFigure ()">Test me</button>
+                        </div>
+                    </div>
                 </div>
-            </fieldset>
-
-            <input id='cpi' class='measure' name='measure' type='radio'>
-
-            <fieldset class='set'>
-                <div id="cpi">
-                    <!-- <a class="btn btn--primary" title="Download CPI as csv" href="/generator?format=csv&amp;uri=/economy/inflationandpriceindices/timeseries/d7g7/mm23">.csv</a> -->
-                    <a class="btn btn--primary" title="Download CPI as xls"
-                        href="/generator?format=xls&amp;uri=/economy/inflationandpriceindices/timeseries/d7g7/mm23">CPI.xls</a>
-                </div>
-            </fieldset>
-
-            <input id='cpih' class='measure' name='measure' type='radio'>
-
-            <fieldset class='set'>
-                <div id="cpih">
-                    <!-- <a class="btn btn--primary" title="Download CPIH as csv" href="/generator?format=csv&amp;uri=/economy/inflationandpriceindices/timeseries/l55o/mm23">.csv</a> -->
-                    <a class="btn btn--primary" title="Download CPIH as xls"
-                        href="/generator?format=xls&amp;uri=/economy/inflationandpriceindices/timeseries/l55o/mm23">CPIH.xls</a>
-                </div>
-            </fieldset>
-        </form>
-
-    </div>
-
-</noscript>
+            </div>
+        </div>
 
 </body>
+
+<script src="index.js"></script>
 
 </html>
