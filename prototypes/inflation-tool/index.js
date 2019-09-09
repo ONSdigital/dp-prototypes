@@ -47,9 +47,9 @@ let releaseDate = ""
 
 
 async function getInflationFigure() {
-    const timeSeriesDataMonths = await getDataforSeries();
-    console.log(releaseDate)
-    console.log(timeSeriesDataMonths)
+    const timeSeries = await getDataforSeries();
+    console.log(timeSeries.date)
+    console.log(timeSeries.data)
 }
 
 let cdid = "chaw"
@@ -57,43 +57,39 @@ let cdid = "chaw"
 
 //Get the time series data for the series related to the one selected
 function getDataforSeries() {
-    return new Promise(async (resolve, reject) => {
-        let timeSeriesDataMonths = []
-        fetch(url + cdid + "/data", {
-                mode: "cors"
-            })
-            .then(response => response.json())
-            .then(response => {
-                //Date does not include a useful time element so just take the date bit.
-                releaseDate = response.description.releaseDate.split("T")[0].replace(/-/g, "");
-                timeSeriesDataMonths = response.months;
-                resolve(timeSeriesDataMonths);
-            }).catch(error => {
-                console.error(error)
-                reject(error);
-                return;
-            })
-    })
+    return fetch(url + cdid + "/data", {
+            mode: "cors"
+        })
+        .then(response => response.json())
+        .then(response => {
+            //Date does not include a useful time element so just take the date bit.
+            const releaseDate = response.description.releaseDate.split("T")[0].replace(/-/g, "");
+            const timeSeriesDataMonths = response.months;
+            return {
+                data: timeSeriesDataMonths,
+                date: releaseDate
+            };
+        }).catch(error => {
+            console.error(error)
+            return;
+        })
 }
-
-
 
 
 
 async function test() {
     let cdid = "kvr9"
-    const timeSeriesDataMonths = await getDataforSeries(cdid);
-
-    if (releaseDate == "20190813") {
+    const timeSeries = await getDataforSeries(cdid);
+    if (timeSeries.date == "20190813") {
         console.log("Test 1: Pass")
     } else {
         console.log("Test 1: Fail")
-        console.log(releaseDate)
+        console.log(timeSeries.date)
     }
-    if (timeSeriesDataMonths[0].date == "1987 JAN") {
+    if (timeSeries.data[0].date == "1987 JAN") {
         console.log("Test 1: Pass")
     } else {
         console.log("Test 1: Fail")
-        console.log(timeSeriesDataMonths[0].date)
+        console.log(timeSeries.data[0].date)
     }
 }
