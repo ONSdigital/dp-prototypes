@@ -45,18 +45,58 @@ const monthMap = {
 
 let releaseDate = ""
 
-
-async function getInflationFigure() {
-    const timeSeries = await getDataforSeries();
-    console.log(timeSeries.date)
-    console.log(timeSeries.data)
+async function getInflationMeasureAndDate(data) {
+    const measure = await setMeasure(data);
+    const monthNeeded = await workOutMonthNeeded(data);
+    getInflationFigure ()
 }
 
-let cdid = "chaw"
+//Takes choice made in select and returns the appropriate measure of Inflation
+function setMeasure(data) {
+    let choice = data;
+    measure = productMeasure[choice];
+    return measure;
+}
 
+//Takes choice made in select and returns the month figure related to that measure of inflation
+function workOutMonthNeeded(data) {
+    //look up month required
+    month = productMonth[data]; 
+    if (month == "pickdate") {       
+        askForDate();
+    }
+    //Look up preformatted text version of that month
+    monthNeeded = monthMap [month];
+    return monthNeeded;
+    
+}
+
+//Sometimes we cant automatically guess the date they need so ask for it
+function askForDate () {
+    document.getElementById("date").style = "";
+}
+
+function dateSelection (data) {
+    monthNeeded = monthMap [data]
+    getInflationFigure ()
+}
+
+
+async function getInflationFigure() {
+    const cdid = await getCDID (measure);
+    const timeSeries = await getDataforSeries(cdid);
+    console.log(monthNeeded);
+    console.log(timeSeries);
+} 
+
+//Takes a measure of inflation and gets the CDID
+function getCDID(measure) {
+    cdid = inflationIDMap[measure];
+    return cdid;
+}
 
 //Get the time series data for the series related to the one selected
-function getDataforSeries() {
+function getDataforSeries(cdid) {
     return fetch(url + cdid + "/data", {
             mode: "cors"
         })
@@ -77,19 +117,57 @@ function getDataforSeries() {
 
 
 
+
 async function test() {
-    let cdid = "kvr9"
-    const timeSeries = await getDataforSeries(cdid);
-    if (timeSeries.date == "20190813") {
+    let choice = "student";
+
+    let measure = await setMeasure(choice);
+    if (measure == "rpi") {
         console.log("Test 1: Pass")
     } else {
         console.log("Test 1: Fail")
+        console.log(measure)
+    };
+
+    const monthNeeded = await workOutMonthNeeded(choice);
+    if (monthNeeded == "MAR") {
+        console.log("Test 2: Pass")
+    } else {
+        console.log("Test 2: Fail")
+        console.log(monthNeeded)
+    };
+
+    measure = "rpi";
+    let cdid = await getCDID (measure);
+    if (cdid == "czbh") {
+        console.log("Test 3: Pass")
+    } else {
+        console.log("Test 3: Fail")
         console.log(timeSeries.date)
-    }
-    if (timeSeries.data[0].date == "1987 JAN") {
-        console.log("Test 1: Pass")
+    };
+
+    cdid = "kvr9";
+    let timeSeries = await getDataforSeries(cdid);
+    if (timeSeries.date == "20170515") {
+        console.log("Test 4: Pass")
     } else {
-        console.log("Test 1: Fail")
+        console.log("Test 4: Fail")
+        console.log(timeSeries.date)
+    };
+    if (timeSeries.data[0].date == "1998 FEB") {
+        console.log("Test 5: Pass")
+    } else {
+        console.log("Test 5: Fail")
         console.log(timeSeries.data[0].date)
-    }
+    };
+
+
+    // productMonth = "APR"
+    // const monthNeeded = await workOutMonthNeeded(timeSeries, productMonth);
+    // if (monthNeeded == "2016 APR") {
+    //     console.log("Test 1: Pass")
+    // } else {
+    //     console.log("Test 1: Fail")
+    //     console.log(monthNeeded)
+    // }
 }
