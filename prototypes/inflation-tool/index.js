@@ -1,4 +1,5 @@
 document.getElementById("fallback").style = "display:none";
+document.getElementById("js-enabled").style = "display:";
 
 function createNode(element) {
     return document.createElement(element);
@@ -44,11 +45,17 @@ const monthMap = {
 };
 
 let releaseDate = ""
+let today = new Date();
 
+//gives us the inflation measure a user needs and gets the date or asks user for it
 async function getInflationMeasureAndDate(data) {
     const measure = await setMeasure(data);
     const monthNeeded = await workOutMonthNeeded(data);
-    getInflationFigure ()
+
+    //only contine if we no the month, otherwise wait for user input
+    if (monthNeeded.text != null) {
+        getInflationFigure()
+    }
 }
 
 //Takes choice made in select and returns the appropriate measure of Inflation
@@ -61,33 +68,38 @@ function setMeasure(data) {
 //Takes choice made in select and returns the month figure related to that measure of inflation
 function workOutMonthNeeded(data) {
     //look up month required
-    month = productMonth[data]; 
-    if (month == "pickdate") {       
+    month = productMonth[data];
+    if (month == "pickdate") {
         askForDate();
     }
-    //Look up preformatted text version of that month
-    monthNeeded = monthMap [month];
+    monthNeeded = {
+        text: monthMap[month],
+        integer: month
+    };
     return monthNeeded;
-    
 }
 
 //Sometimes we cant automatically guess the date they need so ask for it
-function askForDate () {
+function askForDate() {
     document.getElementById("date").style = "";
+    //User date selection will then kick off another function
 }
 
-function dateSelection (data) {
-    monthNeeded = monthMap [data]
-    getInflationFigure ()
+function dateSelection(month) {
+    monthNeeded = {
+        text: monthMap[month],
+        integer: month
+    };
+    getInflationFigure()
 }
 
-
+//function for after we know what date a user needs
 async function getInflationFigure() {
-    const cdid = await getCDID (measure);
+    const cdid = await getCDID(measure);
     const timeSeries = await getDataforSeries(cdid);
-    console.log(monthNeeded);
-    console.log(timeSeries);
-} 
+    const yearNeeded = await getYearNeededFromSeries(timeSeries, monthNeeded)
+    console.log(yearNeeded + " " + monthNeeded.text);
+}
 
 //Takes a measure of inflation and gets the CDID
 function getCDID(measure) {
@@ -116,58 +128,29 @@ function getDataforSeries(cdid) {
 }
 
 
+function getYearNeededFromSeries(timeSeries, monthNeeded, today) {
 
+    let publishedYear = timeSeries.date.substring(0, 4);
+    let publishedMonth = timeSeries.date.substring(4, 6);
+    let publishedDay = timeSeries.date.substring(6, 8);
+    let timeSeriesDate = new Date(publishedYear, publishedMonth - 1, publishedDay, "09", "30");
 
-async function test() {
-    let choice = "student";
+    //logic to work out if you need this years or last years figure based on current date and publish date
+    if (monthNeeded.integer - publishedMonth > 0) {
+        yearNeeded = publishedYear - 1
+        return yearNeeded
 
-    let measure = await setMeasure(choice);
-    if (measure == "rpi") {
-        console.log("Test 1: Pass")
+        //deal with the case of if being this month
+    } else if ((monthNeeded.integer - publishedMonth) == 0) {
+        if (today - timeSeriesDate > 0) {
+            yearNeeded = publishedYear - 1
+            return yearNeeded
+        } else {
+            yearNeeded = publishedYear
+            return yearNeeded
+        }
     } else {
-        console.log("Test 1: Fail")
-        console.log(measure)
-    };
-
-    const monthNeeded = await workOutMonthNeeded(choice);
-    if (monthNeeded == "MAR") {
-        console.log("Test 2: Pass")
-    } else {
-        console.log("Test 2: Fail")
-        console.log(monthNeeded)
-    };
-
-    measure = "rpi";
-    let cdid = await getCDID (measure);
-    if (cdid == "czbh") {
-        console.log("Test 3: Pass")
-    } else {
-        console.log("Test 3: Fail")
-        console.log(timeSeries.date)
-    };
-
-    cdid = "kvr9";
-    let timeSeries = await getDataforSeries(cdid);
-    if (timeSeries.date == "20170515") {
-        console.log("Test 4: Pass")
-    } else {
-        console.log("Test 4: Fail")
-        console.log(timeSeries.date)
-    };
-    if (timeSeries.data[0].date == "1998 FEB") {
-        console.log("Test 5: Pass")
-    } else {
-        console.log("Test 5: Fail")
-        console.log(timeSeries.data[0].date)
-    };
-
-
-    // productMonth = "APR"
-    // const monthNeeded = await workOutMonthNeeded(timeSeries, productMonth);
-    // if (monthNeeded == "2016 APR") {
-    //     console.log("Test 1: Pass")
-    // } else {
-    //     console.log("Test 1: Fail")
-    //     console.log(monthNeeded)
-    // }
+        yearNeeded = publishedYear
+        return yearNeeded
+    }
 }

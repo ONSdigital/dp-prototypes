@@ -80,6 +80,9 @@
                                     </div>
                                 </fieldset>
 
+                                <p>
+                                    Use the file provided to find the latest month related to the inflation measure you need.        
+                                </p>
                                 <p id="disclaimer">NOTE: This is the inflation measure produced by ONS linked to your
                                     selection. The actual figure used for calculating may be different.</p>
 
@@ -88,7 +91,7 @@
                     </div>
                 </div>
                 <!-- Drop down selector for when Javascript is switched on -->
-                <div class="col-wrap">
+                <div class="col-wrap" id= "js-enabled" style="display:none">
                     <div class="col">
                         <div class="col col--md-47 col--lg-34">
                             <div>
@@ -168,5 +171,16 @@
 </body>
 
 <script src="index.js"></script>
+<script>
+    let head = document.getElementsByTagName('head')[0];
+    let js = document.createElement("script");
+    js.type = "text/javascript";
+    console.log(window.location.hostname)
+    if (window.location.hostname == "127.0.0.1") {
+        console.log("Running locally")
+        js.src = "test.js"
+    }
+    head.appendChild(js);
+</script>
 
 </html>
