@@ -172,11 +172,12 @@
 
 <script src="index.js"></script>
 <script>
+    //Only load the tests if running locally
     let head = document.getElementsByTagName('head')[0];
     let js = document.createElement("script");
     js.type = "text/javascript";
-    console.log(window.location.hostname)
     if (window.location.hostname == "127.0.0.1") {
+        console.log(window.location.hostname)
         console.log("Running locally")
         js.src = "test.js"
     }

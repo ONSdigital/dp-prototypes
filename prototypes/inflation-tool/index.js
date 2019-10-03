@@ -1,14 +1,16 @@
 document.getElementById("fallback").style = "display:none";
 document.getElementById("js-enabled").style = "display:";
 
-function createNode(element) {
-    return document.createElement(element);
-}
+// function createNode(element) {
+//     return document.createElement(element);
+// }
 
-function append(parent, el) {
-    return parent.appendChild(el);
-}
-const result = document.getElementById("result");
+// function append(parent, el) {
+//     return parent.appendChild(el);
+// }
+
+// const result = document.getElementById("result");
+
 const url = "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/";
 const productMeasure = {
     pension: "cpi",
@@ -56,6 +58,7 @@ async function getInflationMeasureAndDate(data) {
     if (monthNeeded.text != null) {
         getInflationFigure()
     }
+    return measure
 }
 
 //Takes choice made in select and returns the appropriate measure of Inflation
@@ -98,7 +101,8 @@ async function getInflationFigure() {
     const cdid = await getCDID(measure);
     const timeSeries = await getDataforSeries(cdid);
     const yearNeeded = await getYearNeededFromSeries(timeSeries, monthNeeded)
-    console.log(yearNeeded + " " + monthNeeded.text);
+    const dataValue = await getDataValueforUser(yearNeeded, timeSeries, monthNeeded);
+    console.log(dataValue);
 }
 
 //Takes a measure of inflation and gets the CDID
@@ -135,13 +139,17 @@ function getYearNeededFromSeries(timeSeries, monthNeeded, today) {
     let publishedDay = timeSeries.date.substring(6, 8);
     let timeSeriesDate = new Date(publishedYear, publishedMonth - 1, publishedDay, "09", "30");
 
+
+    console.log(monthNeeded.integer)
+    console.log(publishedMonth)
+
     //logic to work out if you need this years or last years figure based on current date and publish date
-    if (monthNeeded.integer - publishedMonth > 0) {
+    if (monthNeeded.integer - publishedMonth >= 0) {
         yearNeeded = publishedYear - 1
         return yearNeeded
 
         //deal with the case of if being this month
-    } else if ((monthNeeded.integer - publishedMonth) == 0) {
+    } else if ((monthNeeded.integer - publishedMonth) === 0) {
         if (today - timeSeriesDate > 0) {
             yearNeeded = publishedYear - 1
             return yearNeeded
@@ -153,4 +161,14 @@ function getYearNeededFromSeries(timeSeries, monthNeeded, today) {
         yearNeeded = publishedYear
         return yearNeeded
     }
+}
+
+function getDataValueforUser(yearNeeded, timeSeries, monthNeeded) {
+    let dateNeeded = yearNeeded + " " + monthNeeded.text
+    const dataValue = timeSeries.data.find(({
+        date
+    }) => date === dateNeeded);
+
+    return dataValue
+
 }
