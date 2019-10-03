@@ -139,10 +139,6 @@ function getYearNeededFromSeries(timeSeries, monthNeeded, today) {
     let publishedDay = timeSeries.date.substring(6, 8);
     let timeSeriesDate = new Date(publishedYear, publishedMonth - 1, publishedDay, "09", "30");
 
-
-    console.log(monthNeeded.integer)
-    console.log(publishedMonth)
-
     //logic to work out if you need this years or last years figure based on current date and publish date
     if (monthNeeded.integer - publishedMonth >= 0) {
         yearNeeded = publishedYear - 1
@@ -168,7 +164,5 @@ function getDataValueforUser(yearNeeded, timeSeries, monthNeeded) {
     const dataValue = timeSeries.data.find(({
         date
     }) => date === dateNeeded);
-
     return dataValue
-
 }

@@ -49,4 +49,14 @@ async function test() {
         console.log("Test 6: Fail")
         console.log(yearNeeded)
     };
+
+    yearNeeded = "2016"
+    let dataValue = await getDataValueforUser(yearNeeded, timeSeries, monthNeeded);
+    if (dataValue.value == "0.8") {
+        console.log("Test 7: Pass")
+    }else {
+        console.log("Test 7: Fail")
+        console.log(dataValue.value)
+    };
+
 }

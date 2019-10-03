@@ -27,150 +27,157 @@
 </head>
 
 <body>
-    <div>
-        <div class="page-neutral-intro background--astral">
-            <div class="wrapper">
-                <div class="col-wrap">
-                    <div class="col">
-                        <div class="col col--md-47 col--lg-34">
-                            <h2>Inflation estimate helper</h2>
-                            <form id='fallback'>
-                                <fieldset>
-                                    <legend>
-                                        <h2>Get inflation for:</h2>
-                                    </legend>
-                                    <label for='rpi' class='btn'>Student loan</label>
-                                    <label for='cpi' class='btn'>State pension</label>
-                                    <label for='cpih' class='btn'>CPIH</label>
-                                    <label for='rpi' class='btn'>RPI</label>
-                                    <label for='cpi' class='btn'>CPI</label>
-                                </fieldset>
+    <div class="page-neutral-intro background--astral">
+        <div class="wrapper">
+            <div class="col-wrap">
+                <div class="col">
+                    <div class="col col--md-47 col--lg-34">
+                        <h2>Inflation estimate helper</h2>
+                        <form id='fallback'>
+                            <fieldset>
+                                <legend>
+                                    <h2>Get inflation for:</h2>
+                                </legend>
+                                <label for='rpi' class='btn'>Student loan</label>
+                                <label for='cpi' class='btn'>State pension</label>
+                                <label for='cpih' class='btn'>CPIH</label>
+                                <label for='rpi' class='btn'>RPI</label>
+                                <label for='cpi' class='btn'>CPI</label>
+                            </fieldset>
 
-                                <input id='rpi' class='measure' name='measure' type='radio'>
-                                <fieldset class='set'>
-                                    <div id="rpi">
-                                        <p>
-                                            <a class="btn btn--primary" title="Download RPI as xls"
-                                                href="/generator?format=xls&amp;uri=/economy/inflationandpriceindices/timeseries/czbh/mm23">Download
-                                                RPI as xls</a>
-                                        </p>
-                                        <p> RPI is not a National statistic</p>
-                                    </div>
-                                </fieldset>
+                            <input id='rpi' class='measure' name='measure' type='radio'>
+                            <fieldset class='set'>
+                                <div id="rpi">
+                                    <p>
+                                        <a class="btn btn--primary" title="Download RPI as xls"
+                                            href="/generator?format=xls&amp;uri=/economy/inflationandpriceindices/timeseries/czbh/mm23">Download
+                                            RPI as xls</a>
+                                    </p>
+                                    <p> RPI is not a National statistic</p>
+                                </div>
+                            </fieldset>
 
-                                <input id='cpi' class='measure' name='measure' type='radio'>
-                                <fieldset class='set'>
-                                    <div id="cpi">
-                                        <p>
-                                            <a class="btn btn--primary" title="Download CPI as xls"
-                                                href="/generator?format=xls&amp;uri=/economy/inflationandpriceindices/timeseries/d7g7/mm23">Download
-                                                CPI as xls</a>
-                                        </p>
-                                    </div>
-                                </fieldset>
+                            <input id='cpi' class='measure' name='measure' type='radio'>
+                            <fieldset class='set'>
+                                <div id="cpi">
+                                    <p>
+                                        <a class="btn btn--primary" title="Download CPI as xls"
+                                            href="/generator?format=xls&amp;uri=/economy/inflationandpriceindices/timeseries/d7g7/mm23">Download
+                                            CPI as xls</a>
+                                    </p>
+                                </div>
+                            </fieldset>
 
-                                <input id='cpih' class='measure' name='measure' type='radio'>
-                                <fieldset class='set'>
-                                    <div id="cpih">
-                                        <p>
-                                            <a class="btn btn--primary" title="Download CPIH as xls"
-                                                href="/generator?format=xls&amp;uri=/economy/inflationandpriceindices/timeseries/l55o/mm23">Download
-                                                CPIH as xls</a>
-                                        </p>
-                                    </div>
-                                </fieldset>
+                            <input id='cpih' class='measure' name='measure' type='radio'>
+                            <fieldset class='set'>
+                                <div id="cpih">
+                                    <p>
+                                        <a class="btn btn--primary" title="Download CPIH as xls"
+                                            href="/generator?format=xls&amp;uri=/economy/inflationandpriceindices/timeseries/l55o/mm23">Download
+                                            CPIH as xls</a>
+                                    </p>
+                                </div>
+                            </fieldset>
 
-                                <p>
-                                    Use the file provided to find the latest month related to the inflation measure you need.        
-                                </p>
-                                <p id="disclaimer">NOTE: This is the inflation measure produced by ONS linked to your
-                                    selection. The actual figure used for calculating may be different.</p>
+                            <p>
+                                Use the file provided to find the latest month related to the inflation measure you
+                                need.
+                            </p>
+                            <p id="disclaimer">NOTE: This is the inflation measure produced by ONS linked to your
+                                selection. The actual figure used for calculating may be different.</p>
 
-                            </form>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Drop down selector for when Javascript is switched on -->
+            <div class="col-wrap" id="js-enabled" style="display:none">
+                <div class="col">
+                    <div class="col col--md-47 col--lg-34">
+                        <div>
+                            <h3>Get inflation for
+                                <select onchange="getInflationMeasureAndDate(this.value)">
+                                    <option disabled="true" selected>
+                                        --- pick product/measure ---
+                                    </option>
+                                    <option value="pension">
+                                        State pension
+                                    </option>
+                                    <option value="student">
+                                        Student loan
+                                    </option>
+                                    <option value="cpi">
+                                        CPI based
+                                    </option>
+                                    <option value="cpih">
+                                        CPIH based
+                                    </option>
+                                    <option value="rpi">
+                                        RPI based
+                                    </option>
+                                </select>
+                            </h3>
+                        </div>
+                        <div id="date" style="display:none">
+                            <h3>For
+                                <select onchange="dateSelection(this.value)">
+                                    <option disabled="true" selected>
+                                        --- pick month ---
+                                    </option>
+                                    <option value="1">
+                                        January
+                                    </option>
+                                    <option value="2">
+                                        February
+                                    </option>
+                                    <option value="3">
+                                        March
+                                    </option>
+                                    <option value="4">
+                                        April
+                                    </option>
+                                    <option value="5">
+                                        May
+                                    </option>
+                                    <option value="6">
+                                        June
+                                    </option>
+                                    <option value="7">
+                                        July
+                                    </option>
+                                    <option value="8">
+                                        August
+                                    </option>
+                                    <option value="9">
+                                        September
+                                    </option>
+                                    <option value="10">
+                                        October
+                                    </option>
+                                    <option value="11">
+                                        November
+                                    </option>
+                                    <option value="12">
+                                        December
+                                    </option>
+                                </select>
+                            </h3>
                         </div>
                     </div>
                 </div>
-                <!-- Drop down selector for when Javascript is switched on -->
-                <div class="col-wrap" id= "js-enabled" style="display:none">
-                    <div class="col">
-                        <div class="col col--md-47 col--lg-34">
-                            <div>
-                                <h3>Get inflation for
-                                    <select onchange="getInflationMeasureAndDate(this.value)">
-                                        <option disabled="true" selected>
-                                            --- pick product/measure ---
-                                        </option>
-                                        <option value="pension">
-                                            State pension
-                                        </option>
-                                        <option value="student">
-                                            Student loan
-                                        </option>
-                                        <option value="cpi">
-                                            CPI based
-                                        </option>
-                                        <option value="cpih">
-                                            CPIH based
-                                        </option>
-                                        <option value="rpi">
-                                            RPI based
-                                        </option>
-                                    </select>
-                                </h3>
-                            </div>
-                            <div id="date" style="display:none">
-                                <h3>For
-                                    <select onchange="dateSelection(this.value)">
-                                        <option disabled="true" selected>
-                                            --- pick month ---
-                                        </option>
-                                        <option value="1">
-                                            January
-                                        </option>
-                                        <option value="2">
-                                            February
-                                        </option>
-                                        <option value="3">
-                                            March
-                                        </option>
-                                        <option value="4">
-                                            April
-                                        </option>
-                                        <option value="5">
-                                            May
-                                        </option>
-                                        <option value="6">
-                                            June
-                                        </option>
-                                        <option value="7">
-                                            July
-                                        </option>
-                                        <option value="8">
-                                            August
-                                        </option>
-                                        <option value="9">
-                                            September
-                                        </option>
-                                        <option value="10">
-                                            October
-                                        </option>
-                                        <option value="11">
-                                            November
-                                        </option>
-                                        <option value="12">
-                                            December
-                                        </option>
-                                    </select>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </div>
+        </div>
+        <div class="col" id="results">
+            <div class="col col--md-47 col--lg-34">
 
+            </div>
+        </div>
+    </div>
 
 </body>
 
-<script src="index.js"></script>
+<script src="assets/content.js"></script>
+<script src="assets/data.js"></script>
 <script>
     //Only load the tests if running locally
     let head = document.getElementsByTagName('head')[0];
@@ -179,7 +186,7 @@
     if (window.location.hostname == "127.0.0.1") {
         console.log(window.location.hostname)
         console.log("Running locally")
-        js.src = "test.js"
+        js.src = "assets/tests.js"
     }
     head.appendChild(js);
 </script>
