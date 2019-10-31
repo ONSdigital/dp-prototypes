@@ -1,0 +1,27 @@
+
+<html>
+
+<div id="datasets">
+    <h1>List of CMD datasets</h1>
+</div>
+<script>
+    fetch("https://api.beta.ons.gov.uk/v1/datasets", {
+            mode: 'cors',
+        })
+        .then(data => {
+            
+            return data.json()
+        })
+        .then(json => {
+            json.items.map((data, index) => {
+                dataset = document.getElementById("datasets")
+                test = document.createElement("h2")
+                link = data.links.self.href.replace("api.","")
+                link = link.replace("v1/","")
+                test.innerHTML = "<a href = '" + link + "'>" + data.title + "</a>"
+                dataset.append(test)
+            })
+        })
+</script>
+
+</html>

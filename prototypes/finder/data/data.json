@@ -1,0 +1,2250 @@
+[
+    {
+      "Dataset": "A mystery shop of turn-up-and-go services",
+      "URL": "https://www.bva-bdrc.com/projects/rail-delivery-group-london-turn-go/",
+      "Domain": "test-1",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "testing-2"
+    },
+    {
+      "Dataset": "Abortions Notifications (DHSC)",
+      "URL": "https://www.gov.uk/government/publications/abortion-notification-forms-for-england-and-wales",
+      "Domain": "Health",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "England and Wales",
+      "Dimensions": "Age, Sex, Ethnicity, Marriage/Civil-Partnership, Pregnancy/Maternity"
+    },
+    {
+      "Dataset": "Accident and Emergency Datamart (A&E2)",
+      "URL": "http://www.ndc.scot.nhs.uk/National-Datasets/data.asp?ID=1&SubID=3",
+      "Domain": "Health",
+      "Frequency": "Monthly",
+      "Geographicalcoverage": "Scotland",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief"
+    },
+    {
+      "Dataset": "Accident and Emergency Department Survey",
+      "URL": "https://beta.ukdataservice.ac.uk/datacatalogue/studies/study?id=8138",
+      "Domain": "Health",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief"
+    },
+    {
+      "Dataset": "Active Lives Survey (formerly Active People Survey) (14 and 15 year olds)",
+      "URL": "https://www.sportengland.org/research/active-lives-survey/",
+      "Domain": "Health",
+      "Frequency": "Bi-Annual",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "Active Lives Survey (formerly Active People Survey) (Adult questionnaire)",
+      "URL": "https://www.sportengland.org/research/active-lives-survey/",
+      "Domain": "Health",
+      "Frequency": "Bi-Annual",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, testing-2"
+    },
+    {
+      "Dataset": "Active Lives Survey (formerly Active People Survey) (Adult questionnaire)",
+      "URL": "https://www.sportengland.org/research/active-lives-survey/",
+      "Domain": "test-1",
+      "Frequency": "Bi-Annual",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, testing-2"
+    },
+    {
+      "Dataset": "Admission of patients to Mental Health Facilities (Wales) ",
+      "URL": "https://statswales.gov.wales/Catalogue/Health-and-Social-Care/Mental-Health/Admissions-to-Mental-Health-Facilities/admissionstomentalhealthfacilitiesbylhb",
+      "Domain": "Health",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "Wales",
+      "Dimensions": "Sex"
+    },
+    {
+      "Dataset": "Admitted Patient Care dataset (APCds)",
+      "URL": "https://www.datadictionary.nhs.uk/data_dictionary/messages/cds_v6-2/data_sets/cds_v6-2_type_130_-_admitted_patient_care_-_finished_general_episode_cds_fr.asp",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Marriage/Civil-Partnership"
+    },
+    {
+      "Dataset": "Adult inpatient survey",
+      "URL": "https://www.cqc.org.uk/publications/surveys/adult-inpatient-survey-2017",
+      "Domain": "Health",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, testing-2"
+    },
+    {
+      "Dataset": "Adult Psychiatric Morbidity Survey",
+      "URL": "https://digital.nhs.uk/data-and-information/publications/statistical/adult-psychiatric-morbidity-survey",
+      "Domain": "Health",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "Adult Psychiatric Morbidity Survey",
+      "URL": "https://digital.nhs.uk/data-and-information/publications/statistical/adult-psychiatric-morbidity-survey",
+      "Domain": "test-1",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "Adult safeguarding",
+      "URL": "https://gov.wales/statistics-and-research/adult-safeguarding/?lang=en",
+      "Domain": "Health",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "Wales",
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, testing-2"
+    },
+    {
+      "Dataset": "Adult safeguarding",
+      "URL": "https://gov.wales/statistics-and-research/adult-safeguarding/?lang=en",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "Wales",
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, testing-2"
+    },
+    {
+      "Dataset": "Adult Social Care Survey (ASCS)",
+      "URL": "https://digital.nhs.uk/data-and-information/data-collections-and-data-sets/data-collections/social-care-user-surveys",
+      "Domain": "Health",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "Adults receiving care and support",
+      "URL": "https://gov.wales/statistics-and-research/local-authority-social-services-data-collections/?lang=en",
+      "Domain": "Health",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "Wales",
+      "Dimensions": "Age, Sex, Ethnicity"
+    },
+    {
+      "Dataset": "Annual Civil Service Employment Survey (ACSES)",
+      "URL": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/publicsectorpersonnel/methodologies/civilservicestatisticsqmi",
+      "Domain": "Work",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, testing-2"
+    },
+    {
+      "Dataset": "Annual Survey of Hours and Earnings (ASHE)",
+      "URL": "https://www.nomisweb.co.uk/articles/1070.aspx",
+      "Domain": "Living Standards",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex"
+    },
+    {
+      "Dataset": "Annual Survey of Hours and Earnings (ASHE)",
+      "URL": "https://www.nomisweb.co.uk/articles/1070.aspx",
+      "Domain": "Work",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex"
+    },
+    {
+      "Dataset": "Asylum Claims on the basis of sexual orientation",
+      "URL": "https://www.gov.uk/government/statistics/asylum-claims-on-the-basis-of-Sexual Orientation",
+      "Domain": "test-1",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Sexual Orientation"
+    },
+    {
+      "Dataset": "Attainment data: KS1 & Phonics",
+      "URL": "https://www.gov.uk/government/statistics/phonics-screening-check-and-key-stage-1-assessments-england-2017",
+      "Domain": "Education",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "Attainment data: KS4",
+      "URL": "https://www.gov.uk/government/statistics/secondary-school-performance-tables-in-england-2018-provisional",
+      "Domain": "Education",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "Attainment data: KS5 (16-18)",
+      "URL": "https://www.gov.uk/government/statistics/a-level-and-other-16-to-18-results-2016-to-2017-revised",
+      "Domain": "Education",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "Attainment data:KS2",
+      "URL": "https://www.gov.uk/government/statistics/primary-school-performance-tables-2017",
+      "Domain": "Education",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "Benefits Data ",
+      "URL": "https://stat-xplore.dwp.gov.uk/webapi/jsf/login.xhtml",
+      "Domain": "Living Standards",
+      "Frequency": "Monthly",
+      "Geographicalcoverage": "Region",
+      "Dimensions": "Age, Sex, Ethnicity, Marriage/Civil-Partnership, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "Birth notifications",
+      "URL": "https://digital.nhs.uk/services/birth-notification-service",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "England, Wales and the Isle of Man",
+      "Dimensions": "Age, Sex, Pregnancy/Maternity"
+    },
+    {
+      "Dataset": "Birth Registrations",
+      "URL": "https://www.gro.gov.uk/gro/content/",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "England and Wales",
+      "Dimensions": "Age, Sex, Ethnicity, Marriage/Civil-Partnership"
+    },
+    {
+      "Dataset": "Birth Registrations Scotland",
+      "URL": "",
+      "Domain": "",
+      "Frequency": "",
+      "Geographicalcoverage": "",
+      "Dimensions": ""
+    },
+    {
+      "Dataset": "Birth registrations Northern Ireland",
+      "URL": "https://www.nidirect.gov.uk/contacts/contacts-az/general-register-office-northern-ireland",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "Northern Ireland",
+      "Dimensions": "Age, Sex"
+    },
+    {
+      "Dataset": "Breast Screening (KC63)",
+      "URL": "https://www.datadictionary.nhs.uk/data_dictionary/messages/central_return_data_sets/data_sets/nhs_breast_screening_programme_central_return_data_set_(kc63)_fr.asp?shownav=1",
+      "Domain": "Health",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age"
+    },
+    {
+      "Dataset": "British Social Attitudes Survey (BSAS)",
+      "URL": "http://natcen.ac.uk/our-research/research/british-social-attitudes/",
+      "Domain": "test-1",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "Age, Sex, Ethnicity, ?, Religion/Belief, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "Cancer Outcomes and Services Data (COSD)",
+      "URL": "http://www.ncin.org.uk/collecting_and_using_data/data_collection/cosd",
+      "Domain": "Health",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "Care Home Census",
+      "URL": "http://www.isdscotland.org/Health-Topics/Health-and-Social-Community-Care/Care-Homes/Census/",
+      "Domain": "Health",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "Scotland",
+      "Dimensions": "Age, Sex"
+    },
+    {
+      "Dataset": "Child Measurement Programme Data (CMP) ",
+      "URL": "http://www.wales.nhs.uk/sitesplus/888/page/67795",
+      "Domain": "Health",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "Wales",
+      "Dimensions": "Age, Sex, Ethnicity"
+    },
+    {
+      "Dataset": "Childhood Vaccination Coverage Data",
+      "URL": "https://files.digital.nhs.uk/F7/6ADF26/child-vacc-stat-eng-2017-18-tab.xlsx",
+      "Domain": "Health",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age"
+    },
+    {
+      "Dataset": "Children and Young People's Health Services (CYPHS)",
+      "URL": "https://digital.nhs.uk/data-and-information/publications/statistical/children-and-young-people-s-health-services-monthly-statistics/children-and-young-people-s-health-services-monthly-statistics-england-may-2017-experimental-statistics",
+      "Domain": "Health",
+      "Frequency": "Monthly",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity"
+    },
+    {
+      "Dataset": "Children and Young People's Inpatient and Day Case Survey (0-7 years)",
+      "URL": "https://www.cqc.org.uk/publications/surveys/children-young-peoples-survey-2016",
+      "Domain": "Health",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity"
+    },
+    {
+      "Dataset": "Children and Young People's Inpatient and Day Case Survey (12-15 years)",
+      "URL": "https://www.cqc.org.uk/publications/surveys/children-young-peoples-survey-2016",
+      "Domain": "Health",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity"
+    },
+    {
+      "Dataset": "Children and Young People's Inpatient and Day Case Survey (8-11 years)",
+      "URL": "https://www.cqc.org.uk/publications/surveys/children-young-peoples-survey-2016",
+      "Domain": "Health",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity"
+    },
+    {
+      "Dataset": "Children in Care return (OC2)",
+      "URL": "https://www.health-ni.gov.uk/publications/children-care-return-and-quality-report",
+      "Domain": "Living Standards",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "Northern Ireland",
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "Children in Need Census",
+      "URL": "https://www.gov.uk/government/collections/statistics-children-in-need",
+      "Domain": "Education",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "England and Wales",
+      "Dimensions": "Age, Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "Children looked after (SSDA903) data collection",
+      "URL": "",
+      "Domain": "Living Standards",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Pregnancy/Maternity"
+    },
+    {
+      "Dataset": "Children looked after (SSDA903) data collection",
+      "URL": "",
+      "Domain": "Health",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Pregnancy/Maternity"
+    },
+    {
+      "Dataset": "Children looked after survey (CLAS) ",
+      "URL": "https://www.gov.scot/Topics/Statistics/ScotXed/ChildrenandYoungPeople/LookedAfterChildren",
+      "Domain": "Education",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "Scotland",
+      "Dimensions": "Age, Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "Children looked after survey (CLAS) ",
+      "URL": "https://www.gov.scot/Topics/Statistics/ScotXed/ChildrenandYoungPeople/LookedAfterChildren",
+      "Domain": "Living Standards",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "Scotland",
+      "Dimensions": "Age, Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "Children receiving care and support census",
+      "URL": "https://gov.wales/statistics-and-research/local-authority-social-services-data-collections/?lang=en",
+      "Domain": "Health",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "Wales",
+      "Dimensions": "Age, Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "Children's Dental Health Survey",
+      "URL": "https://digital.nhs.uk/data-and-information/publications/statistical/children-s-dental-health-survey",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "England, Wales and Northern Ireland",
+      "Dimensions": "Age, Sex, Ethnicity"
+    },
+    {
+      "Dataset": "Children's' service provisions ",
+      "URL": "https://statswales.gov.wales/Catalogue/Health-and-Social-Care/Social-Services/Childrens-Services/Service-Provision",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "Wales",
+      "Dimensions": "Age"
+    },
+    {
+      "Dataset": "Children's Social Work Statistics",
+      "URL": "https://www.gov.scot/Topics/Statistics/Browse/Children/PubChildrenSocialWork",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "Scotland",
+      "Dimensions": "Age, Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "Civil Partnership dissolutions (HMCTS)",
+      "URL": "",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "",
+      "Dimensions": "Age, Sex, Marriage/Civil-Partnership"
+    },
+    {
+      "Dataset": "Civil partnerships in England and Wales",
+      "URL": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/marriagecohabitationandcivilpartnerships/bulletins/civilpartnershipsinenglandandwales/2017",
+      "Domain": "test-1",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "England and Wales",
+      "Dimensions": "Age, Sex, Marriage/Civil-Partnership"
+    },
+    {
+      "Dataset": "Client Management System (CMS) Data",
+      "URL": "",
+      "Domain": "Work",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "Northern Ireland",
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "Community Contraception Collection (KT31) ",
+      "URL": "https://www.datadictionary.nhs.uk/version2/data_dictionary/messages/central_returns/cross_sector_services/kt31/kt31_fr.asp?shownav=1",
+      "Domain": "Health",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex"
+    },
+    {
+      "Dataset": "Community Life Survey",
+      "URL": "https://www.gov.uk/government/statistics/community-life-survey-2017-18",
+      "Domain": "test-1",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "Community Mental Health Service User Survey",
+      "URL": "https://www.cqc.org.uk/publications/surveys/community-mental-health-survey-2017",
+      "Domain": "Health",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief"
+    },
+    {
+      "Dataset": "Community Services Dataset",
+      "URL": "https://digital.nhs.uk/data-and-information/data-collections-and-data-sets/data-sets/community-services-data-set",
+      "Domain": "Health",
+      "Frequency": "Monthly",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "Concessionary Travel Survey",
+      "URL": "https://www.gov.uk/government/statistical-data-sets/bus08-concessionary-travel",
+      "Domain": "test-1",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": ""
+    },
+    {
+      "Dataset": "Continuous Household Survey",
+      "URL": "https://beta.ukdataservice.ac.uk/datacatalogue/series/series?id=200008",
+      "Domain": "test-1",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "Northern Ireland",
+      "Dimensions": "Age, Sex, Religion/Belief, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "CORE (Continuous Recording of Lettings and Sales in Social Housing)",
+      "URL": "https://core.communities.gov.uk/",
+      "Domain": "Living Standards",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "Corporate Parenting Returns (CPR)",
+      "URL": "https://www.health-ni.gov.uk/publications/corporate-parenting-returns",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "Northern Ireland",
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, testing-2"
+    },
+    {
+      "Dataset": "Court Proceedings Data",
+      "URL": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/306282/Statutory_guidance_on_court_orders_and_pre-proceedings.pdf",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "England and Wales",
+      "Dimensions": "Age, Sex, Ethnicity"
+    },
+    {
+      "Dataset": "Courts Data",
+      "URL": "https://www.gov.uk/government/statistics/guide-to-civil-and-administrative-justice-statistics",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "National",
+      "Dimensions": ""
+    },
+    {
+      "Dataset": "CPS Case Outcomes by Principal Offence Category Data",
+      "URL": "https://data.gov.uk/dataset/89d0aef9-e2f9-4d1a-b779-5a33707c5f2c/crown-prosecution-service-case-outcomes-by-principal-offence-category-data",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "Monthly",
+      "Geographicalcoverage": "England and Wales",
+      "Dimensions": "Age, Ethnicity, Sexual Orientation, Religion/Belief, Gender reassignment, testing-2"
+    },
+    {
+      "Dataset": "CPS Court Proceedings Data",
+      "URL": "https://www.cps.gov.uk/underlying-data",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "England and Wales",
+      "Dimensions": "Age, Sex, Ethnicity"
+    },
+    {
+      "Dataset": "Crime Survey for England and Wales",
+      "URL": "http://www.crimesurvey.co.uk/en/index.html",
+      "Domain": "Health",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "England and Wales",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "Crime Survey for England and Wales",
+      "URL": "http://www.crimesurvey.co.uk/en/index.html",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "England and Wales",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "Defence Statistics (Tri Service)",
+      "URL": "",
+      "Domain": "Work",
+      "Frequency": "Bi-Annual",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Pregnancy/Maternity"
+    },
+    {
+      "Dataset": "Dementia Diagnosis Data",
+      "URL": "https://digital.nhs.uk/data-and-information/data-collections-and-data-sets/data-collections/quality-and-outcomes-framework-qof/quality-and-outcome-framework-qof-business-rules/recorded-dementia-diagnoses",
+      "Domain": "Health",
+      "Frequency": "Monthly",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex"
+    },
+    {
+      "Dataset": "Dental Working Patterns Survey",
+      "URL": "https://digital.nhs.uk/data-and-information/publications/statistical/dental-working-hours/2016-17-and-2017-18-working-patterns-motivation-and-morale",
+      "Domain": "Work",
+      "Frequency": "Bi-Annual",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex"
+    },
+    {
+      "Dataset": "Department of Education Statistics, Northern Ireland",
+      "URL": "https://www.education-ni.gov.uk/topics/statistics-and-research/statistics",
+      "Domain": "Education",
+      "Frequency": "",
+      "Geographicalcoverage": "Northern Ireland",
+      "Dimensions": "Sex, Ethnicity, Religion/Belief"
+    },
+    {
+      "Dataset": "Deprivation of Liberty Safeguards",
+      "URL": "https://digital.nhs.uk/data-and-information/publications/statistical/mental-capacity-act-2005-deprivation-of-liberty-safeguards-assessments",
+      "Domain": "Health",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, testing-2"
+    },
+    {
+      "Dataset": "Dfi Driver & Vehicle Agency customer satisfaction survey",
+      "URL": "https://www.infrastructure-ni.gov.uk/articles/driver-vehicle-agency-customer-satisfaction-survey",
+      "Domain": "test-1",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "Northern Ireland",
+      "Dimensions": "Age, Sex, testing-2"
+    },
+    {
+      "Dataset": "Digital Imaging Dataset (DID)",
+      "URL": "https://www.england.nhs.uk/statistics/statistical-work-areas/diagnostic-imaging-dataset/",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity"
+    },
+    {
+      "Dataset": "Disabled parking badges",
+      "URL": "https://www.gov.uk/government/collections/disabled-parking-badges-statistics",
+      "Domain": "test-1",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "England",
+      "Dimensions": "testing-2"
+    },
+    {
+      "Dataset": "Disabled Persons Railcard in circulation and issued",
+      "URL": "http://dataportal.orr.gov.uk/displayreport/report/html/7dc80e17-34e2-404c-a47c-5d6ba73988dc",
+      "Domain": "test-1",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "testing-2"
+    },
+    {
+      "Dataset": "Divorces (HMCTS)",
+      "URL": "",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "",
+      "Dimensions": "Age, Sex, Marriage/Civil-Partnership"
+    },
+    {
+      "Dataset": "Divorces in England and Wales",
+      "URL": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/divorce/datasets/divorcesinenglandandwales",
+      "Domain": "test-1",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "England and Wales",
+      "Dimensions": "Age, Sex"
+    },
+    {
+      "Dataset": "DWP equality information: employee data",
+      "URL": "https://www.gov.uk/government/statistics/dwp-equality-information-2016-employee-data",
+      "Domain": "Work",
+      "Frequency": "",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, testing-2"
+    },
+    {
+      "Dataset": "Early Years Census",
+      "URL": "https://www.gov.uk/government/statistics/education-provision-children-under-5-years-of-age-january-2018",
+      "Domain": "Education",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity"
+    },
+    {
+      "Dataset": "eAsset/SACHS Data",
+      "URL": "https://data.gov.uk/dataset/171c9302-49f3-4a96-b35c-a9bbac0d2045/easset",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "",
+      "Geographicalcoverage": "England and Wales",
+      "Dimensions": "Age, Sex"
+    },
+    {
+      "Dataset": "Effects of Taxes and Benefits (ETB)",
+      "URL": "https://www.ons.gov.uk/peoplepopulationandcommunity/personalandhouseholdfinances/incomeandwealth/bulletins/theeffectsoftaxesandbenefitsonhouseholdincome/financialyearending2017",
+      "Domain": "Living Standards",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex"
+    },
+    {
+      "Dataset": "Emergency Care Dataset",
+      "URL": "https://www.england.nhs.uk/ourwork/tsd/ec-data-set/",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "Emergency department survey",
+      "URL": "https://www.cqc.org.uk/publications/surveys/emergency-department-survey-2016",
+      "Domain": "Health",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief"
+    },
+    {
+      "Dataset": "English Housing Survey",
+      "URL": "https://www.gov.uk/government/collections/english-housing-survey",
+      "Domain": "Health",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Ethnicity"
+    },
+    {
+      "Dataset": "English Housing Survey",
+      "URL": "https://www.gov.uk/government/collections/english-housing-survey",
+      "Domain": "Living Standards",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Ethnicity"
+    },
+    {
+      "Dataset": "English index of multiple deprivation",
+      "URL": "https://www.gov.uk/government/statistics/english-indices-of-deprivation-2015",
+      "Domain": "Living Standards",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, testing-2"
+    },
+    {
+      "Dataset": "English Longitudinal Study of Ageing (ELSA)",
+      "URL": "https://www.elsa-project.ac.uk/",
+      "Domain": "Work",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "English Longitudinal Study of Ageing (ELSA)\n\n",
+      "URL": "https://www.elsa-project.ac.uk/about-ELSA",
+      "Domain": "Health",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "Estimates of the Population Aged 85 and Over",
+      "URL": "https://www.nisra.gov.uk/statistics/population/estimates-population-aged-85-and-over",
+      "Domain": "test-1",
+      "Frequency": "",
+      "Geographicalcoverage": "Northern Ireland",
+      "Dimensions": "Age, Sex"
+    },
+    {
+      "Dataset": "Estimates of the very old, including centenarians",
+      "URL": "",
+      "Domain": "test-1",
+      "Frequency": "",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex"
+    },
+    {
+      "Dataset": "European Quality of Life Survey",
+      "URL": "",
+      "Domain": "Health",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "National",
+      "Dimensions": "Age, Sex, testing-2"
+    },
+    {
+      "Dataset": "European Quality of Life Survey",
+      "URL": "",
+      "Domain": "Living Standards",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "National",
+      "Dimensions": "Age, Sex, testing-2"
+    },
+    {
+      "Dataset": "European Quality of Life Survey",
+      "URL": "",
+      "Domain": "test-1",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "National",
+      "Dimensions": "Age, Sex, testing-2"
+    },
+    {
+      "Dataset": "European Quality of Life Survey",
+      "URL": "",
+      "Domain": "Work",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "National",
+      "Dimensions": "Age, Sex, testing-2"
+    },
+    {
+      "Dataset": "European Social Survey",
+      "URL": "https://www.europeansocialsurvey.org/data/",
+      "Domain": "Education",
+      "Frequency": "Bi-Annual",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "European Social Survey",
+      "URL": "https://www.europeansocialsurvey.org/data/",
+      "Domain": "Health",
+      "Frequency": "Bi-Annual",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "European Social Survey",
+      "URL": "https://www.europeansocialsurvey.org/data/",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "Bi-Annual",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "European Social Survey",
+      "URL": "https://www.europeansocialsurvey.org/data/",
+      "Domain": "test-1",
+      "Frequency": "Bi-Annual",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "European Social Survey",
+      "URL": "https://www.europeansocialsurvey.org/data/",
+      "Domain": "Work",
+      "Frequency": "Bi-Annual",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "European Union Statistics on Income and Living Conditions (EU-SILC)",
+      "URL": "https://ec.europa.eu/eurostat/web/microdata/european-union-statistics-on-income-and-living-conditions",
+      "Domain": "Living Standards",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Marriage/Civil-Partnership, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "Family Resources Survey (FRS)",
+      "URL": "https://www.gov.uk/government/collections/family-resources-survey--2",
+      "Domain": "Health",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "Family Resources Survey (FRS)",
+      "URL": "https://www.gov.uk/government/collections/family-resources-survey--2",
+      "Domain": "Living Standards",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "Family Resources Survey (FRS)",
+      "URL": "https://www.gov.uk/government/collections/family-resources-survey--2",
+      "Domain": "Work",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "Female Genital Mutilation (FGM) Enhanced Dataset",
+      "URL": "https://digital.nhs.uk/data-and-information/publications/statistical/female-genital-mutilation/female-genital-mutilation-fgm---annual-report-2017-18",
+      "Domain": "Health",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Pregnancy/Maternity"
+    },
+    {
+      "Dataset": "Fit Notes",
+      "URL": "",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Sex, testing-2"
+    },
+    {
+      "Dataset": "Forced Marriage Unit (FMU) Data",
+      "URL": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/730155/2017_FMU_statistics_FINAL.pdf",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Sexual Orientation, testing-2"
+    },
+    {
+      "Dataset": "Free school meal entitlement and child poverty in England",
+      "URL": "https://www.gov.uk/government/statistics/free-school-meal-entitlement-and-child-poverty-in-england",
+      "Domain": "Living Standards",
+      "Frequency": "",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex"
+    },
+    {
+      "Dataset": "Gender Identity Development Service referral figures",
+      "URL": "http://gids.nhs.uk/number-referrals",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "Age, Sex"
+    },
+    {
+      "Dataset": "Gender Recognition Certificates Statistics",
+      "URL": "https://data.gov.uk/dataset/dfa8d1f3-7058-46a1-a268-f0bbf7bb013e/tribunals-and-gender-recognition-statistics",
+      "Domain": "test-1",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "",
+      "Dimensions": "Gender reassignment"
+    },
+    {
+      "Dataset": "Gender Recognition Marriage Register",
+      "URL": "",
+      "Domain": "Other",
+      "Frequency": "",
+      "Geographicalcoverage": "",
+      "Dimensions": "Gender reassignment, Marriage/Civil-Partnership"
+    },
+    {
+      "Dataset": "Genitourinary Medicine Clinic Activity Data Set ",
+      "URL": "https://www.datadictionary.nhs.uk/data_dictionary/messages/clinical_data_sets/overviews/genitourinary_medicine_clinic_activity_data_set_overview.asp?shownav=0",
+      "Domain": "Health",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation"
+    },
+    {
+      "Dataset": "GP Patient Survey",
+      "URL": "https://digital.nhs.uk/binaries/content/assets/website-assets/publications/publications-admin-pages/admin-sources/general-practice-patient-survey.pdf",
+      "Domain": "Health",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, testing-2"
+    },
+    {
+      "Dataset": "Guardianship under the Mental Health Act 1983 (SSDA702)",
+      "URL": "https://digital.nhs.uk/data-and-information/publications/statistical/guardianship-under-the-mental-health-act-1983",
+      "Domain": "Health",
+      "Frequency": "Bi-Annual",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Sex"
+    },
+    {
+      "Dataset": "Gypsy and Traveller Caravan Count",
+      "URL": "https://gov.wales/docs/statistics/2018/180717-gypsy-traveller-caravan-count-july-2018-form-en.pdf",
+      "Domain": "Living Standards",
+      "Frequency": "Twice yearly",
+      "Geographicalcoverage": "Wales",
+      "Dimensions": "Ethnicity"
+    },
+    {
+      "Dataset": "Health Survey for England",
+      "URL": "https://digital.nhs.uk/data-and-information/publications/statistical/health-survey-for-england",
+      "Domain": "Health",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "Health Survey Northern Ireland",
+      "URL": "https://www.health-ni.gov.uk/topics/doh-statistics-and-research/health-survey-northern-ireland",
+      "Domain": "Health",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "Northern Ireland",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "Higher Education Statistics Agency (HESA) Staff Record",
+      "URL": "https://www.hesa.ac.uk/data-and-analysis/staff",
+      "Domain": "Education",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Gender reassignment, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "Higher Education Statistics Agency (HESA) Student Record",
+      "URL": "https://www.hesa.ac.uk/data-and-analysis/students",
+      "Domain": "Education",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Gender reassignment, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "HMPPS Terrorism Prisoners Data",
+      "URL": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/729464/annual-hmpps-digest-2017-18-guide.pdf",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "England and Wales",
+      "Dimensions": "Ethnicity, Religion/Belief"
+    },
+    {
+      "Dataset": "Home Office Data Hub (HODH)",
+      "URL": "http://listpoint.co.uk/Context/details/Home Office Data Hub/1.4",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "",
+      "Geographicalcoverage": "",
+      "Dimensions": "Sex, Ethnicity, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "Home Office Immigration Statistics",
+      "URL": "https://www.gov.uk/government/statistics/immigration-statistics-year-ending-june-2018",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex"
+    },
+    {
+      "Dataset": "Home Office Operational Statistics Data Collection",
+      "URL": "",
+      "Domain": "Work",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief"
+    },
+    {
+      "Dataset": "Homeless Case Level Information Collection (H-CLIC) Data",
+      "URL": "https://gss.civilservice.gov.uk/wp-content/uploads/2018/05/H_CLIC_v1.4.1_guidance.pdf",
+      "Domain": "Living Standards",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Gender reassignment, testing-2"
+    },
+    {
+      "Dataset": "Homelessness Data Collection",
+      "URL": "https://statswales.gov.wales/Catalogue/Housing/Homelessness",
+      "Domain": "Living Standards",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "Wales",
+      "Dimensions": ""
+    },
+    {
+      "Dataset": "Homelessness P1E Data",
+      "URL": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/696614/P1E201803.xls",
+      "Domain": "Living Standards",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "Homelessness statistics HL1",
+      "URL": "https://www.gov.scot/Topics/Statistics/15257/HL1revisions",
+      "Domain": "Living Standards",
+      "Frequency": "",
+      "Geographicalcoverage": "Scotland",
+      "Dimensions": "Age, Sex, Ethnicity, Marriage/Civil-Partnership, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "Homelessness statistics PREVENT1",
+      "URL": "https://www.gov.scot/Topics/Statistics/15257/1529/introductionprevent1",
+      "Domain": "Living Standards",
+      "Frequency": "",
+      "Geographicalcoverage": "Scotland",
+      "Dimensions": "Age, Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "Hospital Episode Statistics (HES)",
+      "URL": "https://digital.nhs.uk/data-and-information/data-tools-and-services/data-services/hospital-episode-statistics",
+      "Domain": "Health",
+      "Frequency": "Monthly",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "Hospital Episode Statistics (HES)",
+      "URL": "https://digital.nhs.uk/data-and-information/data-tools-and-services/data-services/hospital-episode-statistics",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "Monthly",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "Households Below Average Income",
+      "URL": "https://www.gov.uk/government/collections/households-below-average-income-hbai--2",
+      "Domain": "Living Standards",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "Improving Access to Psychological Therapies (IAPT) dataset",
+      "URL": "https://digital.nhs.uk/data-and-information/data-collections-and-data-sets/data-sets/improving-access-to-psychological-therapies-data-set/improving-access-to-psychological-therapies-data-set-reports",
+      "Domain": "Health",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "Individual Insolvencies",
+      "URL": "https://www.gov.uk/government/statistics/individual-insolvencies-by-location-age-and-gender-england-and-wales-2015",
+      "Domain": "Living Standards",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "England and Wales",
+      "Dimensions": "Age, Sex"
+    },
+    {
+      "Dataset": "Individual Learner Record",
+      "URL": "https://www.gov.uk/government/collections/individualised-learner-record-ilr",
+      "Domain": "Education",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "Internet access",
+      "URL": "",
+      "Domain": "test-1",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "Judicial Diversity Statistics",
+      "URL": "https://www.judiciary.uk/about-the-judiciary/who-are-the-judiciary/diversity/judicial-diversity-statistics-2017/",
+      "Domain": "Work",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "England and Wales",
+      "Dimensions": "Age, Sex, Ethnicity"
+    },
+    {
+      "Dataset": "Kids' Life and Times survey",
+      "URL": "http://www.ark.ac.uk/klt/datasets/",
+      "Domain": "test-1",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "Northern Ireland",
+      "Dimensions": "Sex, testing-2"
+    },
+    {
+      "Dataset": "Labour Force Survey",
+      "URL": "",
+      "Domain": "Education",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "Labour Force Survey",
+      "URL": "",
+      "Domain": "Health",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "Labour Force Survey",
+      "URL": "",
+      "Domain": "Living Standards",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "Labour Force Survey",
+      "URL": "",
+      "Domain": "test-1",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "Labour Force Survey",
+      "URL": "https://www.ons.gov.uk/surveys/informationforhouseholdsandindividuals/householdandindividualsurveys/labourforcesurveylfs",
+      "Domain": "Work",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "Learning testing-2 Census",
+      "URL": "https://data.gov.uk/dataset/010cb769-bebe-4f66-b83b-220608cef8d6/learning-disabilities-annual-census-report-england",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "Level 2 and 3 attainment by young people aged 19 in 2017 ",
+      "URL": "https://www.gov.uk/government/statistics/level-2-and-3-attainment-by-young-people-aged-19-in-2017",
+      "Domain": "Education",
+      "Frequency": "annual",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "LGBT Survey",
+      "URL": "https://www.gov.uk/government/publications/national-lgbt-survey-summary-report",
+      "Domain": "Education",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Gender reassignment, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "LGBT Survey",
+      "URL": "https://www.gov.uk/government/publications/national-lgbt-survey-summary-report",
+      "Domain": "Health",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Gender reassignment, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "LGBT Survey",
+      "URL": "https://www.gov.uk/government/publications/national-lgbt-survey-summary-report",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Gender reassignment, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "LGBT Survey",
+      "URL": "https://www.gov.uk/government/publications/national-lgbt-survey-summary-report",
+      "Domain": "test-1",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Gender reassignment, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "LGBT Survey",
+      "URL": "https://www.gov.uk/government/publications/national-lgbt-survey-summary-report",
+      "Domain": "Work",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Gender reassignment, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "Life Opportunities Survey",
+      "URL": "https://www.gov.uk/government/collections/life-opportunities-survey",
+      "Domain": "test-1",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "Age, Sex, Ethnicity, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "Linked [Benefits Data][Police National Computer Data]",
+      "URL": "",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "",
+      "Geographicalcoverage": "",
+      "Dimensions": "Age, Sex, Ethnicity"
+    },
+    {
+      "Dataset": "Linked [Out-of-work Benefit Data][Child Benefit Data]",
+      "URL": "",
+      "Domain": "Work",
+      "Frequency": "",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "Age"
+    },
+    {
+      "Dataset": "Linked[Hospital Episode Statistics][Birth registrations data]",
+      "URL": "",
+      "Domain": "Health",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "Linked[Hospital Episode Statistics][Digital Imaging Dataset]",
+      "URL": "",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "Living Costs and Food Survey (LCF)",
+      "URL": "https://beta.ukdataservice.ac.uk/datacatalogue/series/series?id=2000028",
+      "Domain": "Living Standards",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity"
+    },
+    {
+      "Dataset": "Local Authority School Counselling Services collection, Welsh Government ",
+      "URL": "",
+      "Domain": "Education",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "Wales",
+      "Dimensions": "Sex, Ethnicity"
+    },
+    {
+      "Dataset": "Longitudinal Educational Outcomes",
+      "URL": "https://www.gov.uk/government/statistics/graduate-outcomes-for-all-subjects-by-university",
+      "Domain": "Education",
+      "Frequency": "Experimental",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Sex"
+    },
+    {
+      "Dataset": "Looked after children census",
+      "URL": "https://gov.wales/statistics-and-research/local-authority-social-services-data-collections/?lang=enhttps://gov.wales/statistics-and-research/local-authority-social-services-data-collections/?lang=en",
+      "Domain": "Health",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "Wales",
+      "Dimensions": "Age, Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "Managing and Minimising Physical Restraint (MMPR) Data",
+      "URL": "https://www.gov.uk/government/publications/minimising-and-managing-physical-restraint",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "",
+      "Dimensions": ""
+    },
+    {
+      "Dataset": "Marriage registrations",
+      "URL": "https://www.gro.gov.uk/gro/content/",
+      "Domain": "Other",
+      "Frequency": "",
+      "Geographicalcoverage": "England and Wales ",
+      "Dimensions": "Age, Sex, Marriage/Civil-Partnership"
+    },
+    {
+      "Dataset": "Maternity Indicators Dataset",
+      "URL": "https://gov.wales/statistics-and-research/maternity-statistics/?lang=en",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "Wales",
+      "Dimensions": "Age, Sex, Ethnicity, Pregnancy/Maternity"
+    },
+    {
+      "Dataset": "Maternity Services Dataset (MSDS)",
+      "URL": "https://digital.nhs.uk/data-and-information/data-collections-and-data-sets/data-sets/maternity-services-data-set",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "Maternity Services Survey",
+      "URL": "https://www.cqc.org.uk/publications/surveys/maternity-services-survey-2017",
+      "Domain": "Health",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Ethnicity, Sexual Orientation, Religion/Belief, Pregnancy/Maternity"
+    },
+    {
+      "Dataset": "Mental Health Services Dataset",
+      "URL": "https://digital.nhs.uk/data-and-information/data-collections-and-data-sets/data-sets/mental-health-services-data-set",
+      "Domain": "Health",
+      "Frequency": "Monthly",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "Metropolitan Police Service Stop and Search Data",
+      "URL": "https://www.met.police.uk/sd/stats-and-data/met/stop-and-search-dashboard/",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "UK",
+      "Dimensions": "Age, Sex, Ethnicity"
+    },
+    {
+      "Dataset": "Millennium Cohort Study",
+      "URL": "http://www.cls.ioe.ac.uk/page.aspx?sitesectionid=851",
+      "Domain": "Education",
+      "Frequency": "",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "Millennium Cohort Study",
+      "URL": "http://www.cls.ioe.ac.uk/page.aspx?sitesectionid=851",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "Millennium Cohort Study",
+      "URL": "http://www.cls.ioe.ac.uk/page.aspx?sitesectionid=851",
+      "Domain": "Living Standards",
+      "Frequency": "",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "Millennium Cohort Study",
+      "URL": "http://www.cls.ioe.ac.uk/page.aspx?sitesectionid=851",
+      "Domain": "test-1",
+      "Frequency": "",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "Millennium Cohort Study",
+      "URL": "http://www.cls.ioe.ac.uk/page.aspx?sitesectionid=851",
+      "Domain": "Work",
+      "Frequency": "",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "Monitor of engagement with the natural environment",
+      "URL": "https://www.gov.uk/government/collections/monitor-of-engagement-with-the-natural-environment-survey-purpose-and-results",
+      "Domain": "Health",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Marriage/Civil-Partnership"
+    },
+    {
+      "Dataset": "Mortality data",
+      "URL": "",
+      "Domain": "Health",
+      "Frequency": "Weekly",
+      "Geographicalcoverage": "England and Wales",
+      "Dimensions": "Age, Sex, Marriage/Civil-Partnership"
+    },
+    {
+      "Dataset": "National Community Child Health Database (NCCHD)",
+      "URL": "https://gov.wales/statistics-and-research/births-national-community-child-health-database/?lang=en",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "Wales",
+      "Dimensions": "Age"
+    },
+    {
+      "Dataset": "National Confidential Enquiry into Suicide and Homicide (NCISH) ",
+      "URL": "",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "",
+      "Dimensions": "Age, Sex, Ethnicity, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "National Counter Terrorism Policing Operations Centre (NCTPOC) Arrest and Outcomes Data",
+      "URL": "",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief"
+    },
+    {
+      "Dataset": "National Diet and Nutrition Survey (NDNS)",
+      "URL": "https://beta.ukdataservice.ac.uk/datacatalogue/series/series?id=2000033",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Ethnicity, Marriage/Civil-Partnership, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "National DNA Database (NDNAD)",
+      "URL": "https://www.gov.uk/government/collections/dna-database-documents",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "England and Wales",
+      "Dimensions": "Age, Sex, Ethnicity"
+    },
+    {
+      "Dataset": "National Drug Treatment Monitoring System (NDTMS)",
+      "URL": "https://www.ndtms.net/",
+      "Domain": "Health",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "National Health Service Central Register (NHSCR)",
+      "URL": "https://www.nrscotland.gov.uk/statistics-and-data/nhs-central-register",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "Scotland",
+      "Dimensions": "Age, Sex"
+    },
+    {
+      "Dataset": "National information system for vocational qualifications",
+      "URL": "",
+      "Domain": "Education",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "England and Wales",
+      "Dimensions": "Age, Sex"
+    },
+    {
+      "Dataset": "National Offender Management Service Human Resource Management Service (NOMS HRMS) Data",
+      "URL": "https://data.gov.uk/dataset/8ca0f49b-a66f-4b29-8469-67f53e7db27f/oracle-hrms-prison-service-and-noms-hr-record-database",
+      "Domain": "Work",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "England and Wales",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, testing-2"
+    },
+    {
+      "Dataset": "National Pupil Database",
+      "URL": "https://www.gov.uk/government/collections/national-pupil-database",
+      "Domain": "Education",
+      "Frequency": "",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity"
+    },
+    {
+      "Dataset": "National Radiotherapy Dataset (RTDS) ",
+      "URL": "http://www.natcansat.nhs.uk/rt/rtds.aspx",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "",
+      "Dimensions": "Age, Sex, Ethnicity"
+    },
+    {
+      "Dataset": "National Survey for Wales",
+      "URL": "https://gov.wales/statistics-and-research/national-survey/?lang=en",
+      "Domain": "Education",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "Wales",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "National Survey for Wales",
+      "URL": "https://gov.wales/statistics-and-research/national-survey/?lang=en",
+      "Domain": "Health",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "Wales",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "National Survey for Wales",
+      "URL": "",
+      "Domain": "Living Standards",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "Wales",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "National Survey for Wales",
+      "URL": "https://gov.wales/statistics-and-research/national-survey/?lang=en",
+      "Domain": "test-1",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "Wales",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "National Survey of Bereaved People (VOICES)",
+      "URL": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthcaresystem/bulletins/nationalsurveyofbereavedpeoplevoices/england2015",
+      "Domain": "Health",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief"
+    },
+    {
+      "Dataset": "National Travel Survey",
+      "URL": "https://beta.ukdataservice.ac.uk/datacatalogue/series/series?id=2000037",
+      "Domain": "test-1",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "National Workforce Dataset (NWD)",
+      "URL": "https://digital.nhs.uk/data-and-information/data-collections-and-data-sets/data-sets/national-workforce-data-set-nwd-and-nhs-occupation-codes",
+      "Domain": "Work",
+      "Frequency": "",
+      "Geographicalcoverage": "",
+      "Dimensions": "Age, Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "NI Benefits Statistics Summary ",
+      "URL": "https://www.communities-ni.gov.uk/articles/benefits-statistics-summary",
+      "Domain": "Living Standards",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "Northern Ireland",
+      "Dimensions": "Age, Sex"
+    },
+    {
+      "Dataset": "Northern Ireland Crime Survey",
+      "URL": "https://www.justice-ni.gov.uk/articles/northern-ireland-crime-survey",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "Northern Ireland",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "Northern Ireland Housing Statistics",
+      "URL": "https://www.communities-ni.gov.uk/publications/northern-ireland-housing-statistics-2016-17",
+      "Domain": "Living Standards",
+      "Frequency": "",
+      "Geographicalcoverage": "Northern Ireland",
+      "Dimensions": "Age, Sex, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "Northern Ireland Life and Times Survey",
+      "URL": "https://www.infrastructure-ni.gov.uk/articles/northern-ireland-transport-statistics",
+      "Domain": "Living Standards",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "Northern Ireland",
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, Gender reassignment, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "Northern Ireland Life and Times Survey",
+      "URL": "",
+      "Domain": "test-1",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "Northern Ireland",
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, Gender reassignment, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "Northern Ireland Life and Times Survey",
+      "URL": "http://www.ark.ac.uk/nilt/",
+      "Domain": "Education",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "Northern Ireland",
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, Gender reassignment, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "Northern Ireland Life and Times Survey",
+      "URL": "http://www.ark.ac.uk/nilt/",
+      "Domain": "Work",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "Northern Ireland",
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, Gender reassignment, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "Northern Ireland Multiple Deprivation Measure 2017",
+      "URL": "https://www.nisra.gov.uk/statistics/deprivation/northern-ireland-multiple-deprivation-measure-2017-nimdm2017",
+      "Domain": "Living Standards",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "Northern Ireland",
+      "Dimensions": "Age, testing-2"
+    },
+    {
+      "Dataset": "Northern Ireland Omnibus Survey",
+      "URL": "https://www.communities-ni.gov.uk/topics/customer-insight",
+      "Domain": "Living Standards",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "Northern Ireland",
+      "Dimensions": "Age, Sex, Religion/Belief, testing-2"
+    },
+    {
+      "Dataset": "Northern Ireland Omnibus Survey",
+      "URL": "https://www.communities-ni.gov.uk/topics/customer-insight",
+      "Domain": "test-1",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "Northern Ireland",
+      "Dimensions": "Age, Sex, Religion/Belief, testing-2"
+    },
+    {
+      "Dataset": "Northern Ireland Transport Statistics",
+      "URL": "",
+      "Domain": "",
+      "Frequency": "",
+      "Geographicalcoverage": "",
+      "Dimensions": ""
+    },
+    {
+      "Dataset": "ONS Longitudinal Study",
+      "URL": "https://www.ons.gov.uk/aboutus/whatwedo/paidservices/longitudinalstudyls",
+      "Domain": "Living Standards",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "England and Wales",
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "Opinions and Lifestyle Survey (OPN)",
+      "URL": "https://www.ons.gov.uk/surveys/informationforhouseholdsandindividuals/householdandindividualsurveys/opinionsandlifestylesurvey",
+      "Domain": "Health",
+      "Frequency": "Monthly",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "Age, Sex, Marriage/Civil-Partnership"
+    },
+    {
+      "Dataset": "Opinions and Lifestyle Survey (OPN)",
+      "URL": "https://www.ons.gov.uk/surveys/informationforhouseholdsandindividuals/householdandindividualsurveys/opinionsandlifestylesurvey",
+      "Domain": "test-1",
+      "Frequency": "Monthly",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "Age, Sex, Marriage/Civil-Partnership"
+    },
+    {
+      "Dataset": "Patient Episode Database for Wales (PEDW) ",
+      "URL": "http://www.infoandstats.wales.nhs.uk/page.cfm?orgid=869&pid=40977",
+      "Domain": "Health",
+      "Frequency": "Monthly",
+      "Geographicalcoverage": "Wales",
+      "Dimensions": "Age, Sex, Ethnicity, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "Patient Reported Outcome Measures (PROMs) data",
+      "URL": "https://digital.nhs.uk/data-and-information/data-tools-and-services/data-services/patient-reported-outcome-measures-proms",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity"
+    },
+    {
+      "Dataset": "Patients registered at a GP practice data",
+      "URL": "https://digital.nhs.uk/data-and-information/data-tools-and-services/data-services/general-practice-data-hub/patients-registered-at-a-gp-practice",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex"
+    },
+    {
+      "Dataset": "Personal Demographic Service (PDS)",
+      "URL": "https://digital.nhs.uk/services/demographics",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "England and Wales",
+      "Dimensions": "Age, Sex, Pregnancy/Maternity"
+    },
+    {
+      "Dataset": "Police powers and procedures England and Wales statistics",
+      "URL": "https://www.gov.uk/government/collections/police-powers-and-procedures-england-and-wales",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "England and Wales",
+      "Dimensions": "Age, Sex, Ethnicity"
+    },
+    {
+      "Dataset": "Police Recorded Crime",
+      "URL": "https://data.gov.uk/dataset/f3f79bba-d74a-4c6a-85f3-f29881349a34/offender-management-statistics",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "England and Wales",
+      "Dimensions": "Ethnicity, Sexual Orientation, Religion/Belief, Gender reassignment, testing-2"
+    },
+    {
+      "Dataset": "Pregnancy and maternity-related discrimination and disadvantage: Employer's survey ",
+      "URL": "https://share.sp.ons.statistics.gov.uk/sites/barnea/Downloads/employers_report_-_bis-16-147-pregnancy-and-maternity-related-discrimination-and-disadvantage-experiences-of-employers (2).pdf",
+      "Domain": "Work",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "Age, Sex, Pregnancy/Maternity"
+    },
+    {
+      "Dataset": "Pregnancy and maternity-related discrimination and disadvantage: Mother's survey ",
+      "URL": "https://www.equalityhumanrights.com/en/publication-download/pregnancy-and-maternity-related-discrimination-and-disadvantage-first-findings",
+      "Domain": "Work",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "Age, Sex, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "Prison National Offender Management Information System (p-NOMIS) Data",
+      "URL": "https://data.gov.uk/dataset/7237e18e-c1fe-443f-881a-1113b90b3351/prison-national-offender-management-information-system-p-nomis-and-inmate-information-system-iis",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "",
+      "Geographicalcoverage": "",
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief"
+    },
+    {
+      "Dataset": "Psychiatric Census",
+      "URL": "https://statswales.gov.wales/Catalogue/Health-and-Social-Care/Mental-Health/Psychiatric-Census",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "Wales",
+      "Dimensions": "Age, Sex"
+    },
+    {
+      "Dataset": "Public Appointments Data",
+      "URL": "",
+      "Domain": "Work",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "Northern Ireland",
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, testing-2"
+    },
+    {
+      "Dataset": "Pupils' Attendance Record, Welsh Government ",
+      "URL": "https://beta.gov.wales/attendance-data-collection",
+      "Domain": "Education",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "Wales",
+      "Dimensions": "Age, Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "Pupils Educated Other Than At School (EOTAS), Welsh Government ",
+      "URL": "https://statswales.gov.wales/Catalogue/Education-and-Skills/Schools-and-Teachers/Educated-Other-Than-At-School",
+      "Domain": "Education",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "Wales",
+      "Dimensions": "Age, Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "Quarterly Public Sector Employment Survey (QPSES)",
+      "URL": "https://www.ons.gov.uk/surveys/informationforbusinesses/businesssurveys/quarterlypublicsectoremploymentsurvey",
+      "Domain": "Work",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "Sex"
+    },
+    {
+      "Dataset": "Research into passenger awareness of assisted travel services",
+      "URL": "",
+      "Domain": "test-1",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "Age, Sex, testing-2"
+    },
+    {
+      "Dataset": "Research into passenger experiences of Passenger Assist",
+      "URL": "",
+      "Domain": "test-1",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "Age, Sex, testing-2"
+    },
+    {
+      "Dataset": "Safeguarding Adult Collection (SAC)",
+      "URL": "https://digital.nhs.uk/data-and-information/publications/statistical/guardianship-under-the-mental-health-act-1983",
+      "Domain": "Health",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "School Census",
+      "URL": "https://www.gov.uk/government/publications/school-census-2018-to-2019-technical-information",
+      "Domain": "Education",
+      "Frequency": "",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity"
+    },
+    {
+      "Dataset": "Scottish Cancer Registry",
+      "URL": "http://www.isdscotland.org/Health-Topics/Cancer/Scottish-Cancer-Registry/",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "Scotland",
+      "Dimensions": "Age, Sex, Ethnicity, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "Scottish Crime and Justice Survey",
+      "URL": "https://www.statisticsauthority.gov.uk/publication/scottish-crime-and-justice-survey-2/",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "Scotland",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership"
+    },
+    {
+      "Dataset": "Scottish Funding Council",
+      "URL": "http://www.sfc.ac.uk/publications-statistics/statistical-publications/statistics-schedule/statistical-publication-schedule.aspx",
+      "Domain": "Education",
+      "Frequency": "",
+      "Geographicalcoverage": "Scotland",
+      "Dimensions": "Age, Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "Scottish Government Schools Census",
+      "URL": "https://www.gov.scot/Topics/Statistics/ScotXed/SchoolEducation/SchoolPupilCensus",
+      "Domain": "Education",
+      "Frequency": "",
+      "Geographicalcoverage": "Scotland",
+      "Dimensions": "Age, Sex, Ethnicity"
+    },
+    {
+      "Dataset": "Scottish Health Survey",
+      "URL": "https://beta.ukdataservice.ac.uk/datacatalogue/series/series?id=2000047",
+      "Domain": "Health",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "Scotland",
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "Scottish HES equivalents (Scottish Morbidity Record 00/01/02/04)",
+      "URL": "",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "Scotland",
+      "Dimensions": "Age, Sex, Ethnicity, Marriage/Civil-Partnership, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "Scottish Household Survey",
+      "URL": "https://www.gov.scot/Topics/Statistics/16002/DataAccesAgreements",
+      "Domain": "Living Standards",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "Scotland",
+      "Dimensions": "Age, Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "Scottish Household Survey",
+      "URL": "https://www.gov.scot/Topics/Statistics/16002/DataAccesAgreements",
+      "Domain": "test-1",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "Scotland",
+      "Dimensions": "Age, Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "Scottish Index of Multiple Deprivation",
+      "URL": "https://www.gov.scot/Topics/Statistics/SIMD",
+      "Domain": "Living Standards",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "Scotland",
+      "Dimensions": "Age, testing-2"
+    },
+    {
+      "Dataset": "Scottish Social Attitudes Survey",
+      "URL": "http://natcen.ac.uk/our-research/research/scottish-social-attitudes/",
+      "Domain": "Work",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "Scotland",
+      "Dimensions": "Age, Sex, Religion/Belief, Marriage/Civil-Partnership"
+    },
+    {
+      "Dataset": "Sexual and Reproductive Activity Dataset (SRHAD)",
+      "URL": "https://digital.nhs.uk/data-and-information/publications/statistical/sexual-and-reproductive-health-services/sexual-and-reproductive-health-services-england-2016-17",
+      "Domain": "Health",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Gender reassignment"
+    },
+    {
+      "Dataset": "Short and Long Term Support (SALT)",
+      "URL": "https://data.gov.uk/dataset/7b3e3fd5-cc7c-4212-89b2-200c23fafbf5/adult-social-care-short-and-long-term-support",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "Skills Development Scotland",
+      "URL": "https://www.skillsdevelopmentscotland.co.uk/",
+      "Domain": "Education",
+      "Frequency": "",
+      "Geographicalcoverage": "Scotland",
+      "Dimensions": "Age, Sex"
+    },
+    {
+      "Dataset": "Smoking status at time of delivery (SATOD) data",
+      "URL": "https://digital.nhs.uk/data-and-information/publications/statistical/statistics-on-women-s-smoking-status-at-time-of-delivery-england",
+      "Domain": "Health",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Sex, Ethnicity, Pregnancy/Maternity"
+    },
+    {
+      "Dataset": "Smoking, drinking and drug use among young people survey ",
+      "URL": "https://digital.nhs.uk/data-and-information/publications/statistical/smoking-drinking-and-drug-use-among-young-people-in-england/2016",
+      "Domain": "Health",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity"
+    },
+    {
+      "Dataset": "Statutory register of births",
+      "URL": "https://www.nrscotland.gov.uk/research/guides/statutory-registers/births",
+      "Domain": "Health",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "Scotland",
+      "Dimensions": "Age, Sex, Pregnancy/Maternity"
+    },
+    {
+      "Dataset": "Statutory register of deaths",
+      "URL": "https://www.nrscotland.gov.uk/research/guides/statutory-registers/deaths",
+      "Domain": "Health",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "Scotland",
+      "Dimensions": "Age, Sex, Marriage/Civil-Partnership"
+    },
+    {
+      "Dataset": "Statutory register of marriages",
+      "URL": "https://www.nrscotland.gov.uk/research/guides/birth-death-and-marriage-records",
+      "Domain": "Other",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "Scotland",
+      "Dimensions": "Age, Marriage/Civil-Partnership"
+    },
+    {
+      "Dataset": "Stonewall LGBT in Britain hate crime survey",
+      "URL": "https://www.stonewall.org.uk/comeoutforLGBT/lgbt-in-britain/hate-crime",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Gender reassignment, testing-2"
+    },
+    {
+      "Dataset": "Stonewall LGBT in Britain home and communities survey",
+      "URL": "https://www.stonewall.org.uk/sites/default/files/lgbt_in_britain_home_and_communities.pdf",
+      "Domain": "test-1",
+      "Frequency": "",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Gender reassignment, testing-2"
+    },
+    {
+      "Dataset": "Stonewall LGBT in Britain home and communities survey",
+      "URL": "https://www.stonewall.org.uk/sites/default/files/lgbt_in_britain_home_and_communities.pdf",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Gender reassignment, testing-2"
+    },
+    {
+      "Dataset": "Stonewall LGBT in Britain School Survey",
+      "URL": "https://www.stonewall.org.uk/sites/default/files/the_school_report_2017.pdf",
+      "Domain": "Education",
+      "Frequency": "",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Gender reassignment, testing-2"
+    },
+    {
+      "Dataset": "Stonewall LGBT in Britain School Survey",
+      "URL": "",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Gender reassignment, testing-2"
+    },
+    {
+      "Dataset": "Stonewall LGBT in Britain School Survey",
+      "URL": "",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Gender reassignment, testing-2"
+    },
+    {
+      "Dataset": "Stonewall LGBT in Britain survey",
+      "URL": "http://www.stonewall.org.uk/",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Gender reassignment, testing-2"
+    },
+    {
+      "Dataset": "Stonewall LGBT in Britain survey",
+      "URL": "",
+      "Domain": "Work",
+      "Frequency": "",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Gender reassignment, testing-2"
+    },
+    {
+      "Dataset": "Stonewall LGBT in Britain survey",
+      "URL": "",
+      "Domain": "Education",
+      "Frequency": "",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Gender reassignment, testing-2"
+    },
+    {
+      "Dataset": "Stonewall LGBT in Britain survey",
+      "URL": "",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Gender reassignment, testing-2"
+    },
+    {
+      "Dataset": "Stonewall LGBT in Britain university survey",
+      "URL": "https://www.stonewall.org.uk/sites/default/files/lgbt_in_britain_universities_report.pdf",
+      "Domain": "Education",
+      "Frequency": "",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Gender reassignment, testing-2"
+    },
+    {
+      "Dataset": "Stonewall LGBT in Britain work survey",
+      "URL": "https://www.stonewall.org.uk/sites/default/files/lgbt_in_britain_work_report.pdf",
+      "Domain": "Work",
+      "Frequency": "",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Gender reassignment, testing-2"
+    },
+    {
+      "Dataset": "Stop and search dataset",
+      "URL": "https://www.gov.uk/government/statistics/operation-of-police-powers-under-the-terrorism-act-2000-quarterly-update-to-june-2018",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "Ethnicity"
+    },
+    {
+      "Dataset": "Stop smoking service dataset",
+      "URL": "https://digital.nhs.uk/data-and-information/publications/statistical/statistics-on-nhs-stop-smoking-services-in-england/april-2017-to-march-2018",
+      "Domain": "Health",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity"
+    },
+    {
+      "Dataset": "Summary Care Records (SCR)",
+      "URL": "https://digital.nhs.uk/services/summary-care-records-scr",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, testing-2"
+    },
+    {
+      "Dataset": "Survey of Adult Carers in England (SACE)",
+      "URL": "https://digital.nhs.uk/data-and-information/data-collections-and-data-sets/data-collections/social-care-user-surveys",
+      "Domain": "Health",
+      "Frequency": "Bi-Annual",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity"
+    },
+    {
+      "Dataset": "Survey of personal incomes (SPI)",
+      "URL": "https://www.gov.uk/government/statistics/distribution-of-total-income-before-and-after-tax-by-gender-2010-to-2011",
+      "Domain": "Living Standards",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex"
+    },
+    {
+      "Dataset": "Survey on Living Conditions (SLC)",
+      "URL": "https://ec.europa.eu/eurostat/web/income-and-living-conditions/data/database",
+      "Domain": "Living Standards",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex"
+    },
+    {
+      "Dataset": "Taking part: the national survey of culture, leisure and sport",
+      "URL": "https://www.gov.uk/guidance/taking-part-survey",
+      "Domain": "test-1",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "The General Practice Extraction Service (GPES)",
+      "URL": "https://digital.nhs.uk/services/general-practice-extraction-service",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, testing-2"
+    },
+    {
+      "Dataset": "The Hospital Inpatient System (HIS)",
+      "URL": "https://www.health-ni.gov.uk/publications/hospital-inpatient-system",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "Northern Ireland",
+      "Dimensions": "Age, Sex"
+    },
+    {
+      "Dataset": "Travel Survey for Northern Ireland",
+      "URL": "https://www.infrastructure-ni.gov.uk/articles/travel-survey-northern-ireland",
+      "Domain": "test-1",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "Northern Ireland",
+      "Dimensions": "Age"
+    },
+    {
+      "Dataset": "Understanding Society (USoc)",
+      "URL": "https://www.understandingsociety.ac.uk/",
+      "Domain": "Health",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "Understanding Society (USoc)",
+      "URL": "",
+      "Domain": "Living Standards",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Marriage/Civil-Partnership, testing-2"
+    },
+    {
+      "Dataset": "United Kingdom Time Use Survey",
+      "URL": "https://www.timeuse.org/node/10833",
+      "Domain": "Living Standards",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Marriage/Civil-Partnership"
+    },
+    {
+      "Dataset": "United Kingdom Time Use Survey",
+      "URL": "https://www.timeuse.org/node/10833",
+      "Domain": "Work",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "United Kingdom",
+      "Dimensions": "Age, Sex, Marriage/Civil-Partnership"
+    },
+    {
+      "Dataset": "Wealth and Assets Survey",
+      "URL": "https://www.ons.gov.uk/peoplepopulationandcommunity/personalandhouseholdfinances/incomeandwealth/bulletins/wealthingreatbritainwave5/2014to2016",
+      "Domain": "Living Standards",
+      "Frequency": "Bi-Annual",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "Age, Sex"
+    },
+    {
+      "Dataset": "Welsh Cancer Intelligence and Surveillance Unit's National Cancer Registry",
+      "URL": "http://www.wcisu.wales.nhs.uk/home",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "Wales",
+      "Dimensions": "Age, Sex"
+    },
+    {
+      "Dataset": "Welsh Demographic Survey (WDS)",
+      "URL": "http://www.publichealthwalesobservatory.wales.nhs.uk/wds",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "Wales",
+      "Dimensions": "Age, Sex"
+    },
+    {
+      "Dataset": "Welsh Health Survey",
+      "URL": "https://gov.wales/statistics-and-research/welsh-health-survey/?lang=en",
+      "Domain": "Health",
+      "Frequency": "",
+      "Geographicalcoverage": "Wales",
+      "Dimensions": "Age, Sex, Ethnicity, Pregnancy/Maternity"
+    },
+    {
+      "Dataset": "Welsh Hospital Episode Statistics",
+      "URL": "http://www.infoandstats.wales.nhs.uk/page.cfm?orgid=869&pid=40977",
+      "Domain": "Health",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "Wales",
+      "Dimensions": "Age, Sex, Ethnicity, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "Welsh National Database for Substance Misuse",
+      "URL": "https://statswales.gov.wales/Catalogue/Health-and-Social-Care/Substance-Misuse/summary-of-quarterly-activity",
+      "Domain": "Health",
+      "Frequency": "Quarterly",
+      "Geographicalcoverage": "Wales",
+      "Dimensions": "Age, Sex, Ethnicity"
+    },
+    {
+      "Dataset": "What about youth survey (WAY)",
+      "URL": "https://digital.nhs.uk/data-and-information/areas-of-interest/public-health/what-about-youth-study",
+      "Domain": "Health",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, Sexual Orientation, Religion/Belief, Pregnancy/Maternity, testing-2"
+    },
+    {
+      "Dataset": "Work-Life Balance Employer Survey (WLB)",
+      "URL": "https://www.gov.uk/government/collections/work-life-balance-employer-survey",
+      "Domain": "Work",
+      "Frequency": "Adhoc",
+      "Geographicalcoverage": "Great Britain",
+      "Dimensions": "Age, Sex, Pregnancy/Maternity"
+    },
+    {
+      "Dataset": "Young Life and Times Survey",
+      "URL": "http://www.ark.ac.uk/ylt/",
+      "Domain": "test-1",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "Northern Ireland",
+      "Dimensions": "Sex, Ethnicity, Sexual Orientation, Religion/Belief, Gender reassignment, testing-2"
+    },
+    {
+      "Dataset": "Young Life and Times Survey",
+      "URL": "http://www.ark.ac.uk/ylt/",
+      "Domain": "Living Standards",
+      "Frequency": "Annual ",
+      "Geographicalcoverage": "Northern Ireland",
+      "Dimensions": "Sex, Ethnicity, Sexual Orientation, Religion/Belief, Gender reassignment, testing-2"
+    },
+    {
+      "Dataset": "Young Life and Times Survey",
+      "URL": "http://www.ark.ac.uk/ylt/",
+      "Domain": "Education",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "Northern Ireland",
+      "Dimensions": "Sex, Ethnicity, Sexual Orientation, Religion/Belief, Gender reassignment, testing-2"
+    },
+    {
+      "Dataset": "Young Life and Times Survey",
+      "URL": "http://www.ark.ac.uk/ylt/",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "Northern Ireland",
+      "Dimensions": "Sex, Ethnicity, Sexual Orientation, Religion/Belief, Gender reassignment, testing-2"
+    },
+    {
+      "Dataset": "Young Persons Matched Administrative data",
+      "URL": "https://www.gov.uk/guidance/how-to-access-department-for-education-dfe-data-extracts",
+      "Domain": "Education",
+      "Frequency": "annual",
+      "Geographicalcoverage": "England",
+      "Dimensions": "Age, Sex, Ethnicity, testing-2"
+    },
+    {
+      "Dataset": "Young Persons’ Behaviour and Attitudes Survey ",
+      "URL": "https://www.gov.uk/government/statistics/announcements/young-persons-behaviour-and-attitudes-survey-2016",
+      "Domain": "Health",
+      "Frequency": "Triennial",
+      "Geographicalcoverage": "Northern Ireland",
+      "Dimensions": "Age, Sex, Ethnicity, Religion/Belief, testing-2"
+    },
+    {
+      "Dataset": "Youth Custody Data",
+      "URL": "https://www.gov.uk/government/statistics/youth-custody-data",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "Monthly",
+      "Geographicalcoverage": "England and Wales",
+      "Dimensions": "Age, Sex, Ethnicity"
+    },
+    {
+      "Dataset": "Youth Justice Agency Data",
+      "URL": "https://www.justice-ni.gov.uk/articles/youth-justice-agency-statistics-and-research",
+      "Domain": "Justice and Personal Security",
+      "Frequency": "Annual",
+      "Geographicalcoverage": "Northern Ireland",
+      "Dimensions": "Age, Sex, Religion/Belief"
+    }
+   ]

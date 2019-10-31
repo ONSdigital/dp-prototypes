@@ -1,0 +1,6 @@
+{
+    "title":"Test title",
+    "description":"A description goes here",
+    "toplevel": ["test-1","test-1"],
+    "secondarylevel": ["testing-1","testing-2"]
+}
