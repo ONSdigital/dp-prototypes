@@ -1,62 +1,114 @@
-
+<!DOCTYPE html>
 <html>
-    <h1>List of CMD datasets</h1>
-<ul id="datasets">
-    
-</ul>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="//cdn.ons.gov.uk/sixteens/cb6733a/css/main.css">
+    <link href="https://cdn.ons.gov.uk/sixteens/658deeb/css/work-in-progress.css" rel="stylesheet" type="text/css">
+    <title id="title"></title>
+    <style>
+        li {
+            padding: 0px;
+            margin: 0px
+        }
+
+    </style>
+</head>
+
+
+<body class="pl-home">
+    <div id="hide">
+        <header>
+            <a class="skiplink" href="#main" tabindex="0">
+                Skip to main content
+            </a>
+        </header>
+        <div class="background--ship-grey">
+            <div class="wrapper">
+                <div class="padding-top--1 padding-bottom--1">
+                    <p class="margin-bottom--0 margin-top--0 font-xsmall"><strong class="banner__tag">Warning</strong>
+                        this is a prototype. The content may not be complete or accurate.</p>
+                </div>
+            </div>
+        </div>
+        <div class="page-intro background--astral padding-top-md--4">
+            <div class="pl-wrap__inner padding-top-sm--4">
+                <div class="wrapper">
+                    <h1 id="page-title" class="page-intro__title page-intro__title--home-big padding-bottom-md--4">List
+                        of CMD datasets</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="col-wrap">
+            <div class="col col--md-one col--lg-one">
+                <ul id="datasets">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
 <script>
     fetch("https://api.beta.ons.gov.uk/v1/datasets", {
             mode: 'cors',
         })
         .then(data => {
-            
+
             return data.json()
         })
         .then(json => {
             json.items.map((data, index) => {
                 dataset = document.getElementById("datasets")
                 test = document.createElement("li")
-                link = data.links.self.href.replace("api.","")
-                link = link.replace("v1/","")
+                link = data.links.self.href.replace("api.", "")
+                link = link.replace("v1/", "")
                 test.innerHTML = "<a href = '" + link + "'>" + data.title + "</a>"
                 dataset.append(test)
             })
             sort()
         })
 
-function sort() {
+    function sort() {
         // Grab a reference to the UL
-var container = document.getElementById("datasets");
+        var container = document.getElementById("datasets");
 
-// Gather all the LI's from the container
-var contents = container.querySelectorAll("li");
-// The querySelector doesn't return a traditional array
-// that we can sort, so we'll need to convert the contents 
-// to a normal array.
-var list = [];
-for(var i=0; i<contents.length; i++){
-    list.push(contents[i]);
-    
-}
-console.log(list)
-// Sort based on innerHTML (sorts "in place")
+        // Gather all the LI's from the container
+        var contents = container.querySelectorAll("li");
+        // The querySelector doesn't return a traditional array
+        // that we can sort, so we'll need to convert the contents 
+        // to a normal array.
+        var list = [];
+        for (var i = 0; i < contents.length; i++) {
+            list.push(contents[i]);
 
-list.sort(function(a, b){
-    if(a.innerText < b.innerText) { return -1; }
-    if(a.innerText > b.innerText) { return 1; }
-    return 0;
-})
+        }
+        console.log(list)
+        // Sort based on innerHTML (sorts "in place")
 
-console.log(list)
-// We'll reverse the array because our shuffle runs backwards
-list.reverse();
+        list.sort(function (a, b) {
+            if (a.innerText < b.innerText) {
+                return -1;
+            }
+            if (a.innerText > b.innerText) {
+                return 1;
+            }
+            return 0;
+        })
 
-// Shuffle the order based on the order of our list array.
-for(var i=0; i<list.length; i++){
-    console.log(list[i].innerHTML);
-    container.insertBefore(list[i], container.firstChild);
-}
-}
+        console.log(list)
+        // We'll reverse the array because our shuffle runs backwards
+        list.reverse();
+
+        // Shuffle the order based on the order of our list array.
+        for (var i = 0; i < list.length; i++) {
+            console.log(list[i].innerHTML);
+            container.insertBefore(list[i], container.firstChild);
+        }
+    }
 </script>
 
 </html>

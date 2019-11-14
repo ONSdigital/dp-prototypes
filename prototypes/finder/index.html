@@ -7,8 +7,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="//cdn.ons.gov.uk/sixteens/cb6733a/css/main.css">
     <link href="https://cdn.ons.gov.uk/sixteens/658deeb/css/work-in-progress.css" rel="stylesheet" type="text/css">
-
-
     <title id = "title"></title>
 </head>
 
@@ -39,7 +37,7 @@
     <div class="wrapper">
         <div class="col-wrap">
             <div class="col col--md-one col--lg-one">
-                <h2>Filter by domain
+                <h2>Filter by <span id="domain1"> domain </span>
                     <select id="myInput" title="Domain" onchange="selectDomain()">
                         <option>All options</option>
                     </select>
@@ -80,7 +78,7 @@
                             <tbody id="tableData">
                                 <tr class="table__header-row">
                                     <th scope="col" class="align-left">Dataset</th>
-                                    <th scope="col" class="align-left">Domain</th>
+                                    <th id="domain2" scope="col" class="align-left">Domain</th>
                                     <th scope="col" class="align-left">Frequency</th>
                                     <th scope="col" class="align-left">Geographical coverage</th>
                                     <th scope="col" class="align-left">Dimensions</th>
