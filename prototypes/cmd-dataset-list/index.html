@@ -1,9 +1,9 @@
 
 <html>
-
-<div id="datasets">
     <h1>List of CMD datasets</h1>
-</div>
+<ul id="datasets">
+    
+</ul>
 <script>
     fetch("https://api.beta.ons.gov.uk/v1/datasets", {
             mode: 'cors',
@@ -15,13 +15,48 @@
         .then(json => {
             json.items.map((data, index) => {
                 dataset = document.getElementById("datasets")
-                test = document.createElement("h2")
+                test = document.createElement("li")
                 link = data.links.self.href.replace("api.","")
                 link = link.replace("v1/","")
                 test.innerHTML = "<a href = '" + link + "'>" + data.title + "</a>"
                 dataset.append(test)
             })
+            sort()
         })
+
+function sort() {
+        // Grab a reference to the UL
+var container = document.getElementById("datasets");
+
+// Gather all the LI's from the container
+var contents = container.querySelectorAll("li");
+// The querySelector doesn't return a traditional array
+// that we can sort, so we'll need to convert the contents 
+// to a normal array.
+var list = [];
+for(var i=0; i<contents.length; i++){
+    list.push(contents[i]);
+    
+}
+console.log(list)
+// Sort based on innerHTML (sorts "in place")
+
+list.sort(function(a, b){
+    if(a.innerText < b.innerText) { return -1; }
+    if(a.innerText > b.innerText) { return 1; }
+    return 0;
+})
+
+console.log(list)
+// We'll reverse the array because our shuffle runs backwards
+list.reverse();
+
+// Shuffle the order based on the order of our list array.
+for(var i=0; i<list.length; i++){
+    console.log(list[i].innerHTML);
+    container.insertBefore(list[i], container.firstChild);
+}
+}
 </script>
 
 </html>
