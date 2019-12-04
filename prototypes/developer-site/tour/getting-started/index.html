@@ -70,184 +70,213 @@
         <div class="wrapper margin-bottom-sm--3 margin-bottom-md--6">
             <div class="col-wrap">
                 <div class="col col--md-one-half col--lg-one-third sticky sticky--lg-only">
-                    <div class="margin-top-sm--4 margin-top-md--5 margin-right-lg--2 padding-top--1 padding-right--1 padding-bottom--1 padding-left--1 background--iron-light">
+                    <div
+                        class="margin-top-sm--4 margin-top-md--5 margin-right-lg--2 padding-top--1 padding-right--1 padding-bottom--1 padding-left--1 background--iron-light">
                         <h2 class="font-size--18 margin-top--2"><strong>Contents:</strong></h2>
                         <nav>
                             <ul class="list--neutral">
-                            
+
                                 <li>
-                                    <a href="">
-                                        
-                                            <strong>Introduction</strong>
-                                        
+                                    <a href="/">
+
+                                        Introduction
+
                                     </a>
                                 </li>
-                            
                                 <li>
-                                    <a href="observations/">
-                                        
-                                            Guide to requesting specific observation
-                                        
+                                    <a href="/tour/intro/">
+
+                                        <strong>Take a tour of the API</strong>
+
                                     </a>
                                 </li>
-                            
+
                                 <li>
-                                    <a href="filters/">
-                                        
-                                            Guide to filtering a dataset
-                                        
+                                    <a href="/observations/">
+
+                                        Guide to requesting specific observation
+
                                     </a>
                                 </li>
-                            
+
                                 <li>
-                                    <a href="tour/intro/">
-                                        
-                                            API tour
-                                        
+                                    <a href="/filters/">
+
+                                        Guide to filtering a dataset
+
                                     </a>
                                 </li>
-                            
+
+
+
                                 <li>
-                                    <a href="dataset/">
-                                        
-                                            Explore our data
-                                        
+                                    <a href="/dataset/">
+
+                                        Explore our data
+
                                     </a>
                                 </li>
-                            
+
                                 <li>
-                                    <a href="filter/">
-                                        
-                                            Filter a dataset
-                                        
+                                    <a href="/filter/">
+
+                                        Filter a dataset
+
                                     </a>
                                 </li>
-                            
+
                                 <li>
-                                    <a href="code-list/">
-                                        
-                                            Explore codes and lists
-                                        
+                                    <a href="/code-list/">
+
+                                        Explore codes and lists
+
                                     </a>
                                 </li>
-                            
+
                                 <li>
-                                    <a href="hierarchy/">
-                                        
-                                            Explore hierarchies
-                                        
+                                    <a href="/hierarchy/">
+
+                                        Explore hierarchies
+
                                     </a>
                                 </li>
-                            
+
                                 <li>
-                                    <a href="search/">
-                                        
-                                            Search within a dataset
-                                        
+                                    <a href="/search/">
+
+                                        Search within a dataset
+
                                     </a>
                                 </li>
-                            
+
                             </ul>
                         </nav>
                     </div>
                 </div>
                 <div class="col col--md-one-half col--lg-two-thirds">
-                    <h1 class="break-word margin-top-sm--3 margin-bottom-sm--3"><strong> Getting started</strong></h1>
+                    <h1 class="break-word margin-top-sm--3 margin-bottom-sm--3"><strong>Take a tour of the API</strong>
+                    </h1>
+                    <h2 class="break-word margin-top-sm--3 margin-bottom-sm--3"><strong>Getting started</strong></h2>
                     <div class="static section__content--static-markdown">
-    
-<p>You can get a list of datasets using the <a href="../../dataset/datasets/">list datasets</a> endpoint.</p>
 
-<script>
-    window.onload = () => {
-        document.getElementById("tab-results").addEventListener('click', function(){
-            document.getElementById("tryitout-list-datasets-result-result").classList.remove("hidden");
-            document.getElementById("tryitout-list-datasets-json-result").classList.add("hidden");
-            document.getElementById("tryitout-list-datasets-json-result").classList.remove("btn--secondary-active");
-            document.getElementById("tab-results").classList.add("btn--secondary-active");
-            document.getElementById("tab-json").classList.remove("btn--secondary-active");
-        });
-        document.getElementById("tab-json").addEventListener('click', function(){
-            document.getElementById("tryitout-list-datasets-result-result").classList.add("hidden");
-            document.getElementById("tryitout-list-datasets-json-result").classList.remove("hidden");
-            document.getElementById("tab-results").classList.remove("btn--secondary-active");
-            document.getElementById("tab-json").classList.add("btn--secondary-active");
-        });
+                        <p>You can get a list of datasets using the <a href="../../dataset/datasets/">list datasets</a>
+                            endpoint.</p>
 
-        document.getElementById("tryitout-list-datasets").addEventListener('click', function(){
-            document.getElementById("tryitout-list-datasets").setAttribute("disabled", "");
-            document.getElementById("tryitout-list-datasets-results").setAttribute("class", "hidden");
-            document.getElementById("tryitout-list-datasets").setAttribute("class", "btn btn--primary btn--primary-disabled");
+                        <script>
+                            window.onload = () => {
+                                document.getElementById("tab-results").addEventListener('click', function () {
+                                    document.getElementById("tryitout-list-datasets-result-result")
+                                        .classList.remove("hidden");
+                                    document.getElementById("tryitout-list-datasets-json-result").classList
+                                        .add("hidden");
+                                    document.getElementById("tryitout-list-datasets-json-result").classList
+                                        .remove("btn--secondary-active");
+                                    document.getElementById("tab-results").classList.add(
+                                        "btn--secondary-active");
+                                    document.getElementById("tab-json").classList.remove(
+                                        "btn--secondary-active");
+                                });
+                                document.getElementById("tab-json").addEventListener('click', function () {
+                                    document.getElementById("tryitout-list-datasets-result-result")
+                                        .classList.add("hidden");
+                                    document.getElementById("tryitout-list-datasets-json-result").classList
+                                        .remove("hidden");
+                                    document.getElementById("tab-results").classList.remove(
+                                        "btn--secondary-active");
+                                    document.getElementById("tab-json").classList.add(
+                                        "btn--secondary-active");
+                                });
 
-            fetch("https://api.beta.ons.gov.uk/v1/datasets")
-                .then((r) => {
-                    return r.json();
-                })
-                .then((r) => {
-                    document.getElementById("tryitout-list-datasets-results").removeAttribute("class");
-                    document.getElementById("tryitout-list-datasets").removeAttribute("disabled");
-                    document.getElementById("tryitout-list-datasets").setAttribute("class", "btn btn--primary");
+                                document.getElementById("tryitout-list-datasets").addEventListener('click',
+                                    function () {
+                                        document.getElementById("tryitout-list-datasets").setAttribute(
+                                            "disabled", "");
+                                        document.getElementById("tryitout-list-datasets-results").setAttribute(
+                                            "class", "hidden");
+                                        document.getElementById("tryitout-list-datasets").setAttribute("class",
+                                            "btn btn--primary btn--primary-disabled");
 
-                    document.getElementById("tryitout-list-datasets-json").innerText = JSON.stringify(r, null, 2);
-                    let table = document.getElementById("tryitout-list-datasets-table");
-                    table.innerHTML = "";
-                    table.setAttribute("class", "table");
-                    r.items.forEach(dataset => {
-                        let row = document.createElement("tr");
-                        let datasetID = document.createElement("td");
-                        datasetID.innerText = dataset.id;
-                        row.appendChild(datasetID);
-                        let datasetName = document.createElement("td");
-                        datasetName.innerText = dataset.title;
-                        row.appendChild(datasetName);
-                        table.appendChild(row);
-                    });
-                })
-                .catch((e) => {
-                    console.log(e);
-                });
-        });
-    };
-</script>
+                                        fetch("https://api.beta.ons.gov.uk/v1/datasets")
+                                            .then((r) => {
+                                                return r.json();
+                                            })
+                                            .then((r) => {
+                                                document.getElementById("tryitout-list-datasets-results")
+                                                    .removeAttribute("class");
+                                                document.getElementById("tryitout-list-datasets")
+                                                    .removeAttribute("disabled");
+                                                document.getElementById("tryitout-list-datasets")
+                                                    .setAttribute("class", "btn btn--primary");
 
-<div>
-    <h3>Example</h3>
-    <p>
-        Make a <tt>GET</tt> request to <tt>https://api.beta.ons.gov.uk/v1/datasets</tt>
-    </p>
-    <div>
-        <button class="btn btn--primary" id="tryitout-list-datasets">Try it out</button>
-    </div>
-    <div class="hidden" style="margin-top: 20px;" id="tryitout-list-datasets-results">
-        <fieldset class="btn-group">
-            <div role="radiogroup">
-                <label class="btn btn--secondary btn--chart-control btn--secondary-active" id="tab-results">
-                    Results <input name="range" aria-controls="data" checked="" type="radio">
-                </label>
-                <label class="btn btn--secondary btn--chart-control" id="tab-json">
-                    JSON <input name="range" aria-controls="data" type="radio">
-                </label>
-            </div>
-        </fieldset>
-        <div id="tryitout-list-datasets-json-result" class="hidden"><pre style="max-height: 300px; overflow-y: scroll;" id="tryitout-list-datasets-json"></pre></div>
-        <div id="tryitout-list-datasets-result-result"><table>
-            <thead>
-                <tr>
-                    <th>Dataset ID</th>
-                    <th>Title</th>
-                </tr>
-            </thead>
-            <tbody id="tryitout-list-datasets-table">
+                                                document.getElementById("tryitout-list-datasets-json")
+                                                    .innerText = JSON.stringify(r, null, 2);
+                                                let table = document.getElementById(
+                                                    "tryitout-list-datasets-table");
+                                                table.innerHTML = "";
+                                                table.setAttribute("class", "table");
+                                                r.items.forEach(dataset => {
+                                                    let row = document.createElement("tr");
+                                                    let datasetID = document.createElement("td");
+                                                    datasetID.innerText = dataset.id;
+                                                    row.appendChild(datasetID);
+                                                    let datasetName = document.createElement("td");
+                                                    datasetName.innerText = dataset.title;
+                                                    row.appendChild(datasetName);
+                                                    table.appendChild(row);
+                                                });
+                                            })
+                                            .catch((e) => {
+                                                console.log(e);
+                                            });
+                                    });
+                            };
+                        </script>
 
-            </tbody>
-        </table></div>
-    </div>
-</div>
+                        <div>
+                            <h3>Example</h3>
+                            <p>
+                                Make a <tt>GET</tt> request to <tt>https://api.beta.ons.gov.uk/v1/datasets</tt>
+                            </p>
+                            <div>
+                                <button class="btn btn--primary" id="tryitout-list-datasets">Try it out</button>
+                            </div>
+                            <div class="hidden" style="margin-top: 20px;" id="tryitout-list-datasets-results">
+                                <fieldset class="btn-group">
+                                    <div role="radiogroup">
+                                        <label class="btn btn--secondary btn--chart-control btn--secondary-active"
+                                            id="tab-results">
+                                            Results <input name="range" aria-controls="data" checked="" type="radio">
+                                        </label>
+                                        <label class="btn btn--secondary btn--chart-control" id="tab-json">
+                                            JSON <input name="range" aria-controls="data" type="radio">
+                                        </label>
+                                    </div>
+                                </fieldset>
+                                <div id="tryitout-list-datasets-json-result" class="hidden">
+                                    <pre style="max-height: 300px; overflow-y: scroll;"
+                                        id="tryitout-list-datasets-json"></pre>
+                                </div>
+                                <div id="tryitout-list-datasets-result-result">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Dataset ID</th>
+                                                <th>Title</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tryitout-list-datasets-table">
 
-<nav style="margin-top: 20px;">
-    <a class="btn btn--primary" href="../intro/"><span class="icon icon-arrow-left--light-small"></span> Introduction</a>
-    <a class="btn btn--primary float-right" href="../latest-release/">Find the latest release <span class="icon icon-arrow-right--light-small"></span></a>
-</nav>
-</div>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <nav style="margin-top: 20px;">
+                            <a class="" href="../intro/">Back</a>
+                            <a class="float-right" href="../latest-release/">Next: Find the latest release</a>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
@@ -256,41 +285,48 @@
         <div class="wrapper">
             <div class="improve-this-page" data-module="improve-this-page">
                 <div class="improve-this-page__prompt clearfix" id="feedback-form-header" tabindex="-1">
-                <h3 class="improve-this-page__is-useful-question">Is this page useful?</h3>
-                <a id="feedback-form-yes" class="improve-this-page__page-is-useful-button" href="https://beta.ons.gov.uk/feedback/thanks">
-                Yes
-                </a>
-                <a id="feedback-form-no" class="js-toggle" href="https://beta.ons.gov.uk/feedback?service=dev">
-                No
-                </a>
-                <a id="feedback-form-anything-wrong" class="js-toggle improve-this-page__anything-wrong" href="https://beta.ons.gov.uk/feedback?service=dev">
-                Can't find what you're looking for?
-                </a>
+                    <h3 class="improve-this-page__is-useful-question">Is this page useful?</h3>
+                    <a id="feedback-form-yes" class="improve-this-page__page-is-useful-button"
+                        href="https://beta.ons.gov.uk/feedback/thanks">
+                        Yes
+                    </a>
+                    <a id="feedback-form-no" class="js-toggle" href="https://beta.ons.gov.uk/feedback?service=dev">
+                        No
+                    </a>
+                    <a id="feedback-form-anything-wrong" class="js-toggle improve-this-page__anything-wrong"
+                        href="https://beta.ons.gov.uk/feedback?service=dev">
+                        Can't find what you're looking for?
+                    </a>
                 </div>
                 <div id="feedback-form" class="improve-this-page__form js-hidden">
                     <a href="#" id="feedback-form-close" class="improve-this-page__close js-toggle">Close</a>
                     <form id="feedback-form-container">
                         <input name="feedback-form-type" value="footer" type="hidden">
-                        <input name="url" id="feedback-form-url" value="https://developer.beta.ons.gov.uk" type="hidden">
+                        <input name="url" id="feedback-form-url" value="https://developer.beta.ons.gov.uk"
+                            type="hidden">
                         <div class="form-group">
                             <label class="form-label-bold" id="description-field-label" for="description-field">
-                            How should we improve this page?
+                                How should we improve this page?
                             </label>
-                            <textarea id="description-field" class="form-control" name="description" rows="5"></textarea>
+                            <textarea id="description-field" class="form-control" name="description"
+                                rows="5"></textarea>
                         </div>
                         <div class="form-group">
                             <label class="form-label-bold" for="name-field">
-                            Name (optional)
-                                <span class="form-hint">Include your name and email address if you'd like us to get back to you.</span>
+                                Name (optional)
+                                <span class="form-hint">Include your name and email address if you'd like us to get back
+                                    to you.</span>
                             </label>
                             <input id="name-field" class="form-control" name="name" type="text">
                         </div>
                         <div class="form-group">
-                            <label class="form-label-bold" id="email-field-label" for="email-field">Email (optional)</label>
+                            <label class="form-label-bold" id="email-field-label" for="email-field">Email
+                                (optional)</label>
                             <input id="email-field" class="form-control" name="email" type="text">
                         </div>
                         <div>
-                            <input id="feedback-form-submit" class="btn btn--primary font-weight-700" value="Send feedback" type="submit">
+                            <input id="feedback-form-submit" class="btn btn--primary font-weight-700"
+                                value="Send feedback" type="submit">
                         </div>
                     </form>
                 </div>
@@ -331,7 +367,8 @@
                                     <a href="/news">News</a>
                                 </li>
                                 <li class="footer-nav__item">
-                                    <a href="/aboutus/transparencyandgovernance/freedomofinformationfoi">Freedom of Information</a>
+                                    <a href="/aboutus/transparencyandgovernance/freedomofinformationfoi">Freedom of
+                                        Information</a>
                                 </li>
                             </ul>
                         </div>
@@ -345,10 +382,12 @@
                                     <a href="https://www.facebook.com/ONS" class="icon--hide">Facebook</a>
                                 </li>
                                 <li class="footer-nav__item">
-                                    <a href="https://www.linkedin.com/company/office-for-national-statistics" class="icon--hide">LinkedIn</a>
+                                    <a href="https://www.linkedin.com/company/office-for-national-statistics"
+                                        class="icon--hide">LinkedIn</a>
                                 </li>
                                 <li class="footer-nav__item">
-                                    <a href="https://public.govdelivery.com/accounts/UKONS/subscribers/new" class="icon--hide">Email alerts</a>
+                                    <a href="https://public.govdelivery.com/accounts/UKONS/subscribers/new"
+                                        class="icon--hide">Email alerts</a>
                                 </li>
                             </ul>
                         </div>
@@ -359,13 +398,19 @@
                 <div class="footer-license">
                     <img class="footer-license__img" alt="OGL" width="60" src="https://www.ons.gov.uk/img/ogl.png">
                     <p class="footer-license__text margin-left-sm--0">
-                        All content is available under the <a class="icon--hide" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a> <span class="icon icon-external--light-small"></span>, except where otherwise stated
+                        All content is available under the <a class="icon--hide"
+                            href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open
+                            Government Licence v3.0</a> <span class="icon icon-external--light-small"></span>, except
+                        where otherwise stated
                     </p>
+                </div>
             </div>
         </div>
-    </div>
     </footer>
-    <script>window.feedbackOrigin = "https://beta.ons.gov.uk"</script>
+    <script>
+        window.feedbackOrigin = "https://beta.ons.gov.uk"
+    </script>
     <script src="https://cdn.ons.gov.uk/sixteens/eb938ca/js/main.js"></script>
 </body>
+
 </html>
