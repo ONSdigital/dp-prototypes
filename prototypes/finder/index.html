@@ -7,7 +7,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="//cdn.ons.gov.uk/sixteens/cb6733a/css/main.css">
     <link href="https://cdn.ons.gov.uk/sixteens/658deeb/css/work-in-progress.css" rel="stylesheet" type="text/css">
-    <title id = "title"></title>
+    <title id="title"></title>
 </head>
 
 <body class="pl-home">
@@ -28,8 +28,8 @@
         <div class="page-intro background--indigo padding-top-md--4">
             <div class="pl-wrap__inner padding-top-sm--4">
                 <div class="wrapper">
-                    <h1 id= "page-title" class="page-intro__title page-intro__title--home-big padding-bottom-md--4"></h1>
-                    <p id= "description"></p>
+                    <h1 id="page-title" class="page-intro__title page-intro__title--home-big padding-bottom-md--4"></h1>
+                    <p id="description"></p>
                 </div>
             </div>
         </div>
@@ -49,7 +49,8 @@
                 <h2 class="margin-top-lg--2 margin-top-md--2 margin-top-sm--1">Toggle dimensions covered by data:</h2>
                 <div class="col-wrap">
                     <div class="col col--md-6 col--lg-6 margin-left-md--1">
-                        <button id="showall" class="btn btn--secondary margin-top-lg--1 margin-top-md--1 margin-top-sm--1 btn--secondary-active"
+                        <button id="showall"
+                            class="btn btn--secondary margin-top-lg--1 margin-top-md--1 margin-top-sm--1 btn--secondary-active"
                             onclick="filterSelection('showall')"> Show
                             all</button>
                     </div>
@@ -83,7 +84,7 @@
                                     <th scope="col" class="align-left">Geographical coverage</th>
                                     <th scope="col" class="align-left">Dimensions</th>
                                 </tr>
-                           </tbody>
+                            </tbody>
                         </table>
                         <footer class="figure__footer">
                         </footer>
@@ -91,96 +92,7 @@
                 </div>
             </div>
 
-
             <script>
-                const btns = domainButtons.getElementsByClassName("btn")
-                const showAll = document.getElementById('showall')
-
-                function selectDomain() {
-
-                    // Declare variables 
-                    let input, filter, table, tr, td, i, txtValue;
-                    input = document.getElementById("myInput");
-                    if (input.value === "All domains") {
-                        filter = ""
-                    } else {
-                        filter = input.value.toUpperCase();
-                    }
-                    table = document.getElementById("equalities");
-                    tr = table.getElementsByTagName("tr");
-
-                    // Loop through all table rows, and hide those who don't match the search query
-                    for (i = 0; i < tr.length; i++) {
-                        td = tr[i].getElementsByTagName("td")[1];
-                        if (td) {
-                            txtValue = td.textContent || td.innerText;
-                            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                                tr[i].style.display = "";
-                            } else {
-                                tr[i].style.display = "none";
-                            }
-                        }
-                    }
-                }
-
-                function filterSelection(c) {
-                    // Declare variables 
-                    let input, filter, table, tr, td, i, txtValue;
-
-                    input = c;
-                    filter = input.toUpperCase();
-                    table = document.getElementById("equalities");
-                    tr = table.getElementsByTagName("tr");
-                    // Loop through all table rows, and hide those who don't match the search query
-                    for (i = 0; i < tr.length; i++) {
-                        td = tr[i].getElementsByTagName("td")[4];
-                        if (td) {
-                            txtValue = td.textContent || td.innerText;
-                            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                                //tr[i].style.display = "";                             
-                            } else {
-                                tr[i].style.display = "none";
-                                if (c === "showall") {
-                                    tr[i].style.display = "";
-                                }
-                            }
-                        }
-                    }
-
-                    if (c === "showall") {
-                        showAll.className += " btn--secondary-active";
-                    }
-
-                    for (b = 0; b < btns.length; b++) {
-                        if (c === "showall") {
-                            btns[b].className = btns[b].className.replace(" btn--secondary-active", "")
-                        } else if (btns[b].name === c) {
-                            btns[b].className += " btn--secondary-active";
-                            showAll.className = showAll.className.replace(" btn--secondary-active", "")
-                        }
-                    }
-                }
-
-
-                fetch("data/data.json")
-                    .then(function (response) {
-                        return response.json();
-                    })
-                    .then(function (myJson) {
-                        for (i = 0; i < myJson.length; i++) {
-                            tr = createNode("tr");
-                            tr.innerHTML = "<tr><td class='align-left' ><a href = " + myJson[i].URL + ">" + myJson[
-                                    i].Dataset + "</a></td><td class='align-left' >" + myJson[i].Domain +
-                                "</td><td class='align-left'>" + myJson[i].Frequency +
-                                "</td><td class='align-left'>" + myJson[i].Geographicalcoverage +
-                                "</td><td class='align-left'>" + myJson[i].Dimensions + "</td></tr>"
-
-                                append(equalities, tr);
-                        }
-                        
-                    });
-
-
                 function createNode(element) {
                     return document.createElement(element);
                 }
@@ -189,6 +101,8 @@
                     return parent.appendChild(el);
                 }
             </script>
-                <script src="load.js"></script>
+            <script src="load.js"></script>
+            <script src="data.js"></script>
+            <script src="filters.js"></script>
 
 </html>

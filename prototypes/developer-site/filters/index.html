@@ -1,0 +1,432 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ONS developer site -  Requesting from filter API</title>
+    <link rel="preload" as="font"  type="font/woff2" href="https://cdn.ons.gov.uk/assets/fonts/open-sans-regular/OpenSans-Regular-webfont.woff2" crossorigin>
+    <link rel="preload" as="font"  type="font/woff2" href="https://cdn.ons.gov.uk/assets/fonts/open-sans-bold/OpenSans-Bold-webfont.woff2" crossorigin>
+    <link rel="stylesheet" href="https://cdn.ons.gov.uk/sixteens/eb938ca/css/main.css">
+    <link rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MBCBVQS');</script>
+    
+</head>
+<body class="adjust-font-size--16 link-adjust sticky-footer">
+    <header class="padding-bottom-md--1 padding-bottom-sm--3 border-bottom--iron-sm border-bottom--iron-md">
+        
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBCBVQS"
+                            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        
+        <a class="skiplink" href="#main" tabindex="0">Skip to main content</a>
+        <div class="wrapper">
+            <div class="header col-wrap">
+                <div class="col col--lg-one-third col--md-half">
+                    <a class="inline-block" href="../">
+                        <img class="logo" src="https://cdn.ons.gov.uk/assets/images/ons-logo.svg" alt="Office for National Statistics">
+                    </a>
+                </div>
+                <div class="col col--lg-two-thirds col--md-half header-title">
+                    <strong>Developer site</strong>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="wrapper">
+        <div class="col col--md-40 col--lg-44">
+        <span class="banner__text-icon">Beta</span>
+        <div class="banner__body">
+        <p>This is a new way of getting data - your <a href="/feedback?service=cmd">feedback</a> will help us to improve it.</p>
+        </div>
+        </div>
+        </div>
+        </div>
+    <main id="main" role="main" tabindex="-1">
+        <div class="wrapper margin-bottom-sm--3 margin-bottom-md--6">
+            <div class="col-wrap">
+                <div class="col col--md-one-half col--lg-one-third sticky sticky--lg-only">
+                    <div class="margin-top-sm--4 margin-top-md--5 margin-right-lg--2 padding-top--1 padding-right--1 padding-bottom--1 padding-left--1 background--iron-light">
+                        <h2 class="font-size--18 margin-top--2"><strong>Contents:</strong></h2>
+                        <nav>
+                            <ul class="list--neutral">
+                            
+                                <li>
+                                    <a href="../">
+                                        
+                                            Introduction
+                                        
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="../observations/">
+                                        
+                                            Guide to requesting specific observation
+                                        
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="../filters/">
+                                        
+                                            <strong>Guide to filtering a dataset</strong>
+                                        
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="../tour/intro/">
+                                        
+                                            API tour
+                                        
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="../dataset/">
+                                        
+                                            Explore our data
+                                        
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="../filter/">
+                                        
+                                            Filter a dataset
+                                        
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="../code-list/">
+                                        
+                                            Explore codes and lists
+                                        
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="../hierarchy/">
+                                        
+                                            Explore hierarchies
+                                        
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="../search/">
+                                        
+                                            Search within a dataset
+                                        
+                                    </a>
+                                </li>
+                            
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col col--md-one-half col--lg-two-thirds">
+                    <h1 class="break-word margin-top-sm--3 margin-bottom-sm--3"><strong> Requesting from filter API</strong></h1>
+                    <div class="markdown section__content--static-markdown">
+    <p>The <a href="../filter/">‘Filter a dataset’</a> service allows any combination of dimension options to be requested. This is aimed at more complicated queries than the <a href="../dataset/">‘Explore our dataset’</a> service and requires a POST containing dataset ID, edition, version and details of dimensions.</p>
+
+<p>Any dimensions not filtered on will return all available dimension items for that dataset.
+If you want everything in a dataset for a specific geographic location, you only need to provide the option for that geography, for example;</p>
+
+<pre><code>{
+    &#34;dataset&#34;: {
+        &#34;id&#34;: &#34;cpih01&#34;,
+        &#34;edition&#34;: &#34;time-series&#34;,
+        &#34;version&#34;: 6
+    },
+    &#34;dimensions&#34;: [
+        {
+            &#34;name&#34;: &#34;geography&#34;,
+            &#34;options&#34;: [
+                &#34;K02000001&#34;
+            ]
+        }
+    ]
+}
+</code></pre>
+
+<p>This example body can be sent via post to create a filter, with the response giving you a unique ID. As shown in this example under <code>filter_id</code>:</p>
+
+<pre><code>{
+    &#34;dataset&#34;: {
+        &#34;edition&#34;: &#34;time-series&#34;,
+        &#34;id&#34;: &#34;cpih01&#34;,
+        &#34;version&#34;: 6
+    },
+    &#34;dimensions&#34;: [
+        {
+            &#34;name&#34;: &#34;geography&#34;,
+            &#34;options&#34;: [
+                &#34;K02000001&#34;
+            ]
+        }
+    ],
+    &#34;events&#34;: {},
+    &#34;filter_id&#34;: &#34;d9645c21-0baa-4a58-834e-feb1919b14bb&#34;,
+    &#34;instance_id&#34;: &#34;bc873fb8-0797-469b-84ed-9bb3da80feeb&#34;,
+    &#34;links&#34;: {
+        &#34;dimensions&#34;: {
+            &#34;href&#34;: &#34;https://api.beta.ons.gov.uk/v1/filters/d9645c21-0baa-4a58-834e-feb1919b14bb/dimensions&#34;
+        },
+        &#34;filter_blueprint&#34;: {},
+        &#34;filter_output&#34;: {},
+        &#34;self&#34;: {
+            &#34;href&#34;: &#34;https://api.beta.ons.gov.uk/v1/filters/d9645c21-0baa-4a58-834e-feb1919b14bb&#34;
+        },
+        &#34;version&#34;: {
+            &#34;href&#34;: &#34;https://api.beta.ons.gov.uk/v1/datasets/cpih01/editions/time-series/versions/6&#34;,
+            &#34;id&#34;: &#34;6&#34;
+        }
+    },
+    &#34;published&#34;: true
+}
+</code></pre>
+
+<p>Futher PUT requests can be made to <code>/filter/{filter-ID}</code> to update the dimensions required and once the request is complete it can be submitted by adding <code>?state=submitted</code>.</p>
+
+<p>For example;</p>
+
+<pre><code>/filters/d9645c21-0baa-4a58-834e-feb1919b14bb?submitted=true
+</code></pre>
+
+<p><strong>Note</strong>: <code>?submitted=true</code> can be added to the initial POST request and the job will start immediately.</p>
+
+<pre><code>/filters?submitted=true
+</code></pre>
+
+<p>Once submitted, you will get the following response:</p>
+
+<pre><code>{
+    &#34;dataset&#34;: {
+        &#34;id&#34;: &#34;cpih01&#34;,
+        &#34;edition&#34;: &#34;time-series&#34;,
+        &#34;version&#34;: 6
+    },
+    &#34;instance_id&#34;: &#34;2426ff0f-ca8b-45f6-8728-e851ea165b85&#34;,
+    &#34;dimensions&#34;: [
+        {
+            &#34;name&#34;: &#34;geography&#34;,
+            &#34;options&#34;: [
+                &#34;K02000001&#34;
+            ]
+        }
+    ],
+    &#34;events&#34;: {},
+    &#34;filter_id&#34;: &#34;63c77ab3-b57d-40a8-8397-9830ed98f9fd&#34;,
+    &#34;published&#34;: true,
+    &#34;links&#34;: {
+        &#34;dimensions&#34;: {
+            &#34;href&#34;: &#34;https://api.beta.ons.gov.uk/v1/filters/63c77ab3-b57d-40a8-8397-9830ed98f9fd/dimensions&#34;
+        },
+        &#34;filter_output&#34;: {
+            &#34;id&#34;: &#34;9dd04dd7-07e9-4ce9-90bb-a4205b743027&#34;,
+            &#34;href&#34;: &#34;https://api.beta.ons.gov.uk/v1/filter-outputs/9dd04dd7-07e9-4ce9-90bb-a4205b743027&#34;
+        },
+        &#34;filter_blueprint&#34;: {},
+        &#34;self&#34;: {
+            &#34;href&#34;: &#34;https://api.beta.ons.gov.uk/v1/filters/63c77ab3-b57d-40a8-8397-9830ed98f9fd&#34;
+        },
+        &#34;version&#34;: {
+            &#34;id&#34;: &#34;6&#34;,
+            &#34;href&#34;: &#34;https://api.beta.ons.gov.uk/v1/datasets/cpih01/editions/time-series/versions/6&#34;
+        }
+    }
+}
+</code></pre>
+
+<p>This creates a ‘filter output’ which will contain the files once generated. This is available in the response and follows this format;</p>
+
+<pre><code>&#34;filter_output&#34;: {
+    &#34;id&#34;: &#34;9dd04dd7-07e9-4ce9-90bb-a4205b743027&#34;,
+    &#34;href&#34;: &#34;https://api.beta.ons.gov.uk/v1/filter-outputs/9dd04dd7-07e9-4ce9-90bb-a4205b743027&#34;
+}
+</code></pre>
+
+<p>A GET on the filter-output will return the following;</p>
+
+<pre><code>{
+&#34;dataset&#34;: {
+    &#34;edition&#34;: &#34;time-series&#34;,
+    &#34;id&#34;: &#34;cpih01&#34;,
+    &#34;version&#34;: 6
+},
+&#34;dimensions&#34;: [
+    {
+        &#34;name&#34;: &#34;geography&#34;,
+        &#34;options&#34;: [
+            &#34;K02000001&#34;
+        ]
+    }
+],
+&#34;downloads&#34;: {
+    &#34;csv&#34;: {
+        &#34;href&#34;: &#34;https://download.beta.ons.gov.uk/downloads/filter-outputs/a5deb5e7-bb91-47bc-bb70-f9da12d54fa1.csv&#34;,
+        &#34;size&#34;: &#34;2061369&#34;
+    },
+    &#34;xls&#34;: {
+        &#34;href&#34;: &#34;https://download.beta.ons.gov.uk/downloads/filter-outputs/a5deb5e7-bb91-47bc-bb70-f9da12d54fa1.xlsx&#34;,
+        &#34;size&#34;: &#34;112878&#34;
+    }
+},
+&#34;events&#34;: {},
+&#34;filter_id&#34;: &#34;a5deb5e7-bb91-47bc-bb70-f9da12d54fa1&#34;,
+&#34;instance_id&#34;: &#34;bc873fb8-0797-469b-84ed-9bb3da80feeb&#34;,
+&#34;links&#34;: {
+    &#34;dimensions&#34;: {},
+    &#34;filter_blueprint&#34;: {
+        &#34;href&#34;: &#34;https://api.beta.ons.gov.uk/v1/filters/5ce923e2-613e-4dcf-874c-d750d97afe79&#34;,
+        &#34;id&#34;: &#34;5ce923e2-613e-4dcf-874c-d750d97afe79&#34;
+    },
+    &#34;filter_output&#34;: {},
+    &#34;self&#34;: {
+        &#34;href&#34;: &#34;https://api.beta.ons.gov.uk/v1/filter-outputs/a5deb5e7-bb91-47bc-bb70-f9da12d54fa1&#34;
+    },
+    &#34;version&#34;: {
+        &#34;href&#34;: &#34;https://api.beta.ons.gov.uk/v1/datasets/cpih01/editions/time-series/versions/6&#34;,
+        &#34;id&#34;: &#34;6&#34;
+    }
+},
+&#34;published&#34;: true,
+&#34;state&#34;: &#34;completed&#34;
+}
+</code></pre>
+
+<p><strong>Note</strong>: The split between ‘filter’ and ‘filter-outputs’ is there to allow the filter to be modified and resubmitted.</p>
+
+</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div class="improve-this-page" data-module="improve-this-page">
+                <div class="improve-this-page__prompt clearfix" id="feedback-form-header" tabindex="-1">
+                <h3 class="improve-this-page__is-useful-question">Is this page useful?</h3>
+                <a id="feedback-form-yes" class="improve-this-page__page-is-useful-button" href="https://beta.ons.gov.uk/feedback/thanks">
+                Yes
+                </a>
+                <a id="feedback-form-no" class="js-toggle" href="https://beta.ons.gov.uk/feedback?service=dev">
+                No
+                </a>
+                <a id="feedback-form-anything-wrong" class="js-toggle improve-this-page__anything-wrong" href="https://beta.ons.gov.uk/feedback?service=dev">
+                Can't find what you're looking for?
+                </a>
+                </div>
+                <div id="feedback-form" class="improve-this-page__form js-hidden">
+                    <a href="#" id="feedback-form-close" class="improve-this-page__close js-toggle">Close</a>
+                    <form id="feedback-form-container">
+                        <input name="feedback-form-type" value="footer" type="hidden">
+                        <input name="url" id="feedback-form-url" value="https://developer.beta.ons.gov.ukfilters/" type="hidden">
+                        <div class="form-group">
+                            <label class="form-label-bold" id="description-field-label" for="description-field">
+                            How should we improve this page?
+                            </label>
+                            <textarea id="description-field" class="form-control" name="description" rows="5"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label-bold" for="name-field">
+                            Name (optional)
+                                <span class="form-hint">Include your name and email address if you'd like us to get back to you.</span>
+                            </label>
+                            <input id="name-field" class="form-control" name="name" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label-bold" id="email-field-label" for="email-field">Email (optional)</label>
+                            <input id="email-field" class="form-control" name="email" type="text">
+                        </div>
+                        <div>
+                            <input id="feedback-form-submit" class="btn btn--primary font-weight-700" value="Send feedback" type="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <h2 class="visuallyhidden">Footer links</h2>
+        <div class="footer">
+            <div class="wrapper">
+                <nav>
+                    <div class="footer-nav col-wrap">
+                        <div class="col col--lg-one-third col--md-one-third">
+                            <h3 class="footer-nav__heading">Help</h3>
+                            <ul class="footer-nav__list">
+                                <li class="footer-nav__item">
+                                    <a href="/help/accessibility">Accessibility</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="/help/cookiesandprivacy">Cookies and privacy</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="/help/termsandconditions">Terms and conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col col--lg-one-third col--md-one-third">
+                            <h3 class="footer-nav__heading">About ONS</h3>
+                            <ul class="footer-nav__list">
+                                <li class="footer-nav__item">
+                                    <a href="/aboutus/whatwedo">What we do</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="/aboutus/careers">Careers</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="/aboutus/contactus">Contact us</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="/news">News</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="/aboutus/transparencyandgovernance/freedomofinformationfoi">Freedom of Information</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col col--lg-one-third col--md-one-third">
+                            <h3 class="footer-nav__heading">Connect with us</h3>
+                            <ul class="footer-nav__list">
+                                <li class="footer-nav__item">
+                                    <a href="https://twitter.com/ONS" class="icon--hide">Twitter</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="https://www.facebook.com/ONS" class="icon--hide">Facebook</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="https://www.linkedin.com/company/office-for-national-statistics" class="icon--hide">LinkedIn</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="https://public.govdelivery.com/accounts/UKONS/subscribers/new" class="icon--hide">Email alerts</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="wrapper">
+                <div class="footer-license">
+                    <img class="footer-license__img" alt="OGL" width="60" src="https://www.ons.gov.uk/img/ogl.png">
+                    <p class="footer-license__text margin-left-sm--0">
+                        All content is available under the <a class="icon--hide" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a> <span class="icon icon-external--light-small"></span>, except where otherwise stated
+                    </p>
+            </div>
+        </div>
+    </div>
+    </footer>
+    <script>window.feedbackOrigin = "https://beta.ons.gov.uk"</script>
+    <script src="https://cdn.ons.gov.uk/sixteens/eb938ca/js/main.js"></script>
+</body>
+</html>

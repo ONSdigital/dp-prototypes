@@ -21,5 +21,4 @@ fetch("data/setup.json")
             domain.innerHTML = "<button name='" + data.secondarylevel[i] + "' class='btn btn--secondary btn--small margin-top-lg--1 margin-top-md--1 margin-top-sm--1' onclick=" + onClickLabel + ">" + data.secondarylevel[i] + "</button>"
             domainButtons.append(domain)
         }
-
     });
