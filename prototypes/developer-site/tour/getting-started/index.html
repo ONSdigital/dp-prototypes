@@ -194,7 +194,8 @@
                                         document.getElementById("tryitout-list-datasets-results").setAttribute(
                                             "class", "hidden");
                                         document.getElementById("tryitout-list-datasets").setAttribute("class",
-                                            "btn btn--primary btn--primary-disabled");
+                                            "btn btn--primary margin-left-lg--2 margin-left-md--2 margin-left-sm--1 btn--primary-disabled"
+                                            );
 
                                         fetch("https://api.beta.ons.gov.uk/v1/datasets")
                                             .then((r) => {
@@ -206,10 +207,11 @@
                                                 document.getElementById("tryitout-list-datasets")
                                                     .removeAttribute("disabled");
                                                 document.getElementById("tryitout-list-datasets")
-                                                    .setAttribute("class", "btn btn--primary");
+                                                    .setAttribute("class", "hidden");
 
                                                 document.getElementById("tryitout-list-datasets-json")
-                                                    .innerText = JSON.stringify(r, null, 2);
+                                                    .innerHTML = "<code>" + JSON.stringify(r, null, 2); +
+                                                "</code>"
                                                 let table = document.getElementById(
                                                     "tryitout-list-datasets-table");
                                                 table.innerHTML = "";
@@ -234,29 +236,55 @@
 
                         <div>
                             <h3>Example</h3>
-                            <p>
+                            <p class="margin-bottom--0 ">
                                 Make a <tt>GET</tt> request to <tt>https://api.beta.ons.gov.uk/v1/datasets</tt>
                             </p>
+                            <p class="margin-top--0" >
+                                <a onclick="codeExample()">Show/hide Javascript example</a>
+                            </p>
+                            <div class="markdown" id="codeExample" style="display: none;">
+                                    <pre>
+                                        <code>
+    fetch("https://api.beta.ons.gov.uk/v1/datasets")
+        .then((result) => {
+            return result.json();
+        })
+        .then((result) => {
+            console.log(result)
+        })
+        .catch(function(error) {
+            console.log(error);
+        });
+                                        </code>
+                                    </pre>
+                                </div>
                             <div>
                                 <button class="btn btn--primary" id="tryitout-list-datasets">Try it out</button>
                             </div>
+                            
+
+
                             <div class="hidden" style="margin-top: 20px;" id="tryitout-list-datasets-results">
                                 <fieldset class="btn-group">
                                     <div role="radiogroup">
+
                                         <label class="btn btn--secondary btn--chart-control btn--secondary-active"
-                                            id="tab-results">
-                                            Results <input name="range" aria-controls="data" checked="" type="radio">
-                                        </label>
-                                        <label class="btn btn--secondary btn--chart-control" id="tab-json">
+                                            id="tab-json">
                                             JSON <input name="range" aria-controls="data" type="radio">
+                                        </label>
+                                        <label class="btn btn--secondary btn--chart-control " id="tab-results">
+                                            Content <input name="range" aria-controls="data" checked="" type="radio">
                                         </label>
                                     </div>
                                 </fieldset>
-                                <div id="tryitout-list-datasets-json-result" class="hidden">
-                                    <pre style="max-height: 300px; overflow-y: scroll;"
-                                        id="tryitout-list-datasets-json"></pre>
+                                <div id="tryitout-list-datasets-json-result"
+                                    style="max-height: 400px; overflow-y: scroll;">
+                                    <div class="markdown">
+                                        <pre id="tryitout-list-datasets-json"></pre>
+                                    </div>
                                 </div>
-                                <div id="tryitout-list-datasets-result-result">
+                                <div id="tryitout-list-datasets-result-result" class="hidden"
+                                    style="max-height: 400px; overflow-y: scroll;">
                                     <table>
                                         <thead>
                                             <tr>
@@ -271,7 +299,7 @@
                                 </div>
                             </div>
                         </div>
-
+                        <hr class="margin-top--3">
                         <nav style="margin-top: 20px;">
                             <a class="" href="../intro/">Back</a>
                             <a class="float-right" href="../latest-release/">Next: Find the latest release</a>
@@ -409,6 +437,15 @@
     </footer>
     <script>
         window.feedbackOrigin = "https://beta.ons.gov.uk"
+
+        function codeExample() {
+            var x = document.getElementById("codeExample");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
     </script>
     <script src="https://cdn.ons.gov.uk/sixteens/eb938ca/js/main.js"></script>
 </body>
