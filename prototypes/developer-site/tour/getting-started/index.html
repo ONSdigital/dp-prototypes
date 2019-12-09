@@ -14,7 +14,35 @@
     <link rel="stylesheet"
         href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
     <link rel="stylesheet" href="../../assets/css/main.css">
+    <style>
+    table.results table {
+    min-width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+        }
 
+
+        table.results th {
+        padding: 7px 0 1px 0;
+
+    }
+
+    table.results tr.table__header-row {
+
+        border-bottom: 3px solid #D0D2D3;
+        vertical-align: top;
+        padding-top: 5px;
+        text-align: left;
+    }
+
+    table.results td {
+        padding: 6px 1px 2px 1px;
+    }
+
+    table.results tr:nth-child(even) {background-color: #f2f2f2;}
+
+
+    </style>
     <script>
         (function (w, d, s, l, i) {
             w[l] = w[l] || [];
@@ -285,9 +313,9 @@
                                 </div>
                                 <div id="tryitout-list-datasets-result-result" class="hidden"
                                     style="max-height: 400px; overflow-y: scroll;">
-                                    <table>
+                                    <table class="results">
                                         <thead>
-                                            <tr>
+                                            <tr class ="table__header-row">
                                                 <th>Dataset ID</th>
                                                 <th>Title</th>
                                             </tr>
@@ -301,7 +329,7 @@
                         </div>
                         <hr class="margin-top--3">
                         <nav style="margin-top: 20px;">
-                            <a class="" href="../intro/">Back</a>
+                            
                             <a class="float-right" href="../latest-release/">Next: Find the latest release</a>
                         </nav>
                     </div>
