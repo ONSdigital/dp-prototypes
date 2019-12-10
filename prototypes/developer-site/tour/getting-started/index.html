@@ -63,7 +63,7 @@
 </head>
 
 <body class="adjust-font-size--16 link-adjust sticky-footer">
-    <header class="padding-bottom-md--1 padding-bottom-sm--3 border-bottom--iron-sm border-bottom--iron-md">
+    <header class="border-bottom--iron-sm border-bottom--iron-md">
 
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBCBVQS" height="0" width="0"
                 style="display:none;visibility:hidden"></iframe></noscript>
@@ -82,18 +82,19 @@
                 </div>
             </div>
         </div>
-    </header>
-    <div class="banner">
-        <div class="wrapper">
-            <div class="col col--md-40 col--lg-44">
-                <span class="banner__text-icon">Beta</span>
-                <div class="banner__body">
-                    <p>This is a new way of getting data - your <a href="/feedback?service=dev">feedback</a> will help
-                        us to improve it.</p>
+
+        <div class="banner">
+            <div class="wrapper">
+                <div class="col col--md-40 col--lg-44">
+                    <span class="banner__text-icon">Beta</span>
+                    <div class="banner__body">
+                        <p>This is a new way of getting data - your <a href="/feedback?service=dev">feedback</a> will help
+                            us to improve it.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
     <main id="main" role="main" tabindex="-1">
         <div class="wrapper margin-bottom-sm--3 margin-bottom-md--6">
             <div class="col-wrap">
@@ -222,7 +223,7 @@
                                         document.getElementById("tryitout-list-datasets-results").setAttribute(
                                             "class", "hidden");
                                         document.getElementById("tryitout-list-datasets").setAttribute("class",
-                                            "btn btn--primary margin-left-lg--2 margin-left-md--2 margin-left-sm--1 btn--primary-disabled"
+                                            "btn btn--primary btn--primary-disabled"
                                             );
 
                                         fetch("https://api.beta.ons.gov.uk/v1/datasets")
