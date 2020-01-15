@@ -36,7 +36,7 @@
         <div class="page-intro background--astral padding-top-md--4">
             <div class="pl-wrap__inner padding-top-sm--4">
                 <div class="wrapper">
-                    <h1 id="page-title" class="page-intro__title page-intro__title--home-big padding-bottom-md--4">What data are you looking for?</h1>
+                    <h1 id="page-title" class="page-intro__title page-intro__title--home-big padding-bottom-md--4">What Census data are you looking for?</h1>
                 </div>
             </div>
         </div>
@@ -44,56 +44,49 @@
     <div class="wrapper">
         <div class="col-wrap">
             <div class="col col--md-one col--lg-one">
-                <h2>Select dimensions</h2>
-                <input type="checkbox" >
-                <label class="container">Age
-
+                <h2>Select dimensions available in Census data</h2>
+                <p style="border-left: 3px solid #f90; padding-left: 0.5rem;">Can these be themed as categorised/drill-down-able dimensions or how granular are these?</p>
+                <input type="checkbox" id="age">
+                <label class="container" for="age">Age
                     <span class="checkmark"></span>
                   </label>
-                  <input type="checkbox" >
-                  <label class="container">National level
-
+                  <input type="checkbox" id="national_level">
+                  <label class="container" for="national_level">National level
                     <span class="checkmark"></span>
                   </label>
-                  <input type="checkbox" >
-                  <label class="container">Subnational level
-
+                  <input type="checkbox" id="subnational_level">
+                  <label class="container" for="subnational_level">Subnational level
                     <span class="checkmark"></span>
                   </label>
-                  <input type="checkbox" >
-                  <label class="container">Sex
-
+                  <input type="checkbox" id="sex">
+                  <label class="container" for="sex">Sex
                     <span class="checkmark"></span>
                   </label>
-                  <input type="checkbox" >
-                  <label class="container">Ethnicity
-
+                  <input type="checkbox" id="ethnicity">
+                  <label class="container" for="ethnicity">Ethnicity
                     <span class="checkmark"></span>
                   </label>
-                  <input type="checkbox" >
-                  <label class="container">Employment status
-
+                  <input type="checkbox" id="employment_status">
+                  <label class="container" for="employment_status">Employment status
                     <span class="checkmark"></span>
                   </label>
-                  <input type="checkbox" >
-                  <label class="container">Number of rooms
-
+                  <input type="checkbox" id="no_rooms">
+                  <label class="container" for="no_rooms">Number of rooms
                     <span class="checkmark"></span>
                   </label>
-                  <input type="checkbox" >
-                  <label class="container">etc
-                    
+                  <input type="checkbox" id="etc">
+                  <label class="container" for="etc">etc
                     <span class="checkmark"></span>
                   </label>
             </div>
-            <div class="col col--md-one col--lg-one">
+            <!-- <div class="col col--md-one col--lg-one">
                 <h2>Select topics</h2>
                 <input type="radio" name="age" value="30"> All
                 <input type="radio" checked="checked" name="age" value="60"> Census
                 <input type="radio" name="age" value="100"> Employment  
                 <input type="radio" name="age" value="100"> Economy  
                 <input type="radio" name="age" value="100"> etc 
-            </div>
+            </div> -->
 
         </div>
     </div>
@@ -101,7 +94,7 @@
         <div class="col-wrap">
             <div class="col col--md-one col--lg-one">
                 <h2><a class = "btn btn--secondary" href ="https://onsdigital.github.io/dp-prototypes/prototypes/cmd-dataset-list/index.html">Results</a></h2>
-                <a href ="https://www.ons.gov.uk/filters/417dc456-7c5b-4a98-b618-32b942dcb3dc/dimensions" style="color:white"> Option for demo</a>
+                <a href ="https://www.ons.gov.uk/filters/417dc456-7c5b-4a98-b618-32b942dcb3dc/dimensions" style="color:#e0e0e0"> Option for demo</a>
             </div>
         </div>
     </div>
